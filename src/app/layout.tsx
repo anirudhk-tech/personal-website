@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "@fontsource/montserrat";
+import "@fontsource/orbitron";
 import { ThemeWrapper } from "@/themeWrapper";
 
 export const metadata: Metadata = {
