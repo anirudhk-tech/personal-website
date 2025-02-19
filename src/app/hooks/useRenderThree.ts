@@ -1,20 +1,25 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import * as Three from "three";
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
 import { OrbitControls } from "three/examples/jsm/Addons.js";
 
-export const useRenderThree = (source: string, screen: string) => {
-  const containerRef = useRef<HTMLDivElement | null>(null);
+export const useRenderThree = (
+  model: string,
+  screen: string,
+  screenTexture: string
+) => {
+  const [container, setContainer] = useState<HTMLDivElement | null>(null);
   const modelRef = useRef<Three.Object3D | null>(null);
   const isPausedRef = useRef(false);
   const pivotRef = useRef<Three.Group | null>(null);
   const outOfViewRef = useRef(false);
+  const isMobileProject = model.includes("iphone");
 
   useEffect(() => {
-    if (!containerRef.current) return;
-    const cleanupRef = containerRef.current;
-    const width = containerRef.current.clientWidth;
-    const height = containerRef.current.clientHeight;
+    if (!container) return;
+    const cleanupRef = container;
+    const width = container.clientWidth;
+    const height = container.clientHeight;
 
     // SCENE SET UP
 
@@ -25,11 +30,15 @@ export const useRenderThree = (source: string, screen: string) => {
     pivotRef.current = pivot;
 
     const camera = new Three.PerspectiveCamera(75, width / height, 0.1, 1000);
-    camera.position.set(0.0, 0.08, 45); // Move the camera so it's in front of the model
+    if (isMobileProject) {
+      camera.position.set(-3, 0.6, 85);
+    } else {
+      camera.position.set(0.0, 0.08, 45);
+    } // Move the camera so it's in front of the model (either iphone or laptop)
 
     const renderer = new Three.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(width, height);
-    containerRef.current.appendChild(renderer.domElement);
+    container.appendChild(renderer.domElement);
     renderer.shadowMap.enabled = true;
 
     const controls = new OrbitControls(camera, renderer.domElement);
@@ -76,29 +85,44 @@ export const useRenderThree = (source: string, screen: string) => {
 
     // LOADING
     const loader = new GLTFLoader();
-    loader.load(source, (gltf) => {
-      const model = gltf.scene;
-      modelRef.current = model;
-      const box = new Three.Box3().setFromObject(model);
-      const center = new Three.Vector3();
-      box.getCenter(center);
+    loader.load(
+      model,
+      (gltf) => {
+        const model = gltf.scene;
+        modelRef.current = model;
+        const box = new Three.Box3().setFromObject(model);
+        const center = new Three.Vector3();
+        box.getCenter(center);
 
-      model.position.sub(center);
-      pivot.add(model);
+        model.position.sub(center);
+        pivot.add(model);
 
-      const textureLoader = new Three.TextureLoader();
-      textureLoader.load(screen, (texture) => {
-        model.traverse((child) => {
-          if (child instanceof Three.Mesh && child.name === "Object_123") {
-            const mesh = child;
-            mesh.material = new Three.MeshBasicMaterial({
-              map: texture,
+        const textureLoader = new Three.TextureLoader();
+        textureLoader.load(
+          screen,
+          (texture) => {
+            model.traverse((child) => {
+              if (isMobileProject) console.log(child.name);
+              if (child instanceof Three.Mesh && child.name === screenTexture) {
+                const mesh = child;
+                mesh.material = new Three.MeshBasicMaterial({
+                  map: texture,
+                });
+                mesh.material.needsUpdate = true;
+              }
             });
-            mesh.material.needsUpdate = true;
+          },
+          undefined,
+          (error) => {
+            console.error("Error loading texture:", error);
           }
-        });
-      });
-    });
+        );
+      },
+      undefined,
+      (error) => {
+        console.error("Error loading model:", error);
+      }
+    );
 
     // ANIMATION
     let frameId: number | null = null;
@@ -123,9 +147,9 @@ export const useRenderThree = (source: string, screen: string) => {
     }
     animate();
 
-    containerRef.current.addEventListener("mousedown", handleMouseDown);
-    containerRef.current.addEventListener("mouseup", handleMouseUp);
-    containerRef.current.addEventListener("mouseleave", handleMouseUp);
+    container.addEventListener("mousedown", handleMouseDown);
+    container.addEventListener("mouseup", handleMouseUp);
+    container.addEventListener("mouseleave", handleMouseUp);
 
     // OFF SCREEN DETECTION
     const observer = new IntersectionObserver((entries) => {
@@ -142,7 +166,7 @@ export const useRenderThree = (source: string, screen: string) => {
         }
       });
     });
-    observer.observe(containerRef.current);
+    observer.observe(container);
 
     // CLEANUP
     return () => {
@@ -158,7 +182,7 @@ export const useRenderThree = (source: string, screen: string) => {
       cleanupRef.removeEventListener("mouseup", handleMouseUp);
       cleanupRef.removeEventListener("mouseleave", handleMouseUp);
     };
-  }, [source, screen]);
+  }, [model, screen, screenTexture, isMobileProject, container]);
 
-  return { containerRef };
+  return { setContainer };
 };

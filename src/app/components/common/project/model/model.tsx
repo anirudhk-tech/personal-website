@@ -8,13 +8,15 @@ export const Model = ({
   screen,
   backgroundGradient,
   project,
+  screenTexture,
 }: {
   model: string;
   screen: string;
   backgroundGradient?: string;
   project: Project;
+  screenTexture: string;
 }) => {
-  const { containerRef } = useRenderThree(model, screen);
+  const { setContainer } = useRenderThree(model, screen, screenTexture);
   const isMobile = useMediaQuery("(max-width: 600px)");
 
   return (
@@ -29,7 +31,7 @@ export const Model = ({
       )}
       <ModelContainer
         sx={{ background: backgroundGradient ? backgroundGradient : "" }}
-        ref={containerRef}
+        ref={setContainer}
       ></ModelContainer>
     </Container>
   );

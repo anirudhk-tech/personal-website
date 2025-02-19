@@ -9,6 +9,7 @@ export interface Project {
   icons: Icon[];
   externalLinks: Link[];
   screen: string;
+  type: "mobile" | "pc";
 }
 
 export interface Icon {

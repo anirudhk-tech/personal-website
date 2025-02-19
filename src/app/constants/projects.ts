@@ -4,6 +4,7 @@ import { Icons } from "./icons";
 export const projects: Project[] = [
   {
     title: "Raydar",
+    type: "pc",
     screen: "/raydar.png",
     description:
       "A lost and found ML solution that connects uploaded sketches and descriptions of objects to a database of found items.",
@@ -82,6 +83,7 @@ export const projects: Project[] = [
   },
   {
     title: "Guardpup",
+    type: "pc",
     screen: "/guardpup.png",
     description:
       "A MadHacks hackathon entry that deters deepfake manipulation by combining AI-driven image search, usage analytics, and screenshot prevention.",
@@ -136,6 +138,7 @@ export const projects: Project[] = [
   },
   {
     title: "Crypto Trader",
+    type: "pc",
     screen: "/robinhood.png",
     description:
       "A Python-based trading bot leveraging the Robinhood API for automated cryptocurrency trades.",
@@ -173,6 +176,7 @@ export const projects: Project[] = [
   },
   {
     title: "EcoSteps",
+    type: "pc",
     screen: "/ecosteps.png",
     description:
       "A NASA Space Apps 2024 project that gamifies eco-friendly actions for the next generation, backed by AI-driven insights from NASA data.",
@@ -238,6 +242,7 @@ export const projects: Project[] = [
   },
   {
     title: "Personal Discord Bot",
+    type: "pc",
     screen: "/discord.png",
     description:
       "A Python-powered Discord bot designed for a personal server, featuring a simulated stock market, Reddit integrations, and text encryption.",
