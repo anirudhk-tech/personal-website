@@ -36,8 +36,7 @@ export const Intro = () => {
               src={ProfilePicture}
               alt="Profile picture"
               fill
-              objectFit="cover"
-              style={{ borderRadius: 50 }}
+              style={{ objectFit: "cover", borderRadius: 50 }}
             />
           </PictureContainer>
         </NavigationAndPhotoContainer>
