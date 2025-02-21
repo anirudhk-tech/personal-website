@@ -137,6 +137,56 @@ export const projects: Project[] = [
     ],
   },
   {
+    title: "ElectroBook",
+    type: "pixel",
+    screen: "/electrobook.png",
+    description:
+      "An Android app for storing eBooks locally, built with React Native, SQLite, MMKV, and Filesystem, and managed through Zustand.",
+    startDate: "Dec. 2023",
+    endDate: "Aug. 2024",
+    points: [
+      "Implemented a cross-platform user interface in React Native.",
+      "Utilized SQLite, MMKV, and Filesystem for robust local storage and offline support.",
+      "Managed global state with Zustand for seamless user experiences.",
+      "Employed Git and Expo for version control and deployment.",
+      "Published the final product on the Google Play Store.",
+    ],
+    icons: [
+      {
+        name: Icons.reactnative.name,
+        icon: Icons.reactnative.icon,
+        link: Icons.reactnative.link,
+      },
+      {
+        name: Icons.sqlite.name,
+        icon: Icons.sqlite.icon,
+        link: Icons.sqlite.link,
+      },
+      {
+        name: Icons.expo.name,
+        icon: Icons.expo.icon,
+        link: Icons.expo.link,
+      },
+      {
+        name: Icons.javascript.name,
+        icon: Icons.javascript.icon,
+        link: Icons.javascript.link,
+      },
+    ],
+    externalLinks: [
+      {
+        name: Icons.github.name,
+        icon: Icons.github.icon,
+        link: "https://github.com/anirudhk-tech/ElectroBook",
+      },
+      {
+        name: Icons.playstore.name,
+        icon: Icons.playstore.icon,
+        link: "https://play.google.com/store/apps/details?id=com.anirudh_k.ElectroBook_Latest&hl=en_US",
+      },
+    ],
+  },
+  {
     title: "Crypto Trader",
     type: "pc",
     screen: "/robinhood.png",

@@ -13,7 +13,8 @@ export const useRenderThree = (
   const isPausedRef = useRef(false);
   const pivotRef = useRef<Three.Group | null>(null);
   const outOfViewRef = useRef(false);
-  const isMobileProject = model.includes("iphone");
+  const isIphoneProject = model.includes("iphone");
+  const isPixelProject = model.includes("pixel");
 
   useEffect(() => {
     if (!container) return;
@@ -30,11 +31,13 @@ export const useRenderThree = (
     pivotRef.current = pivot;
 
     const camera = new Three.PerspectiveCamera(75, width / height, 0.1, 1000);
-    if (isMobileProject) {
+    if (isIphoneProject) {
       camera.position.set(-3, 0.6, 85);
+    } else if (isPixelProject) {
+      camera.position.set(0, 0.6, -3);
     } else {
       camera.position.set(0.0, 0.08, 45);
-    } // Move the camera so it's in front of the model (either iphone or laptop)
+    } // Move the camera so it's in front of the model (either iphone, pixel or laptop)
 
     const renderer = new Three.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(width, height);
@@ -89,6 +92,7 @@ export const useRenderThree = (
       model,
       (gltf) => {
         const model = gltf.scene;
+        if (isPixelProject) model.scale.set(15, 15, 15); // Pixel 3D model is small
         modelRef.current = model;
         const box = new Three.Box3().setFromObject(model);
         const center = new Three.Vector3();
@@ -102,7 +106,6 @@ export const useRenderThree = (
           screen,
           (texture) => {
             model.traverse((child) => {
-              if (isMobileProject) console.log(child.name);
               if (child instanceof Three.Mesh && child.name === screenTexture) {
                 const mesh = child;
                 mesh.material = new Three.MeshBasicMaterial({
@@ -182,7 +185,14 @@ export const useRenderThree = (
       cleanupRef.removeEventListener("mouseup", handleMouseUp);
       cleanupRef.removeEventListener("mouseleave", handleMouseUp);
     };
-  }, [model, screen, screenTexture, isMobileProject, container]);
+  }, [
+    model,
+    screen,
+    screenTexture,
+    isIphoneProject,
+    isPixelProject,
+    container,
+  ]);
 
   return { setContainer };
 };

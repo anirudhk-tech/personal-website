@@ -1,11 +1,12 @@
 "use client";
 
 import { useRef } from "react";
-import { Landing } from "./components/common/landing/landing";
+import { Landing } from "./components/landing/landing";
 import { Container } from "./page.styles";
 import { ScrollWidth } from "./animations/scrollWidth";
-import { Intro } from "./components/common/intro/intro";
-import { Project } from "./components/common/project/project";
+import { Intro } from "./components/intro/intro";
+import { Project } from "./components/project/project";
+import { Experience } from "./components/experience/experience";
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -25,6 +26,7 @@ export default function Home() {
       <Landing />
       <Intro />
       <Project />
+      <Experience />
     </Container>
   );
 }

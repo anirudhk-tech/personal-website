@@ -24,6 +24,11 @@ import { SiExpress } from "react-icons/si";
 import { FaNode } from "react-icons/fa";
 import { SiFlask } from "react-icons/si";
 import { FaDiscord } from "react-icons/fa";
+import { TbBrandReactNative } from "react-icons/tb";
+import { SiSqlite } from "react-icons/si";
+import { SiExpo } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import { BiLogoPlayStore } from "react-icons/bi";
 
 export const Icons: Record<string, Icon | Link> = {
   python: {
@@ -155,5 +160,30 @@ export const Icons: Record<string, Icon | Link> = {
     name: "Discord",
     icon: <FaDiscord color="black" size={24} />,
     link: "https://discord.com/",
+  },
+  javascript: {
+    name: "JavaScript",
+    icon: <IoLogoJavascript color="black" size={24} />,
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  sqlite: {
+    name: "SQLite",
+    icon: <SiSqlite color="black" size={24} />,
+    link: "https://sqlite.org/",
+  },
+  expo: {
+    name: "Expo",
+    icon: <SiExpo color="black" size={24} />,
+    link: "https://expo.dev/",
+  },
+  reactnative: {
+    name: "React Native",
+    icon: <TbBrandReactNative color="black" size={24} />,
+    link: "https://reactnative.dev/",
+  },
+  playstore: {
+    name: "Play Store",
+    icon: <BiLogoPlayStore color="black" size={24} />,
+    link: "https://play.google.com/",
   },
 };

@@ -25,11 +25,17 @@ export const Project = () => {
                   model={
                     project.type === "pc"
                       ? "/macbook/scene.gltf"
+                      : project.type === "pixel"
+                      ? "/google_pixel_6_pro/scene.gltf"
                       : "/iphone_12_pro/scene.gltf"
                   }
                   screen={project.screen}
                   screenTexture={
-                    project.type === "pc" ? "Object_123" : "Screen_Wallpaper_0"
+                    project.type === "pc"
+                      ? "Object_123"
+                      : project.type === "pixel"
+                      ? "Screen_Screen_0"
+                      : "Screen_Wallpaper_0"
                   }
                   backgroundGradient="linear-gradient(135deg,#f2f2f2 0%,#e2e2e2 100%)"
                   project={project}
