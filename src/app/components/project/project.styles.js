@@ -11,6 +11,7 @@ export const Container = styled(Box)(() => ({
   "@media (max-width: 600px)": {
     height: "200vh",
   },
+  marginTop: "60px",
 }));
 
 export const ProjectContainer = styled(Box)(() => ({

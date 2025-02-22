@@ -12,6 +12,17 @@ export interface Project {
   type: "pixel" | "iphone" | "pc";
 }
 
+export interface Experience {
+  title: string;
+  responsibilities: string[];
+  startDate: string;
+  endDate: string;
+  company: string;
+  location: string;
+  icons: Icon[];
+  type: "work" | "self-employed" | "association";
+}
+
 export interface Icon {
   name: string;
   icon: React.ReactElement;

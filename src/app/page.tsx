@@ -25,8 +25,8 @@ export default function Home() {
       />
       <Landing />
       <Intro />
-      <Project />
       <Experience />
+      <Project />
     </Container>
   );
 }
