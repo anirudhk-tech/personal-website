@@ -36,7 +36,7 @@ export const Desc = ({ project }: { project: Project }) => {
         <IconsContainer>
           {project.icons.map((icon, idx) => (
             <a
-              href={icon.link}
+              href={icon.link ? icon.link : undefined}
               key={idx}
               target="_blank"
               rel="noopener noreferrer"
@@ -56,7 +56,7 @@ export const Desc = ({ project }: { project: Project }) => {
           <Typography variant="body2">External Links: </Typography>
           {project.externalLinks.map((link, idx) => (
             <a
-              href={link.link}
+              href={link.link ? link.link : undefined}
               key={idx}
               target="_blank"
               rel="noopener noreferrer"

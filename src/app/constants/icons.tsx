@@ -29,6 +29,15 @@ import { SiSqlite } from "react-icons/si";
 import { SiExpo } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoPlayStore } from "react-icons/bi";
+import { FaPhp } from "react-icons/fa";
+import { AiOutlineDotNet } from "react-icons/ai";
+import { PiFileCSharpFill } from "react-icons/pi";
+import { SiD3Dotjs } from "react-icons/si";
+import { AiFillExperiment } from "react-icons/ai";
+import { MdManageAccounts } from "react-icons/md";
+import { MdAddBusiness } from "react-icons/md";
+import { FaFlutter } from "react-icons/fa6";
+import { GrSystem } from "react-icons/gr";
 
 export const Icons: Record<string, Icon | Link> = {
   python: {
@@ -185,5 +194,50 @@ export const Icons: Record<string, Icon | Link> = {
     name: "Play Store",
     icon: <BiLogoPlayStore color="black" size={24} />,
     link: "https://play.google.com/",
+  },
+  flutter: {
+    name: "Flutter",
+    icon: <FaFlutter color="black" size={24} />,
+    link: "https://flutter.dev/",
+  },
+  php: {
+    name: "PHP",
+    icon: <FaPhp color="black" size={24} />,
+    link: "https://www.php.net/",
+  },
+  dot_net: {
+    name: ".NET",
+    icon: <AiOutlineDotNet color="black" size={24} />,
+    link: "https://dotnet.microsoft.com/",
+  },
+  c_sharp: {
+    name: "C#",
+    icon: <PiFileCSharpFill color="black" size={24} />,
+    link: "https://docs.microsoft.com/en-us/dotnet/csharp/",
+  },
+  d3: {
+    name: "D3",
+    icon: <SiD3Dotjs color="black" size={24} />,
+    link: "https://d3js.org/",
+  },
+  startup: {
+    name: "Startup",
+    icon: <AiFillExperiment color="black" size={24} />,
+    link: null,
+  },
+  management: {
+    name: "Management",
+    icon: <MdManageAccounts color="black" size={24} />,
+    link: null,
+  },
+  marketing: {
+    name: "Marketing",
+    icon: <MdAddBusiness color="black" size={24} />,
+    link: null,
+  },
+  systems: {
+    name: "Backend systems",
+    icon: <GrSystem color="black" size={24} />,
+    link: null,
   },
 };

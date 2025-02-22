@@ -7,6 +7,7 @@ import { ScrollWidth } from "./animations/scrollWidth";
 import { Intro } from "./components/intro/intro";
 import { Project } from "./components/project/project";
 import { Experience } from "./components/experience/experience";
+import { Skills } from "./components/skills/skills";
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -27,6 +28,7 @@ export default function Home() {
       <Intro />
       <Experience />
       <Project />
+      <Skills />
     </Container>
   );
 }

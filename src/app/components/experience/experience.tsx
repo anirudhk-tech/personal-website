@@ -1,6 +1,8 @@
 import { FadeInOnScroll } from "@/app/animations/fadeinOnScroll";
 import {
   Container,
+  IconContainer,
+  IconsContainer,
   LegendContainer,
   LegendSubContainer,
   Spacer,
@@ -60,6 +62,23 @@ export const Experience = () => {
               </TimelineSeparator>
               <TimelineContent>
                 <ExperienceCard experience={exp} />
+                <IconsContainer>
+                  {exp.icons.map((icon, idx) => (
+                    <a
+                      href={icon.link ? icon.link : undefined}
+                      key={idx}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <IconContainer
+                        key={idx}
+                        label={icon.name}
+                        icon={icon.icon}
+                        clickable
+                      />
+                    </a>
+                  ))}
+                </IconsContainer>
               </TimelineContent>
             </TimelineItem>
             <Spacer></Spacer>

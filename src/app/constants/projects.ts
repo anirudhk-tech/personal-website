@@ -74,11 +74,6 @@ export const projects: Project[] = [
         icon: Icons.website.icon,
         link: "https://raydar.tech/",
       },
-      {
-        name: Icons.video.name,
-        icon: Icons.video.icon,
-        link: "https://youtu.be/bXiNiE0yr2s",
-      },
     ],
   },
   {

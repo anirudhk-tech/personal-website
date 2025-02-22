@@ -16,19 +16,19 @@ export const Experiences: Experience[] = [
     endDate: "Present Day",
     icons: [
       {
-        name: Icons.python.name,
-        icon: Icons.python.icon,
-        link: Icons.python.link,
+        name: Icons.c_sharp.name,
+        icon: Icons.c_sharp.icon,
+        link: Icons.c_sharp.link,
       },
       {
-        name: Icons.nextjs.name,
-        icon: Icons.nextjs.icon,
-        link: Icons.nextjs.link,
+        name: Icons.dot_net.name,
+        icon: Icons.dot_net.icon,
+        link: Icons.dot_net.link,
       },
       {
-        name: Icons.spacy.name,
-        icon: Icons.spacy.icon,
-        link: Icons.spacy.link,
+        name: Icons.php.name,
+        icon: Icons.php.icon,
+        link: Icons.php.link,
       },
     ],
   },
@@ -45,7 +45,23 @@ export const Experiences: Experience[] = [
       "Leveraged React Native with D3 and Reanimated on the frontend, and Supabase on the backend to securely store user data.",
       "Focused on a clean, user-friendly interface to ensure an effortless experience.",
     ],
-    icons: [],
+    icons: [
+      {
+        name: Icons.reactnative.name,
+        icon: Icons.reactnative.icon,
+        link: Icons.reactnative.link,
+      },
+      {
+        name: Icons.d3.name,
+        icon: Icons.d3.icon,
+        link: Icons.d3.link,
+      },
+      {
+        name: Icons.supabase.name,
+        icon: Icons.supabase.icon,
+        link: Icons.supabase.link,
+      },
+    ],
   },
   {
     title: "Co-Founder",
@@ -59,7 +75,23 @@ export const Experiences: Experience[] = [
       "Oversaw product development lifecycles, from concept to deployment.",
       "Led strategic planning, client outreach, and business development in a fast-paced startup environment.",
     ],
-    icons: [],
+    icons: [
+      {
+        name: Icons.startup.name,
+        icon: Icons.startup.icon,
+        link: Icons.startup.link,
+      },
+      {
+        name: Icons.marketing.name,
+        icon: Icons.marketing.icon,
+        link: Icons.marketing.link,
+      },
+      {
+        name: Icons.management.name,
+        icon: Icons.management.icon,
+        link: Icons.management.link,
+      },
+    ],
   },
   {
     title: "ACM Group Founder",
@@ -73,7 +105,23 @@ export const Experiences: Experience[] = [
       "Coordinate workshops, projects, and meetings aimed at rapidly improving coding skills and publishing apps.",
       "Serve as the primary organizer and mentor, fostering a collaborative environment for skill-sharing and peer learning.",
     ],
-    icons: [],
+    icons: [
+      {
+        name: Icons.management.name,
+        icon: Icons.management.icon,
+        link: Icons.management.link,
+      },
+      {
+        name: Icons.flutter.name,
+        icon: Icons.flutter.icon,
+        link: Icons.flutter.link,
+      },
+      {
+        name: Icons.reactnative.name,
+        icon: Icons.reactnative.icon,
+        link: Icons.reactnative.link,
+      },
+    ],
   },
   {
     title: "Software Intern",
@@ -87,6 +135,12 @@ export const Experiences: Experience[] = [
       "Gained hands-on experience with database organization, testing, and real-time troubleshooting.",
       "Collaborated with international stakeholders in Spain, expanding professional communication skills.",
     ],
-    icons: [],
+    icons: [
+      {
+        name: Icons.systems.name,
+        icon: Icons.systems.icon,
+        link: Icons.systems.link,
+      },
+    ],
   },
 ];
