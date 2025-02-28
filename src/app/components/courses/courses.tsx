@@ -8,7 +8,7 @@ export const Courses = () => {
     <Container>
       <FadeInOnScroll>
         <Typography variant="h1">Courses</Typography>
-        <CoursesTitle variant="h3">Major</CoursesTitle>
+        <CoursesTitle variant="body1">Major</CoursesTitle>
         <CoursesContainer>
           {courses
             .filter((course) => course.type === "major")
@@ -21,7 +21,7 @@ export const Courses = () => {
               </FadeInOnScroll>
             ))}
         </CoursesContainer>
-        <CoursesTitle variant="h3">General Education</CoursesTitle>
+        <CoursesTitle variant="body1">General Education</CoursesTitle>
         <CoursesContainer>
           {courses
             .filter((course) => course.type === "gened")

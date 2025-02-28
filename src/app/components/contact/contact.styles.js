@@ -8,6 +8,7 @@ export const Container = styled(Box)(() => ({
   paddingLeft: "5%",
   paddingRight: "5%",
   marginTop: "60px",
+  gap: "10px",
 }));
 
 export const ContactContainer = styled(Box)(() => ({

@@ -20,4 +20,6 @@ export const CoursesContainer = styled(Box)(() => ({
 
 export const CoursesTitle = styled(Typography)(() => ({
   marginTop: "20px",
+  textDecoration: "underline",
+  fontWeight: "bold",
 }));

@@ -5,6 +5,9 @@ export const Container = styled(Box)(() => ({
   flexDirection: "column",
   gap: "10px",
   height: "fit-content",
+  "@media (min-width: 600px)": {
+    flex: 1,
+  },
 }));
 
 export const PointsContainer = styled(Box)(() => ({

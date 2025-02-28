@@ -16,7 +16,7 @@ export const Skills = () => {
       </FadeInOnScroll>
       <FadeInOnScroll>
         <SubContainer>
-          <Typography variant="h4">Languages</Typography>
+          <Typography variant="body2">Languages</Typography>
           <SkillIconsContainer>
             {skills
               .filter((skill) => skill.type === "Language")
@@ -28,7 +28,7 @@ export const Skills = () => {
       </FadeInOnScroll>
       <FadeInOnScroll>
         <SubContainer>
-          <Typography variant="h4">Frameworks and Libraries</Typography>
+          <Typography variant="body2">Frameworks and Libraries</Typography>
           <SkillIconsContainer>
             {skills
               .filter(
@@ -43,7 +43,7 @@ export const Skills = () => {
       </FadeInOnScroll>
       <FadeInOnScroll>
         <SubContainer>
-          <Typography variant="h4">UI and Design</Typography>
+          <Typography variant="body2">UI and Design</Typography>
           <SkillIconsContainer>
             {skills
               .filter((skill) => skill.type === "UI")
@@ -55,7 +55,7 @@ export const Skills = () => {
       </FadeInOnScroll>
       <FadeInOnScroll>
         <SubContainer>
-          <Typography variant="h4">Other</Typography>
+          <Typography variant="body2">Other</Typography>
           <SkillIconsContainer>
             {skills
               .filter((skill) => skill.type === "Soft Skill")
