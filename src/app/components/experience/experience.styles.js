@@ -7,6 +7,7 @@ export const Container = styled(Box)(() => ({
   width: "100%",
   gap: "30px",
   paddingRight: "10%",
+  marginTop: "60px",
 }));
 
 export const Spacer = styled(Box)(() => ({
@@ -43,7 +44,6 @@ export const IconContainer = styled(Chip)(() => ({
     transform: "translateY(-4px)",
     boxShadow: "0 12px 24px rgba(0, 0, 0, 0.2)",
   },
-  marginTop: "60px",
 }));
 
 export const IconsContainer = styled(Box)(() => ({

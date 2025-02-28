@@ -20,7 +20,6 @@ export const ProjectContainer = styled(Box)(() => ({
   flexDirection: "row",
   "@media (max-width: 600px)": {
     flexDirection: "column",
-    height: "120vh",
   },
 }));
 
