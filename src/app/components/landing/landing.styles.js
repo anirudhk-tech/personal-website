@@ -11,6 +11,8 @@ export const Container = styled(Box)(() => ({
   paddingBottom: "10%",
   paddingLeft: "5%",
   paddingRight: "5%",
+  justifyContent: "center",
+  alignItems: "center",
 }));
 
 export const TextContainer = styled(Box)(() => ({

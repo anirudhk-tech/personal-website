@@ -4,9 +4,6 @@ export const Container = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
   height: "fit-content",
-  "@media (min-width: 600px)": {
-    height: "130vh",
-  },
   width: "100vw",
   paddingLeft: "5%",
   paddingRight: "5%",
