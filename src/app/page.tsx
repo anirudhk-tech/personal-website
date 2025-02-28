@@ -15,7 +15,8 @@ import { Fab } from "@mui/material";
 import { IoChevronUpCircle } from "react-icons/io5";
 
 export default function Home() {
-  const [scrollToTopVisible, setScrollToTopVisible] = useState(true);
+  const FAB_THRESHOLD = 20;
+  const [scrollToTopVisible, setScrollToTopVisible] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const experienceRef = useRef<HTMLDivElement>(null);
   const projectRef = useRef<HTMLDivElement>(null);
@@ -26,9 +27,7 @@ export default function Home() {
   const landingRef = useRef<HTMLDivElement>(null);
 
   const handleScrollToTop = () => {
-    if (landingRef.current) {
-      landingRef.current.scrollIntoView({ behavior: "smooth" });
-    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const handleScrollToExperience = () => {
@@ -68,23 +67,15 @@ export default function Home() {
   };
 
   useEffect(() => {
-    const ContainerRef2 = containerRef.current;
-
     const handleScroll = () => {
-      if (containerRef.current) {
-        const scrollTop = containerRef.current.scrollTop;
-        setScrollToTopVisible(scrollTop > 0);
-      }
+      const scrollTop = window.scrollY;
+      setScrollToTopVisible(scrollTop > FAB_THRESHOLD);
     };
 
-    if (containerRef.current) {
-      containerRef.current.addEventListener("scroll", handleScroll);
-    }
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      if (ContainerRef2) {
-        ContainerRef2.removeEventListener("scroll", handleScroll);
-      }
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 

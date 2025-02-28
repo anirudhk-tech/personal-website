@@ -31,6 +31,9 @@ import { FaFlutter } from "react-icons/fa6";
 import { TbCircleDashedLetterC } from "react-icons/tb";
 import { FaPlus } from "react-icons/fa";
 import { SiChakraui } from "react-icons/si";
+import { TbBrandThreejs } from "react-icons/tb";
+import { FiFramer } from "react-icons/fi";
+import { FaHorse } from "react-icons/fa";
 
 export const skills = [
   {
@@ -236,5 +239,23 @@ export const skills = [
     type: "UI",
     name: "Chakra UI",
     link: "https://chakra-ui.com/",
+  },
+  {
+    icon: <FiFramer color="black" size={24} />,
+    type: "UI",
+    name: "Framer Motion",
+    link: "https://www.framer.com/motion/",
+  },
+  {
+    icon: <TbBrandThreejs color="black" size={24} />,
+    type: "Library",
+    name: "Three.js",
+    link: "https://threejs.org/",
+  },
+  {
+    icon: <FaHorse color="black" size={24} />,
+    type: "UI",
+    name: "Reanimated",
+    link: "http://docs.swmansion.com/react-native-reanimated/",
   },
 ];

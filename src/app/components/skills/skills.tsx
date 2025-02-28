@@ -21,7 +21,9 @@ export const Skills = () => {
             {skills
               .filter((skill) => skill.type === "Language")
               .map((skill, idx) => (
-                <IconContainer key={idx} label={skill.name} icon={skill.icon} />
+                <a key={idx} href={skill.link ? skill.link : undefined}>
+                  <IconContainer label={skill.name} icon={skill.icon} />
+                </a>
               ))}
           </SkillIconsContainer>
         </SubContainer>
@@ -36,7 +38,13 @@ export const Skills = () => {
                   skill.type === "Framework" || skill.type === "Library"
               )
               .map((skill, idx) => (
-                <IconContainer key={idx} label={skill.name} icon={skill.icon} />
+                <a key={idx} href={skill.link ? skill.link : undefined}>
+                  <IconContainer
+                    key={idx}
+                    label={skill.name}
+                    icon={skill.icon}
+                  />
+                </a>
               ))}
           </SkillIconsContainer>
         </SubContainer>
@@ -48,7 +56,13 @@ export const Skills = () => {
             {skills
               .filter((skill) => skill.type === "UI")
               .map((skill, idx) => (
-                <IconContainer key={idx} label={skill.name} icon={skill.icon} />
+                <a key={idx} href={skill.link ? skill.link : undefined}>
+                  <IconContainer
+                    key={idx}
+                    label={skill.name}
+                    icon={skill.icon}
+                  />
+                </a>
               ))}
           </SkillIconsContainer>
         </SubContainer>
@@ -60,7 +74,13 @@ export const Skills = () => {
             {skills
               .filter((skill) => skill.type === "Soft Skill")
               .map((skill, idx) => (
-                <IconContainer key={idx} label={skill.name} icon={skill.icon} />
+                <a key={idx} href={skill.link ? skill.link : undefined}>
+                  <IconContainer
+                    key={idx}
+                    label={skill.name}
+                    icon={skill.icon}
+                  />
+                </a>
               ))}
           </SkillIconsContainer>
         </SubContainer>
