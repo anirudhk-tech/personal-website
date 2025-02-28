@@ -31,6 +31,7 @@ export const Experiences: Experience[] = [
         link: Icons.php.link,
       },
     ],
+    externalLinks: null,
   },
   {
     title: "Mobile Developer",
@@ -62,6 +63,7 @@ export const Experiences: Experience[] = [
         link: Icons.supabase.link,
       },
     ],
+    externalLinks: null,
   },
   {
     title: "Co-Founder",
@@ -92,6 +94,7 @@ export const Experiences: Experience[] = [
         link: Icons.management.link,
       },
     ],
+    externalLinks: null,
   },
   {
     title: "ACM Group Founder",
@@ -122,6 +125,7 @@ export const Experiences: Experience[] = [
         link: Icons.reactnative.link,
       },
     ],
+    externalLinks: null,
   },
   {
     title: "Software Intern",
@@ -142,5 +146,6 @@ export const Experiences: Experience[] = [
         link: Icons.systems.link,
       },
     ],
+    externalLinks: null,
   },
 ];

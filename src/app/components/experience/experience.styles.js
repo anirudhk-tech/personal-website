@@ -49,6 +49,7 @@ export const IconContainer = styled(Chip)(() => ({
 export const IconsContainer = styled(Box)(() => ({
   display: "flex",
   flexDirection: "row",
+  flexWrap: "wrap",
   gap: "5px",
   height: "fit-content",
   width: "fit-content",

@@ -21,6 +21,7 @@ export interface Experience {
   location: string;
   icons: Icon[];
   type: "work" | "self-employed" | "association";
+  externalLinks: Link[] | null;
 }
 
 export interface Icon {
@@ -31,6 +32,33 @@ export interface Icon {
 
 export interface Link {
   name: string;
+  icon: React.ReactElement;
+  link: string | null;
+}
+
+export interface Skill {
+  icon: React.ReactElement;
+  type: string;
+  name: string;
+  link: string | null;
+}
+
+export interface Course {
+  short: string;
+  long: string;
+  description: string;
+  type: string;
+}
+
+export interface Hobby {
+  name: string;
+  icon: React.ReactElement;
+  description: string;
+  other?: string;
+}
+
+export interface Contact {
+  content: string;
   icon: React.ReactElement;
   link: string | null;
 }

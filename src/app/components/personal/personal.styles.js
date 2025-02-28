@@ -5,29 +5,23 @@ export const Container = styled(Box)(() => ({
   flexDirection: "column",
   height: "fit-content",
   width: "100vw",
-  gap: "30px",
   paddingLeft: "5%",
   paddingRight: "5%",
   marginTop: "60px",
 }));
 
-export const ProjectContainer = styled(Box)(() => ({
+export const HobbiesContainer = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
   height: "fit-content",
   width: "100%",
   gap: "30px",
-  flexDirection: "row",
-  "@media (max-width: 600px)": {
-    flexDirection: "column",
-    height: "120vh",
-  },
 }));
 
-export const ProjectsContainer = styled(Box)(() => ({
+export const HobbyContainer = styled(Box)(() => ({
   display: "flex",
-  flexDirection: "column",
+  flexDirection: "row",
   height: "fit-content",
   width: "100%",
-  gap: "50px",
+  gap: "10px",
 }));

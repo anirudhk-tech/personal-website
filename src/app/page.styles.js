@@ -8,4 +8,5 @@ export const Container = styled(Box)(() => ({
   overflowY: "scroll",
   overflowX: "hidden",
   backgroundColor: "white",
+  paddingBottom: "50px",
 }));

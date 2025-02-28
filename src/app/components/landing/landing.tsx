@@ -1,16 +1,69 @@
 import { FadeIn } from "@/app/animations/fadein";
-import { Container, TextContainer } from "./landing.styles";
+import {
+  Container,
+  MenuContainer,
+  MenuItemContainer,
+  TextContainer,
+} from "./landing.styles";
 import { Typography } from "@mui/material";
 
-export const Landing = () => {
+export const Landing = ({
+  handleScrollToExperience,
+  handleScrollToProjects,
+  handleScrollToSkills,
+  handleScrollToCourses,
+  handleScrollToPersonal,
+  handleScrollToContact,
+}: {
+  handleScrollToExperience: () => void;
+  handleScrollToProjects: () => void;
+  handleScrollToSkills: () => void;
+  handleScrollToCourses: () => void;
+  handleScrollToPersonal: () => void;
+  handleScrollToContact: () => void;
+}) => {
   return (
     <Container>
       <TextContainer>
         <FadeIn delay={0.5} duration={1}>
-          <Typography variant="h4">{`Oh hi there, I'm Anirudh Kuppili.`}</Typography>
+          <Typography variant="h3">{`Oh hi there, I'm Anirudh Kuppili.`}</Typography>
         </FadeIn>
         <FadeIn delay={1.5} duration={1}>
-          <Typography variant="h4">Welcome to my corner of the web.</Typography>
+          <Typography variant="body1">
+            Looking for something specific?
+          </Typography>
+        </FadeIn>
+        <FadeIn delay={2.0} duration={1}>
+          <MenuContainer>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/akuppili/overlay/1738268680426/single-media-viewer/?profileId=ACoAAEjoBksB2AUh9__CRRQxCAzswBb5L1hvrAE"
+            >
+              <MenuItemContainer label="Resume" />
+            </a>
+            <MenuItemContainer
+              label="Experience"
+              onClick={handleScrollToExperience}
+            />
+            <MenuItemContainer
+              label="Projects"
+              onClick={handleScrollToProjects}
+            />
+            <MenuItemContainer label="Skills" onClick={handleScrollToSkills} />
+            <MenuItemContainer
+              label="Courses"
+              onClick={handleScrollToCourses}
+            />
+            <MenuItemContainer
+              label="Hobbies"
+              onClick={handleScrollToPersonal}
+            />
+            <MenuItemContainer
+              label="Contact"
+              onClick={handleScrollToContact}
+            />
+          </MenuContainer>
         </FadeIn>
       </TextContainer>
     </Container>

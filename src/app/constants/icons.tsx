@@ -38,6 +38,13 @@ import { MdManageAccounts } from "react-icons/md";
 import { MdAddBusiness } from "react-icons/md";
 import { FaFlutter } from "react-icons/fa6";
 import { GrSystem } from "react-icons/gr";
+import { MdMovie } from "react-icons/md";
+import { FaBookAtlas } from "react-icons/fa6";
+import { MdCastle } from "react-icons/md";
+import { FaPersonSwimming } from "react-icons/fa6";
+import { TbWriting } from "react-icons/tb";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
 
 export const Icons: Record<string, Icon | Link> = {
   python: {
@@ -238,6 +245,41 @@ export const Icons: Record<string, Icon | Link> = {
   systems: {
     name: "Backend systems",
     icon: <GrSystem color="black" size={24} />,
+    link: null,
+  },
+  movie: {
+    name: "Movie",
+    icon: <MdMovie color="black" size={24} />,
+    link: null,
+  },
+  nonfiction: {
+    name: "Nonfiction",
+    icon: <FaBookAtlas color="black" size={24} />,
+    link: null,
+  },
+  fiction: {
+    name: "Fiction",
+    icon: <MdCastle color="black" size={24} />,
+    link: null,
+  },
+  swimming: {
+    name: "Swimming",
+    icon: <FaPersonSwimming color="black" size={24} />,
+    link: null,
+  },
+  writing: {
+    name: "Writing",
+    icon: <TbWriting color="black" size={24} />,
+    link: null,
+  },
+  email: {
+    name: "Email",
+    icon: <MdEmail color="black" size={24} />,
+    link: null,
+  },
+  linkedin: {
+    name: "LinkedIn",
+    icon: <FaLinkedin color="black" size={24} />,
     link: null,
   },
 };

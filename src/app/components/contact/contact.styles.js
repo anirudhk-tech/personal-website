@@ -2,36 +2,24 @@ import { Box, styled, Chip } from "@mui/material";
 
 export const Container = styled(Box)(() => ({
   display: "flex",
-  flexDirection: "row",
-  height: "100vh",
-  width: "100vw",
-  overflow: "hidden",
-  background: "linear-gradient(135deg, #ed4264 , #ffedbc)",
-  paddingTop: "10%",
-  paddingBottom: "10%",
-  paddingLeft: "5%",
-  paddingRight: "5%",
-}));
-
-export const TextContainer = styled(Box)(() => ({
-  display: "flex",
   flexDirection: "column",
   height: "fit-content",
-  paddingRight: "1rem",
-  width: "100%",
-  gap: "10px",
+  width: "100vw",
+  paddingLeft: "5%",
+  paddingRight: "5%",
+  marginTop: "60px",
 }));
 
-export const MenuContainer = styled(Box)(() => ({
+export const ContactContainer = styled(Box)(() => ({
   display: "flex",
   flexDirection: "row",
-  flexWrap: "wrap",
   height: "fit-content",
   width: "100%",
   gap: "10px",
+  flexWrap: "wrap",
 }));
 
-export const MenuItemContainer = styled(Chip)(() => ({
+export const IconContainer = styled(Chip)(() => ({
   height: "fit-content",
   width: "fit-content",
   display: "flex",
