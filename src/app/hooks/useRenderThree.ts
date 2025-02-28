@@ -145,7 +145,8 @@ export const useRenderThree = (
       renderer.render(scene, camera);
       if (pivotRef.current) {
         if (isPausedRef.current) return;
-        pivotRef.current.rotation.y += 0.0005;
+        pivotRef.current.rotation.y +=
+          isIphoneProject || isPixelProject ? 0.002 : 0.0005;
       }
     }
     animate();
