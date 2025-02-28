@@ -29,7 +29,7 @@ export const SummaryAndPhotoContainer = styled(Box)(() => ({
   height: "fit-content",
   alignItems: "flex-start",
   width: "100vw",
-  height: "100vh",
+  height: "fit-content",
   "@media (max-width: 600px)": {
     flexDirection: "column",
     paddingRight: "7%",

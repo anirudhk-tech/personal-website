@@ -38,7 +38,7 @@ export const Landing = ({
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/akuppili/overlay/1738268680426/single-media-viewer/?profileId=ACoAAEjoBksB2AUh9__CRRQxCAzswBb5L1hvrAE"
+              href="https://www.linkedin.com/in/akuppili/overlay/1740770171256/single-media-viewer/?profileId=ACoAAEjoBksB2AUh9__CRRQxCAzswBb5L1hvrAE"
             >
               <MenuItemContainer label="Resume" />
             </a>
