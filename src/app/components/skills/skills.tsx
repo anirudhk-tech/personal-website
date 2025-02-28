@@ -51,6 +51,29 @@ export const Skills = () => {
       </FadeInOnScroll>
       <FadeInOnScroll>
         <SubContainer>
+          <Typography variant="body2">Databases</Typography>
+          <SkillIconsContainer>
+            {skills
+              .filter((skill) => skill.type === "Database")
+              .map((skill, idx) => (
+                <a
+                  key={idx}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={skill.link ? skill.link : undefined}
+                >
+                  <IconContainer
+                    key={idx}
+                    label={skill.name}
+                    icon={skill.icon}
+                  />
+                </a>
+              ))}
+          </SkillIconsContainer>
+        </SubContainer>
+      </FadeInOnScroll>
+      <FadeInOnScroll>
+        <SubContainer>
           <Typography variant="body2">UI and Design</Typography>
           <SkillIconsContainer>
             {skills
@@ -67,7 +90,7 @@ export const Skills = () => {
           </SkillIconsContainer>
         </SubContainer>
       </FadeInOnScroll>
-      <FadeInOnScroll> 
+      <FadeInOnScroll>
         <SubContainer>
           <Typography variant="body2">Other</Typography>
           <SkillIconsContainer>

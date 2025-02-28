@@ -12,8 +12,8 @@ export const ModelContainer = styled(Box)(() => ({
 export const Container = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
-  height: "80vh",
   flex: 1,
+  height: "80vh",
 }));
 
 export const PlaceholderContainer = styled(Box)(() => ({
