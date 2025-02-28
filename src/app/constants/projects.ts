@@ -140,11 +140,10 @@ export const projects: Project[] = [
     startDate: "Dec. 2023",
     endDate: "Aug. 2024",
     points: [
-      "Implemented a cross-platform user interface in React Native.",
+      "Implemented a cross-platform user interface with React Native.",
       "Utilized SQLite, MMKV, and Filesystem for robust local storage and offline support.",
-      "Managed global state with Zustand for seamless user experiences.",
       "Employed Git and Expo for version control and deployment.",
-      "Published the final product on the Google Play Store.",
+      "Published the final product on the Google Play Store with 100+ downloads.",
     ],
     icons: [
       {
@@ -275,6 +274,11 @@ export const projects: Project[] = [
         name: Icons.flask.name,
         icon: Icons.flask.icon,
         link: Icons.flask.link,
+      },
+      {
+        name: Icons.adobe.name,
+        icon: Icons.adobe.icon,
+        link: Icons.adobe.link,
       },
     ],
     externalLinks: [

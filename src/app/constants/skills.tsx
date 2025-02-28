@@ -19,12 +19,15 @@ import {
   SiExpo,
   SiD3Dotjs,
   SiMui,
+  SiOracle,
+  SiAdobe,
+  SiFigma,
 } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { TbBrandReactNative } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
 import { AiOutlineDotNet, AiFillExperiment } from "react-icons/ai";
-import { PiFileCSharpFill } from "react-icons/pi";
+import { PiFileCSharpFill, PiFileSql } from "react-icons/pi";
 import { MdManageAccounts, MdAddBusiness } from "react-icons/md";
 import { GrSystem } from "react-icons/gr";
 import { FaFlutter } from "react-icons/fa6";
@@ -34,6 +37,7 @@ import { SiChakraui } from "react-icons/si";
 import { TbBrandThreejs } from "react-icons/tb";
 import { FiFramer } from "react-icons/fi";
 import { FaHorse } from "react-icons/fa";
+import { CiPaperplane } from "react-icons/ci";
 
 export const skills = [
   {
@@ -257,5 +261,35 @@ export const skills = [
     type: "UI",
     name: "Reanimated",
     link: "http://docs.swmansion.com/react-native-reanimated/",
+  },
+  {
+    icon: <CiPaperplane color="black" size={24} />,
+    type: "UI",
+    name: "React Native Paper",
+    link: "https://callstack.github.io/react-native-paper/",
+  },
+  {
+    icon: <SiOracle color="black" size={24} />,
+    type: "Database",
+    name: "Oracle",
+    link: "https://www.oracle.com/database/",
+  },
+  {
+    icon: <PiFileSql color="black" size={24} />,
+    type: "Database",
+    name: "MS SQL",
+    link: "https://docs.microsoft.com/en-us/sql/",
+  },
+  {
+    icon: <SiAdobe color="black" size={24} />,
+    type: "UI",
+    name: "Adobe",
+    link: "https://www.adobe.com/",
+  },
+  {
+    icon: <SiFigma color="black" size={24} />,
+    type: "UI",
+    name: "Figma",
+    link: "https://www.figma.com/",
   },
 ];

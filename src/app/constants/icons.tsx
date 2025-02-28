@@ -1,6 +1,6 @@
 import { FaPython } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiSpacy } from "react-icons/si";
+import { SiFigma, SiSpacy } from "react-icons/si";
 import { SiShadcnui } from "react-icons/si";
 import { SiScikitlearn } from "react-icons/si";
 import { SiClerk } from "react-icons/si";
@@ -45,6 +45,10 @@ import { FaPersonSwimming } from "react-icons/fa6";
 import { TbWriting } from "react-icons/tb";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
+import { PiFileSql } from "react-icons/pi";
+import { SiOracle } from "react-icons/si";
+import { CiPaperplane } from "react-icons/ci";
+import { SiAdobe } from "react-icons/si";
 
 export const Icons: Record<string, Icon | Link> = {
   python: {
@@ -187,6 +191,21 @@ export const Icons: Record<string, Icon | Link> = {
     icon: <SiSqlite color="black" size={24} />,
     link: "https://sqlite.org/",
   },
+  mssql: {
+    name: "MS SQL",
+    icon: <PiFileSql color="black" size={24} />,
+    link: "https://docs.microsoft.com/en-us/sql/",
+  },
+  oracle: {
+    name: "Oracle",
+    icon: <SiOracle color="black" size={24} />,
+    link: "https://www.oracle.com/database/",
+  },
+  reactnativepaper: {
+    name: "React Native Paper",
+    icon: <CiPaperplane color="black" size={24} />,
+    link: "https://callstack.github.io/react-native-paper/",
+  },
   expo: {
     name: "Expo",
     icon: <SiExpo color="black" size={24} />,
@@ -281,5 +300,15 @@ export const Icons: Record<string, Icon | Link> = {
     name: "LinkedIn",
     icon: <FaLinkedin color="black" size={24} />,
     link: null,
+  },
+  adobe: {
+    name: "Adobe",
+    icon: <SiAdobe color="black" size={24} />,
+    link: "https://www.adobe.com/",
+  },
+  figma: {
+    name: "Figma",
+    icon: <SiFigma color="black" size={24} />,
+    link: "https://www.figma.com/",
   },
 };
