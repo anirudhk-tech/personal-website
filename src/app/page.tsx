@@ -84,8 +84,10 @@ export default function Home() {
       <ScrollWidth
         target={containerRef}
         style={{
-          height: 2,
+          height: 5,
           backgroundColor: "black",
+          borderTopRightRadius: "5px",
+          borderBottomRightRadius: "5px",
           position: "fixed",
           top: 0,
           zIndex: 10,
