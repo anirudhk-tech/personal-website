@@ -74,7 +74,12 @@ export const Skills = () => {
             {skills
               .filter((skill) => skill.type === "Soft Skill")
               .map((skill, idx) => (
-                <a key={idx} href={skill.link ? skill.link : undefined}>
+                <a
+                  key={idx}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={skill.link ? skill.link : undefined}
+                >
                   <IconContainer
                     key={idx}
                     label={skill.name}
