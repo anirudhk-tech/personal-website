@@ -22,6 +22,8 @@ export const TextContainer = styled(Box)(() => ({
   paddingRight: "1rem",
   width: "100%",
   gap: "10px",
+  alignItems: "center",
+  justifyContent: "center",
 }));
 
 export const MenuContainer = styled(Box)(() => ({
