@@ -17,7 +17,7 @@ export const LazyLoadModel = ({ children }: { children: React.ReactNode }) => {
           }
         });
       },
-      { threshold: 0.0 }
+      { threshold: 0.0, rootMargin: "0px 0px -500px 0px" }
     );
 
     if (containerRef.current) {
