@@ -27,6 +27,7 @@ export const Model = ({
           <Typography variant="body1">
             {project.startDate} - {project.endDate}
           </Typography>
+          <Typography variant="body2">{project.description}</Typography>
         </>
       )}
       <ModelContainer
