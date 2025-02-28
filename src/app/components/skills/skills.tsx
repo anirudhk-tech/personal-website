@@ -67,7 +67,7 @@ export const Skills = () => {
           </SkillIconsContainer>
         </SubContainer>
       </FadeInOnScroll>
-      <FadeInOnScroll>
+      <FadeInOnScroll> 
         <SubContainer>
           <Typography variant="body2">Other</Typography>
           <SkillIconsContainer>
