@@ -26,7 +26,10 @@ export const Landing = ({
     <Container>
       <TextContainer>
         <FadeIn delay={0.5} duration={1}>
-          <Typography variant="h3">{`Oh hi there, I'm Anirudh Kuppili.`}</Typography>
+          <Typography
+            variant="h3"
+            sx={{ textAlign: "center" }}
+          >{`Oh hi there, I'm Anirudh Kuppili.`}</Typography>
         </FadeIn>
         <FadeIn delay={1.5} duration={1}>
           <Typography variant="body1">

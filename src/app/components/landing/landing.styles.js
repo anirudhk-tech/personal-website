@@ -33,6 +33,8 @@ export const MenuContainer = styled(Box)(() => ({
   height: "fit-content",
   width: "100%",
   gap: "10px",
+  justifyContent: "center",
+  alignItems: "center",
 }));
 
 export const MenuItemContainer = styled(Chip)(() => ({
