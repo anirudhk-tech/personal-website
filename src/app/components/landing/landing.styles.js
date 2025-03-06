@@ -4,6 +4,7 @@ export const Container = styled(Box)(() => ({
   display: "flex",
   flexDirection: "row",
   height: "100vh",
+  "@supports (height: 100dvh)": { height: "100dvh" },
   width: "100vw",
   overflow: "hidden",
   background: "linear-gradient(135deg, #ed4264 , #ffedbc)",
@@ -18,7 +19,7 @@ export const Container = styled(Box)(() => ({
 export const TextContainer = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
-  height: "fit-content",
+  height: "auto",
   paddingRight: "1rem",
   width: "100%",
   gap: "10px",
@@ -30,7 +31,7 @@ export const MenuContainer = styled(Box)(() => ({
   display: "flex",
   flexDirection: "row",
   flexWrap: "wrap",
-  height: "fit-content",
+  height: "auto",
   width: "100%",
   gap: "10px",
   justifyContent: "center",
@@ -38,7 +39,7 @@ export const MenuContainer = styled(Box)(() => ({
 }));
 
 export const MenuItemContainer = styled(Chip)(() => ({
-  height: "fit-content",
+  height: "auto",
   width: "fit-content",
   display: "flex",
   padding: 5,

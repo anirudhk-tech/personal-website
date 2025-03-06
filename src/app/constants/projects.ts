@@ -88,7 +88,6 @@ export const projects: Project[] = [
       "Built a React JS interface with Bootstrap for smooth user experiences, secured by Auth0.",
       "Used MongoDB to store image data and track user activity for leak forensics.",
       "Leveraged Databricks and pretrained AI models for deepfake detection and image processing.",
-      "Implemented screenshot prevention to deter unauthorized image gathering.",
       "Provided post, view, and download metrics to identify potential media leak sources.",
     ],
     icons: [

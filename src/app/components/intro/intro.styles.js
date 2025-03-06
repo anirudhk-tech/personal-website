@@ -3,7 +3,7 @@ import { styled, Box } from "@mui/material";
 export const Container = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
-  height: "fit-content",
+  height: "auto",
   width: "100vw",
   paddingLeft: "5%",
   paddingRight: "5%",
@@ -17,16 +17,16 @@ export const TextContainer = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
   gap: "10px",
-  height: "fit-content",
+  height: "auto",
 }));
 
 export const SummaryAndPhotoContainer = styled(Box)(() => ({
   display: "flex",
   flexDirection: "row",
-  height: "fit-content",
+  height: "auto",
   alignItems: "flex-start",
   width: "100vw",
-  height: "fit-content",
+  height: "auto",
   "@media (max-width: 600px)": {
     flexDirection: "column",
     paddingRight: "7%",

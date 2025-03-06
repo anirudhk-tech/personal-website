@@ -4,23 +4,21 @@ export const Container = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
   gap: "10px",
-  height: "fit-content",
-  "@media (min-width: 600px)": {
-    flex: 1,
-  },
+  height: "auto",
 }));
 
 export const PointsContainer = styled(Box)(() => ({
   display: "flex",
   flexDirection: "row",
   gap: "10px",
-  height: "fit-content",
+  height: "auto",
   width: "fit-content",
   alignItems: "center",
 }));
 
 export const IconContainer = styled(Chip)(() => ({
-  height: "fit-content",
+  height: "5vh",
+  "@supports (height: 5dvh)": { height: "5dvh" },
   width: "fit-content",
   display: "flex",
   padding: 5,
@@ -35,7 +33,7 @@ export const IconsContainer = styled(Box)(() => ({
   display: "flex",
   flexDirection: "row",
   gap: "5px",
-  height: "fit-content",
+  height: "auto",
   width: "fit-content",
   flexWrap: "wrap",
   marginTop: "10px",
@@ -46,7 +44,7 @@ export const ExternalContainer = styled(Box)(() => ({
   flexDirection: "row",
   gap: "5px",
   marginTop: "20px",
-  height: "fit-content",
+  height: "auto",
   width: "fit-content",
   alignItems: "center",
 }));

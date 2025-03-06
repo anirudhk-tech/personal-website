@@ -3,7 +3,7 @@ import { Box, styled, Typography } from "@mui/material";
 export const Container = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
-  height: "fit-content",
+  height: "auto",
   width: "500px",
   padding: "10px",
   background: "linear-gradient(135deg,#f2f2f2 0%,#e2e2e2 100%)",

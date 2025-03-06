@@ -3,7 +3,7 @@ import { styled, Box, Chip } from "@mui/material";
 export const Container = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
-  height: "fit-content",
+  height: "auto",
   width: "100vw",
   paddingLeft: "5%",
   paddingRight: "5%",
@@ -11,7 +11,7 @@ export const Container = styled(Box)(() => ({
 }));
 
 export const SubContainer = styled(Box)(() => ({
-  height: "fit-content",
+  height: "auto",
   width: "100%",
   marginTop: "20px",
 }));
@@ -25,7 +25,7 @@ export const SkillIconsContainer = styled(Box)(() => ({
 }));
 
 export const IconContainer = styled(Chip)(() => ({
-  height: "fit-content",
+  height: "auto",
   width: "fit-content",
   display: "flex",
   padding: 5,

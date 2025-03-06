@@ -3,7 +3,7 @@ import { Box, styled, Chip } from "@mui/material";
 export const Container = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
-  height: "fit-content",
+  height: "auto",
   width: "100%",
   gap: "30px",
   paddingRight: "10%",
@@ -20,7 +20,7 @@ export const LegendContainer = styled(Box)(() => ({
   display: "flex",
   flexDirection: "row",
   gap: "20px",
-  height: "fit-content",
+  height: "auto",
   width: "100%",
   paddingLeft: "5%",
 }));
@@ -29,13 +29,13 @@ export const LegendSubContainer = styled(Box)(() => ({
   display: "flex",
   flexDirection: "row",
   gap: "5px",
-  height: "fit-content",
+  height: "auto",
   width: "fit-content",
   alignItems: "center",
 }));
 
 export const IconContainer = styled(Chip)(() => ({
-  height: "fit-content",
+  height: "auto",
   width: "fit-content",
   display: "flex",
   padding: 5,
@@ -51,7 +51,7 @@ export const IconsContainer = styled(Box)(() => ({
   flexDirection: "row",
   flexWrap: "wrap",
   gap: "5px",
-  height: "fit-content",
+  height: "auto",
   width: "fit-content",
   marginTop: "10px",
 }));
