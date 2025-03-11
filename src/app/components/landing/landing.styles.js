@@ -4,7 +4,6 @@ export const Container = styled(Box)(() => ({
   display: "flex",
   flexDirection: "row",
   height: "100vh",
-  // "@supports (height: 100dvh)": { height: "100dvh" },
   width: "100vw",
   overflow: "hidden",
   background: "linear-gradient(135deg, #ed4264 , #ffedbc)",

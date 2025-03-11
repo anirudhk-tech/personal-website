@@ -9,7 +9,7 @@ export const ScrollWidth = ({
   style?: React.CSSProperties;
 }) => {
   const { scrollYProgress } = useScroll({
-    target: target,
+    container: target,
   });
 
   const width = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);

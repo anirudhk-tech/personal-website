@@ -5,6 +5,7 @@ export const Container = styled(Box)(() => ({
   flexDirection: "column",
   gap: "10px",
   height: "auto",
+  flex: 1,
 }));
 
 export const PointsContainer = styled(Box)(() => ({
@@ -18,7 +19,6 @@ export const PointsContainer = styled(Box)(() => ({
 
 export const IconContainer = styled(Chip)(() => ({
   height: "5vh",
-  // "@supports (height: 5dvh)": { height: "5dvh" },
   width: "fit-content",
   display: "flex",
   padding: 5,

@@ -67,33 +67,37 @@ export default function Home() {
   };
 
   useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
+      const scrollTop = container.scrollTop;
       setScrollToTopVisible(scrollTop > FAB_THRESHOLD);
     };
 
-    window.addEventListener("scroll", handleScroll);
-
+    container.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      container.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <LockContainer>
       <Container ref={containerRef}>
-        <ScrollWidth
-          target={containerRef}
-          style={{
-            height: 5,
-            backgroundColor: "black",
-            borderTopRightRadius: "5px",
-            borderBottomRightRadius: "5px",
-            position: "fixed",
-            top: 0,
-            zIndex: 10,
-          }}
-        />
+        {containerRef.current && (
+          <ScrollWidth
+            target={containerRef}
+            style={{
+              height: 5,
+              backgroundColor: "black",
+              borderTopRightRadius: "5px",
+              borderBottomRightRadius: "5px",
+              position: "fixed",
+              top: 0,
+              zIndex: 10,
+            }}
+          />
+        )}
         {scrollToTopVisible && (
           <Fab
             variant="extended"
