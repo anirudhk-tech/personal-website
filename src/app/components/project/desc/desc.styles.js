@@ -11,7 +11,7 @@ export const PointsContainer = styled(Box)(() => ({
   display: "flex",
   flexDirection: "row",
   gap: "10px",
-  height: "80%",
+  height: "auto",
   width: "fit-content",
   alignItems: "center",
 }));
