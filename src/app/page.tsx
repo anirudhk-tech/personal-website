@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Landing } from "./components/landing/landing";
-import { Container } from "./page.styles";
+import { Container, LockContainer } from "./page.styles";
 import { ScrollWidth } from "./animations/scrollWidth";
 import { Intro } from "./components/intro/intro";
 import { Project } from "./components/project/project";
@@ -80,60 +80,62 @@ export default function Home() {
   }, []);
 
   return (
-    <Container ref={containerRef}>
-      <ScrollWidth
-        target={containerRef}
-        style={{
-          height: 5,
-          backgroundColor: "black",
-          borderTopRightRadius: "5px",
-          borderBottomRightRadius: "5px",
-          position: "fixed",
-          top: 0,
-          zIndex: 10,
-        }}
-      />
-      {scrollToTopVisible && (
-        <Fab
-          variant="extended"
-          sx={{
+    <LockContainer>
+      <Container ref={containerRef}>
+        <ScrollWidth
+          target={containerRef}
+          style={{
+            height: 5,
+            backgroundColor: "black",
+            borderTopRightRadius: "5px",
+            borderBottomRightRadius: "5px",
             position: "fixed",
-            right: 10,
-            bottom: 10,
+            top: 0,
+            zIndex: 10,
           }}
-        >
-          <IoChevronUpCircle onClick={handleScrollToTop} />
-        </Fab>
-      )}
-      <div ref={landingRef}>
-        <Landing
-          handleScrollToContact={handleScrollToContact}
-          handleScrollToExperience={handleScrollToExperience}
-          handleScrollToProjects={handleScrollToProjects}
-          handleScrollToSkills={handleScrollToSkills}
-          handleScrollToCourses={handleScrollToCourses}
-          handleScrollToPersonal={handleScrollToPersonal}
         />
-      </div>
-      <Intro />
-      <div ref={experienceRef}>
-        <Experience />
-      </div>
-      <div ref={projectRef}>
-        <Project />
-      </div>
-      <div ref={skillsRef}>
-        <Skills />
-      </div>
-      <div ref={coursesRef}>
-        <Courses />
-      </div>
-      <div ref={personalRef}>
-        <Personal />
-      </div>
-      <div ref={contactRef}>
-        <Contact />
-      </div>
-    </Container>
+        {scrollToTopVisible && (
+          <Fab
+            variant="extended"
+            sx={{
+              position: "fixed",
+              right: 10,
+              bottom: 10,
+            }}
+          >
+            <IoChevronUpCircle onClick={handleScrollToTop} />
+          </Fab>
+        )}
+        <div ref={landingRef}>
+          <Landing
+            handleScrollToContact={handleScrollToContact}
+            handleScrollToExperience={handleScrollToExperience}
+            handleScrollToProjects={handleScrollToProjects}
+            handleScrollToSkills={handleScrollToSkills}
+            handleScrollToCourses={handleScrollToCourses}
+            handleScrollToPersonal={handleScrollToPersonal}
+          />
+        </div>
+        <Intro />
+        <div ref={experienceRef}>
+          <Experience />
+        </div>
+        <div ref={projectRef}>
+          <Project />
+        </div>
+        <div ref={skillsRef}>
+          <Skills />
+        </div>
+        <div ref={coursesRef}>
+          <Courses />
+        </div>
+        <div ref={personalRef}>
+          <Personal />
+        </div>
+        <div ref={contactRef}>
+          <Contact />
+        </div>
+      </Container>
+    </LockContainer>
   );
 }
