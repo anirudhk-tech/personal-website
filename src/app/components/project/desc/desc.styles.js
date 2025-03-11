@@ -11,14 +11,14 @@ export const PointsContainer = styled(Box)(() => ({
   display: "flex",
   flexDirection: "row",
   gap: "10px",
-  height: "auto",
+  height: "80%",
   width: "fit-content",
   alignItems: "center",
 }));
 
 export const IconContainer = styled(Chip)(() => ({
   height: "5vh",
-  "@supports (height: 5dvh)": { height: "5dvh" },
+  // "@supports (height: 5dvh)": { height: "5dvh" },
   width: "fit-content",
   display: "flex",
   padding: 5,
