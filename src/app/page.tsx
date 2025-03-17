@@ -27,7 +27,9 @@ export default function Home() {
   const landingRef = useRef<HTMLDivElement>(null);
 
   const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (containerRef.current) {
+      containerRef.current.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
 
   const handleScrollToExperience = () => {
