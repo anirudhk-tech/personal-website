@@ -13,7 +13,7 @@ export const projects: Project[] = [
     points: [
       "Predictive LSTM model that forecasts future spending based on real transaction data.",
       "Interactive 'Oracle' engine where users adjust spending parameters to see impact instantly.",
-      "Stunning animated UI built with Tailwind CSS, Framer Motion, and Next.js.",
+      "Stunning animated UI built with Tailwind CSS, Shadcn, Three.js, and Next.js.",
       "Secure backend using Convex DB with built-in encryption and Plaid integration for financial data.",
       "Anomaly detection to flag unusual transaction patterns in user history and send real time emails.",
       "Custom dashboard with dynamic charts, category breakdowns, and a Gemini wrapper for smart suggestions.",
