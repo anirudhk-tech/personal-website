@@ -3,11 +3,107 @@ import { Icons } from "./icons";
 
 export const projects: Project[] = [
   {
+    title: "Midas",
+    type: "pc",
+    screen: "/midas.png",
+    description:
+      "Led a team of 5 to develop a predictive financial assistant that visualizes your spending, forecasts the future, and lets you experiment with budget adjustments in real time.",
+    startDate: "Mar. 29 2025",
+    endDate: "Mar. 31 2025",
+    points: [
+      "Predictive LSTM model that forecasts future spending based on real transaction data.",
+      "Interactive 'Oracle' engine where users adjust spending parameters to see impact instantly.",
+      "Stunning animated UI built with Tailwind CSS, Framer Motion, and Next.js.",
+      "Secure backend using Convex DB with built-in encryption and Plaid integration for financial data.",
+      "Anomaly detection to flag unusual transaction patterns in user history and send real time emails.",
+      "Custom dashboard with dynamic charts, category breakdowns, and a Gemini wrapper for smart suggestions.",
+    ],
+    icons: [
+      {
+        name: Icons.python.name,
+        icon: Icons.python.icon,
+        link: Icons.python.link,
+      },
+      {
+        name: Icons.nextjs.name,
+        icon: Icons.nextjs.icon,
+        link: Icons.nextjs.link,
+      },
+      {
+        name: Icons.spacy.name,
+        icon: Icons.spacy.icon,
+        link: Icons.spacy.link,
+      },
+      {
+        name: Icons.shadcn.name,
+        icon: Icons.shadcn.icon,
+        link: Icons.shadcn.link,
+      },
+      {
+        name: Icons.scikit.name,
+        icon: Icons.scikit.icon,
+        link: Icons.scikit.link,
+      },
+      {
+        name: Icons.clerk.name,
+        icon: Icons.clerk.icon,
+        link: Icons.clerk.link,
+      },
+      {
+        name: Icons.tailwind.name,
+        icon: Icons.tailwind.icon,
+        link: Icons.tailwind.link,
+      },
+      {
+        name: Icons.pytorch.name,
+        icon: Icons.pytorch.icon,
+        link: Icons.pytorch.link,
+      },
+      {
+        name: Icons.threejs.name,
+        icon: Icons.threejs.icon,
+        link: Icons.threejs.link,
+      },
+      {
+        name: Icons.plaid.name,
+        icon: Icons.plaid.icon,
+        link: Icons.plaid.link,
+      },
+      {
+        name: Icons.gemini.name,
+        icon: Icons.gemini.icon,
+        link: Icons.gemini.link,
+      },
+      {
+        name: Icons.convex.name,
+        icon: Icons.convex.icon,
+        link: Icons.convex.link,
+      },
+    ],
+    externalLinks: [
+      {
+        name: Icons.github.name,
+        icon: Icons.github.icon,
+        link: "https://github.com/ArslanKamchybekov/uncommonhacks",
+      },
+      {
+        name: Icons.website.name,
+        icon: Icons.website.icon,
+        link: "https://midas-new.vercel.app/",
+      },
+      {
+        name: Icons.devpost.name,
+        icon: Icons.devpost.icon,
+        link: "https://devpost.com/software/midas-38otw5",
+      },
+    ],
+  },
+  {
     title: "Raydar",
     type: "pc",
     screen: "/raydar.png",
     description:
-      "A lost and found ML solution that connects uploaded sketches and descriptions of objects to a database of found items.",
+      "Led a team of 5 to develop a lost and found ML solution that connects uploaded sketches and descriptions of objects to a database of found items.",
     startDate: "Feb. 9 2025",
     endDate: "Feb. 11 2025",
     points: [
@@ -74,6 +170,11 @@ export const projects: Project[] = [
         icon: Icons.website.icon,
         link: "https://raydar.tech/",
       },
+      {
+        name: Icons.devpost.name,
+        icon: Icons.devpost.icon,
+        link: "https://devpost.com/software/raydar-163vca",
+      },
     ],
   },
   {
@@ -81,7 +182,7 @@ export const projects: Project[] = [
     type: "pc",
     screen: "/guardpup.png",
     description:
-      "A MadHacks hackathon entry that deters deepfake manipulation by combining AI-driven image search, usage analytics, and screenshot prevention.",
+      "Led a team of 4 to develop a web app that deters deepfake manipulation by combining AI-driven image search, usage analytics, and screenshot prevention.",
     startDate: "Nov. 2024",
     endDate: "Nov. 2024",
     points: [
@@ -124,9 +225,9 @@ export const projects: Project[] = [
         link: "https://github.com/ArslanKamchybekov/madhacks-acm",
       },
       {
-        name: Icons.video.name,
-        icon: Icons.video.icon,
-        link: "https://youtu.be/IoqLMKYulzc",
+        name: Icons.devpost.name,
+        icon: Icons.devpost.icon,
+        link: "https://devpost.com/software/guardpup",
       },
     ],
   },
@@ -222,7 +323,7 @@ export const projects: Project[] = [
     type: "pc",
     screen: "/ecosteps.png",
     description:
-      "A NASA Space Apps 2024 project that gamifies eco-friendly actions for the next generation, backed by AI-driven insights from NASA data.",
+      "Led a team of 5 to develop a NASA Space Apps 2024 project that gamifies eco-friendly actions for the next generation, backed by AI-driven insights from NASA data.",
     startDate: "Oct. 2024",
     endDate: "Oct. 2024",
     points: [

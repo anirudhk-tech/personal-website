@@ -49,8 +49,38 @@ import { PiFileSql } from "react-icons/pi";
 import { SiOracle } from "react-icons/si";
 import { CiPaperplane } from "react-icons/ci";
 import { SiAdobe } from "react-icons/si";
+import { SiDevpost } from "react-icons/si";
+import { TbBrandThreejs } from "react-icons/tb";
+import { FaMoneyCheckAlt } from "react-icons/fa";
+import { RiGeminiFill } from "react-icons/ri";
+import { AiOutlineChrome } from "react-icons/ai";
 
 export const Icons: Record<string, Icon | Link> = {
+  convex: {
+    name: "Convex",
+    icon: <AiOutlineChrome color="black" size={24} />,
+    link: "https://www.convex.dev/",
+  },
+  gemini: {
+    name: "Gemini",
+    icon: <RiGeminiFill color="black" size={24} />,
+    link: "https://gemini.com/",
+  },
+  plaid: {
+    name: "Plaid",
+    icon: <FaMoneyCheckAlt color="black" size={24} />,
+    link: "https://plaid.com/",
+  },
+  threejs: {
+    name: "Three.js",
+    icon: <TbBrandThreejs color="black" size={24} />,
+    link: "https://threejs.org/",
+  },
+  devpost: {
+    name: "Devpost",
+    icon: <SiDevpost color="black" size={24} />,
+    link: "https://devpost.com/",
+  },
   python: {
     name: "Python",
     icon: <FaPython color="black" size={24} />,

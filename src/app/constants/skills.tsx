@@ -26,7 +26,11 @@ import {
 import { DiMongodb } from "react-icons/di";
 import { TbBrandReactNative } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
-import { AiOutlineDotNet, AiFillExperiment } from "react-icons/ai";
+import {
+  AiOutlineDotNet,
+  AiFillExperiment,
+  AiOutlineChrome,
+} from "react-icons/ai";
 import { PiFileCSharpFill, PiFileSql } from "react-icons/pi";
 import { MdManageAccounts, MdAddBusiness } from "react-icons/md";
 import { GrSystem } from "react-icons/gr";
@@ -291,5 +295,11 @@ export const skills = [
     type: "UI",
     name: "Figma",
     link: "https://www.figma.com/",
+  },
+  {
+    icon: <AiOutlineChrome color="black" size={24} />,
+    type: "Database",
+    name: "Convex",
+    link: "https://www.convex.dev/",
   },
 ];

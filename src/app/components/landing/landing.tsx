@@ -22,6 +22,9 @@ export const Landing = ({
   handleScrollToPersonal: () => void;
   handleScrollToContact: () => void;
 }) => {
+  const LINKEDIN_RESUME =
+    "https://www.linkedin.com/in/akuppili/details/featured/1743371700354/single-media-viewer/?profileId=ACoAAEjoBksB2AUh9__CRRQxCAzswBb5L1hvrAE";
+
   return (
     <Container>
       <TextContainer>
@@ -38,11 +41,7 @@ export const Landing = ({
         </FadeIn>
         <FadeIn delay={2.0} duration={1}>
           <MenuContainer>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/akuppili/overlay/1740770171256/single-media-viewer/?profileId=ACoAAEjoBksB2AUh9__CRRQxCAzswBb5L1hvrAE"
-            >
+            <a target="_blank" rel="noopener noreferrer" href={LINKEDIN_RESUME}>
               <MenuItemContainer label="Resume" />
             </a>
             <MenuItemContainer
