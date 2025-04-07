@@ -7,7 +7,7 @@ export const projects: Project[] = [
     type: "pc",
     screen: "/waddl.png",
     description:
-      "A productivity webapp that employs computer vision, AI, and a Chrome extension. Waddl puts the user and their friend group in charge of raising a duck that 'feeds' on their productivity. Productivity is tracked in real time, and if the user slacks off, Waddl reacts by sending humorous AI nudges, optionally deducting the user’s money, or even notifying the user’s external contacts like their boss or family.",
+      "Led and a team of 5 to develop a productivity webapp that employs computer vision, AI, and a Chrome extension. Waddl puts the user and their friend group in charge of raising a duck that 'feeds' on their productivity. Productivity is tracked in real time, and if the user slacks off, Waddl reacts by sending humorous AI nudges, optionally deducting the user’s money, or even notifying the user’s external contacts like their boss or family.",
     startDate: "Apr. 1 2025",
     endDate: "Apr. 3 2025",
     points: [
@@ -39,11 +39,6 @@ export const projects: Project[] = [
         link: Icons.chrome_extension.link,
       },
       {
-        name: Icons.opencv.name,
-        icon: Icons.opencv.icon,
-        link: Icons.opencv.link,
-      },
-      {
         name: Icons.pytorch.name,
         icon: Icons.pytorch.icon,
         link: Icons.pytorch.link,
@@ -53,18 +48,37 @@ export const projects: Project[] = [
         icon: Icons.nextjs.icon,
         link: Icons.nextjs.link,
       },
+      {
+        name: Icons.gemini.name,
+        icon: Icons.gemini.icon,
+        link: Icons.gemini.link,
+      },
+      {
+        name: Icons.mongodb.name,
+        icon: Icons.mongodb.icon,
+        link: Icons.mongodb.link,
+      },
+      {
+        name: Icons.shadcn.name,
+        icon: Icons.shadcn.icon,
+        link: Icons.shadcn.link,
+      },
+      {
+        name: Icons.tailwind.name,
+        icon: Icons.tailwind.icon,
+        link: Icons.tailwind.link,
+      },
     ],
     externalLinks: [
-      // Example external links - replace or remove as desired
       {
         name: Icons.github.name,
         icon: Icons.github.icon,
-        link: "https://github.com/YourUserName/YourWaddlRepo",
+        link: "https://github.com/ArslanKamchybekov/waddl",
       },
       {
-        name: Icons.website.name,
-        icon: Icons.website.icon,
-        link: "https://www.your-waddl-webapp.com",
+        name: Icons.devpost.name,
+        icon: Icons.devpost.icon,
+        link: "https://devpost.com/software/deadlines-dragons",
       },
     ],
   },
