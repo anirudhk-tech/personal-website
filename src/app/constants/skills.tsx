@@ -45,8 +45,15 @@ import { FiFramer } from "react-icons/fi";
 import { FaHorse } from "react-icons/fa";
 import { CiPaperplane } from "react-icons/ci";
 import { FaStripeS } from "react-icons/fa";
+import { SiTensorflow } from "react-icons/si";
 
 export const skills = [
+  {
+    icon: <SiTensorflow color="black" size={24} />,
+    type: "Library",
+    name: "TensorFlow",
+    link: "https://www.tensorflow.org/",
+  },
   {
     icon: <FaStripeS color="black" size={24} />,
     type: "Library",

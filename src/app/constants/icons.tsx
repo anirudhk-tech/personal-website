@@ -56,8 +56,14 @@ import { RiGeminiFill } from "react-icons/ri";
 import { AiOutlineChrome } from "react-icons/ai";
 import { IoExtensionPuzzle } from "react-icons/io5";
 import { SiOpencv } from "react-icons/si";
+import { SiTensorflow } from "react-icons/si";
 
 export const Icons: Record<string, Icon | Link> = {
+  tensorflow: {
+    name: "TensorFlow",
+    icon: <SiTensorflow color="black" size={24} />,
+    link: "https://www.tensorflow.org/",
+  },
   mediapipe: {
     name: "MediaPipe",
     icon: <SiMediapipe color="black" size={24} />,

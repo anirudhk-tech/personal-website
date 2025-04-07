@@ -39,9 +39,14 @@ export const projects: Project[] = [
         link: Icons.chrome_extension.link,
       },
       {
-        name: Icons.pytorch.name,
-        icon: Icons.pytorch.icon,
-        link: Icons.pytorch.link,
+        name: Icons.tensorflow.name,
+        icon: Icons.tensorflow.icon,
+        link: Icons.tensorflow.link,
+      },
+      {
+        name: Icons.mediapipe.name,
+        icon: Icons.mediapipe.icon,
+        link: Icons.mediapipe.link,
       },
       {
         name: Icons.nextjs.name,
