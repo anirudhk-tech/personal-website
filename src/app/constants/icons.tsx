@@ -1,6 +1,6 @@
 import { FaPython } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiFigma, SiSpacy } from "react-icons/si";
+import { SiFigma, SiMediapipe, SiSpacy } from "react-icons/si";
 import { SiShadcnui } from "react-icons/si";
 import { SiScikitlearn } from "react-icons/si";
 import { SiClerk } from "react-icons/si";
@@ -54,8 +54,25 @@ import { TbBrandThreejs } from "react-icons/tb";
 import { FaMoneyCheckAlt } from "react-icons/fa";
 import { RiGeminiFill } from "react-icons/ri";
 import { AiOutlineChrome } from "react-icons/ai";
+import { IoExtensionPuzzle } from "react-icons/io5";
+import { SiOpencv } from "react-icons/si";
 
 export const Icons: Record<string, Icon | Link> = {
+  mediapipe: {
+    name: "MediaPipe",
+    icon: <SiMediapipe color="black" size={24} />,
+    link: "https://github.com/google-ai-edge/mediapipe",
+  },
+  opencv: {
+    name: "OpenCV",
+    icon: <SiOpencv color="black" size={24} />,
+    link: "https://opencv.org/",
+  },
+  chrome_extension: {
+    name: "Chrome Extension",
+    icon: <IoExtensionPuzzle color="black" size={24} />,
+    link: "https://developer.chrome.com/docs/extensions",
+  },
   convex: {
     name: "Convex",
     icon: <AiOutlineChrome color="black" size={24} />,

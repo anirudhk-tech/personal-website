@@ -22,10 +22,12 @@ import {
   SiOracle,
   SiAdobe,
   SiFigma,
+  SiOpencv,
+  SiMediapipe,
 } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { TbBrandReactNative } from "react-icons/tb";
-import { IoLogoJavascript } from "react-icons/io5";
+import { IoExtensionPuzzle, IoLogoJavascript } from "react-icons/io5";
 import {
   AiOutlineDotNet,
   AiFillExperiment,
@@ -42,8 +44,15 @@ import { TbBrandThreejs } from "react-icons/tb";
 import { FiFramer } from "react-icons/fi";
 import { FaHorse } from "react-icons/fa";
 import { CiPaperplane } from "react-icons/ci";
+import { FaStripeS } from "react-icons/fa";
 
 export const skills = [
+  {
+    icon: <FaStripeS color="black" size={24} />,
+    type: "Library",
+    name: "Stripe",
+    link: "https://stripe.com/",
+  },
   {
     icon: <FaPython color="black" size={24} />,
     type: "Language",
@@ -301,5 +310,23 @@ export const skills = [
     type: "Database",
     name: "Convex",
     link: "https://www.convex.dev/",
+  },
+  {
+    name: "OpenCV",
+    icon: <SiOpencv color="black" size={24} />,
+    link: "https://opencv.org/",
+    type: "Library",
+  },
+  {
+    name: "Chrome Extension",
+    icon: <IoExtensionPuzzle color="black" size={24} />,
+    link: "https://developer.chrome.com/docs/extensions",
+    type: "Library",
+  },
+  {
+    name: "Mediapipe",
+    icon: <SiMediapipe color="black" size={24} />,
+    link: "https://github.com/google-ai-edge/mediapipe",
+    type: "Library",
   },
 ];

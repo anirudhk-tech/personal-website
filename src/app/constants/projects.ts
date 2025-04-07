@@ -3,6 +3,72 @@ import { Icons } from "./icons";
 
 export const projects: Project[] = [
   {
+    title: "Waddl",
+    type: "pc",
+    screen: "/waddl.png",
+    description:
+      "A productivity webapp that employs computer vision, AI, and a Chrome extension. Waddl puts the user and their friend group in charge of raising a duck that 'feeds' on their productivity. Productivity is tracked in real time, and if the user slacks off, Waddl reacts by sending humorous AI nudges, optionally deducting the user’s money, or even notifying the user’s external contacts like their boss or family.",
+    startDate: "Apr. 1 2025",
+    endDate: "Apr. 3 2025",
+    points: [
+      "Monitors user engagement through computer vision to detect productivity levels in real time.",
+      "Chrome extension gauges browsing activity’s relevance to the user’s current task using AI-based classification.",
+      "Provides a shared environment for friend groups to raise a virtual duck, adding social accountability.",
+      "Triggers humorous AI messages to the group chat if a user’s productivity falls below a set threshold.",
+      "Optionally deducts the user’s money or sends automated emails to bosses/family when productivity is low.",
+    ],
+    icons: [
+      {
+        name: Icons.python.name,
+        icon: Icons.python.icon,
+        link: Icons.python.link,
+      },
+      {
+        name: Icons.opencv.name,
+        icon: Icons.opencv.icon,
+        link: Icons.opencv.link,
+      },
+      {
+        name: Icons.auth0.name,
+        icon: Icons.auth0.icon,
+        link: Icons.auth0.link,
+      },
+      {
+        name: Icons.chrome_extension.name,
+        icon: Icons.chrome_extension.icon,
+        link: Icons.chrome_extension.link,
+      },
+      {
+        name: Icons.opencv.name,
+        icon: Icons.opencv.icon,
+        link: Icons.opencv.link,
+      },
+      {
+        name: Icons.pytorch.name,
+        icon: Icons.pytorch.icon,
+        link: Icons.pytorch.link,
+      },
+      {
+        name: Icons.nextjs.name,
+        icon: Icons.nextjs.icon,
+        link: Icons.nextjs.link,
+      },
+    ],
+    externalLinks: [
+      // Example external links - replace or remove as desired
+      {
+        name: Icons.github.name,
+        icon: Icons.github.icon,
+        link: "https://github.com/YourUserName/YourWaddlRepo",
+      },
+      {
+        name: Icons.website.name,
+        icon: Icons.website.icon,
+        link: "https://www.your-waddl-webapp.com",
+      },
+    ],
+  },
+  {
     title: "Midas",
     type: "pc",
     screen: "/midas.png",
