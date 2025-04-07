@@ -7,7 +7,7 @@ export const projects: Project[] = [
     type: "pc",
     screen: "/waddl.png",
     description:
-      "Led a team of 5 to develop a productivity webapp that employs computer vision, AI, and a Chrome extension. Waddl puts the user and their friend group in charge of raising a duck that 'feeds' on their productivity. Productivity is tracked in real time, and if the user slacks off, Waddl reacts by sending humorous AI nudges, optionally deducting the user’s money, or even notifying the user’s external contacts like their boss or family.",
+      "Led a team of 5 to develop a productivity webapp that employs computer vision, AI, and a Chrome extension. Waddl puts the user and their friend group in charge of raising a duck that 'feeds' on their productivity. If the user slacks off, Waddl reacts by sending humorous AI nudges, optionally deducting the user’s money, or even notifying the user’s external contacts like their boss or family.",
     startDate: "Apr. 1 2025",
     endDate: "Apr. 3 2025",
     points: [
