@@ -1,6 +1,12 @@
 import { FaPython } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiFigma, SiMediapipe, SiSpacy } from "react-icons/si";
+import {
+  SiFigma,
+  SiMediapipe,
+  SiRedux,
+  SiSpacy,
+  SiTypescript,
+} from "react-icons/si";
 import { SiShadcnui } from "react-icons/si";
 import { SiScikitlearn } from "react-icons/si";
 import { SiClerk } from "react-icons/si";
@@ -10,13 +16,13 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiPytorch } from "react-icons/si";
 import { Icon, Link } from "../types";
 import { TfiGithub } from "react-icons/tfi";
-import { IoRocket } from "react-icons/io5";
+import { IoLogoElectron, IoRocket } from "react-icons/io5";
 import { FaYoutube } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
 import { SiAuth0 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiReactbootstrap } from "react-icons/si";
-import { TbBrandDatabricks } from "react-icons/tb";
+import { TbBrandDatabricks, TbBrandFramerMotion } from "react-icons/tb";
 import { SiRobinhood } from "react-icons/si";
 import { FaLock } from "react-icons/fa";
 import { GiArtificialIntelligence } from "react-icons/gi";
@@ -28,9 +34,9 @@ import { TbBrandReactNative } from "react-icons/tb";
 import { SiSqlite } from "react-icons/si";
 import { SiExpo } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
-import { BiLogoPlayStore } from "react-icons/bi";
+import { BiLogoPlayStore, BiLogoPostgresql } from "react-icons/bi";
 import { FaPhp } from "react-icons/fa";
-import { AiOutlineDotNet } from "react-icons/ai";
+import { AiFillOpenAI, AiOutlineDotNet } from "react-icons/ai";
 import { PiFileCSharpFill } from "react-icons/pi";
 import { SiD3Dotjs } from "react-icons/si";
 import { AiFillExperiment } from "react-icons/ai";
@@ -57,8 +63,62 @@ import { AiOutlineChrome } from "react-icons/ai";
 import { IoExtensionPuzzle } from "react-icons/io5";
 import { SiOpencv } from "react-icons/si";
 import { SiTensorflow } from "react-icons/si";
+import { FaBox } from "react-icons/fa";
+import { RiDraftFill } from "react-icons/ri";
+import { FaBomb } from "react-icons/fa";
+import { SiStyledcomponents } from "react-icons/si";
 
 export const Icons: Record<string, Icon | Link> = {
+  styled_components: {
+    name: "Styled Components",
+    icon: <SiStyledcomponents color="black" size={24} />,
+    link: "https://styled-components.com/",
+  },
+  fusejs: {
+    name: "Fuse.js",
+    icon: <FaBomb color="black" size={24} />,
+    link: "https://fusejs.io/",
+  },
+  draftjs: {
+    name: "Draft.js",
+    icon: <RiDraftFill color="black" size={24} />,
+    link: "https://draftjs.org/",
+  },
+  dndkit: {
+    name: "DndKit",
+    icon: <FaBox color="black" size={24} />,
+    link: "https://dndkit.com/",
+  },
+  electron: {
+    name: "Electron",
+    icon: <IoLogoElectron color="black" size={24} />,
+    link: "https://www.electronjs.org/",
+  },
+  postgresql: {
+    name: "PostgreSQL",
+    icon: <BiLogoPostgresql color="black" size={24} />,
+    link: "https://www.postgresql.org/",
+  },
+  framer_motion: {
+    name: "Framer Motion",
+    icon: <TbBrandFramerMotion color="black" size={24} />,
+    link: "https://www.framer.com/docs/",
+  },
+  openai: {
+    name: "OpenAI",
+    icon: <AiFillOpenAI color="black" size={24} />,
+    link: "https://openai.com/",
+  },
+  redux: {
+    name: "Redux",
+    icon: <SiRedux color="black" size={24} />,
+    link: "https://redux.js.org/",
+  },
+  typescript: {
+    name: "TypeScript",
+    icon: <SiTypescript color="black" size={24} />,
+    link: "https://www.typescriptlang.org/",
+  },
   tensorflow: {
     name: "TensorFlow",
     icon: <SiTensorflow color="black" size={24} />,

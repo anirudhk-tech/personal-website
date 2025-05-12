@@ -1,5 +1,14 @@
-import { FaPython, FaReact, FaNode, FaPhp } from "react-icons/fa";
 import {
+  FaPython,
+  FaReact,
+  FaNode,
+  FaPhp,
+  FaBox,
+  FaBomb,
+} from "react-icons/fa";
+import {
+  RiDraftFill,
+  RiGeminiFill,
   RiNextjsFill,
   RiSupabaseFill,
   RiTailwindCssFill,
@@ -24,14 +33,22 @@ import {
   SiFigma,
   SiOpencv,
   SiMediapipe,
+  SiTypescript,
+  SiRedux,
+  SiStyledcomponents,
 } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
-import { TbBrandReactNative } from "react-icons/tb";
-import { IoExtensionPuzzle, IoLogoJavascript } from "react-icons/io5";
+import { TbBrandFramerMotion, TbBrandReactNative } from "react-icons/tb";
+import {
+  IoExtensionPuzzle,
+  IoLogoElectron,
+  IoLogoJavascript,
+} from "react-icons/io5";
 import {
   AiOutlineDotNet,
   AiFillExperiment,
   AiOutlineChrome,
+  AiFillOpenAI,
 } from "react-icons/ai";
 import { PiFileCSharpFill, PiFileSql } from "react-icons/pi";
 import { MdManageAccounts, MdAddBusiness } from "react-icons/md";
@@ -46,8 +63,71 @@ import { FaHorse } from "react-icons/fa";
 import { CiPaperplane } from "react-icons/ci";
 import { FaStripeS } from "react-icons/fa";
 import { SiTensorflow } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+
+// Sections: Library, Language, Framework, UI, Database, Auth, Soft Skill
 
 export const skills = [
+  {
+    icon: <SiStyledcomponents color="black" size={24} />,
+    type: "UI",
+    name: "Styled Components",
+    link: "https://styled-components.com/",
+  },
+  {
+    icon: <FaBomb color="black" size={24} />,
+    type: "Library",
+    name: "Fuse.js",
+    link: "https://fusejs.io/",
+  },
+  {
+    icon: <RiDraftFill color="black" size={24} />,
+    type: "Library",
+    name: "Draft.js",
+    link: "https://draftjs.org/",
+  },
+  {
+    icon: <FaBox color="black" size={24} />,
+    type: "Library",
+    name: "Dnd Kit",
+    link: "https://dndkit.com/",
+  },
+  {
+    icon: <IoLogoElectron color="black" size={24} />,
+    type: "Framework",
+    name: "Electron",
+    link: "https://www.electronjs.org/",
+  },
+  {
+    icon: <RiGeminiFill color="black" size={24} />,
+    type: "Library",
+    name: "Gemini",
+    link: "https://www.gemini.com/",
+  },
+  {
+    icon: <BiLogoPostgresql color="black" size={24} />,
+    type: "Database",
+    name: "PostgreSQL",
+    link: "https://www.postgresql.org/",
+  },
+  {
+    icon: <TbBrandFramerMotion color="black" size={24} />,
+    type: "UI",
+    name: "Framer Motion",
+    link: "https://www.framer.com/motion/",
+  },
+  {
+    icon: <AiFillOpenAI color="black" size={24} />,
+    type: "Library",
+    name: "OpenAI",
+    link: "https://openai.com/",
+  },
+  {
+    icon: <SiRedux color="black" size={24} />,
+    type: "Library",
+    name: "Redux",
+    link: "https://redux.js.org/",
+  },
   {
     icon: <SiTensorflow color="black" size={24} />,
     type: "Library",
@@ -59,6 +139,12 @@ export const skills = [
     type: "Library",
     name: "Stripe",
     link: "https://stripe.com/",
+  },
+  {
+    icon: <SiTypescript color="black" size={24} />,
+    type: "Language",
+    name: "TypeScript",
+    link: "https://www.typescriptlang.org/",
   },
   {
     icon: <FaPython color="black" size={24} />,

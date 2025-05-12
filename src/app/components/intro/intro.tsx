@@ -1,13 +1,33 @@
 import { Typography } from "@mui/material";
-import {
-  Container,
-  SummaryAndPhotoContainer,
-  PictureContainer,
-  TextContainer,
-} from "./intro.styles";
+import { Container, TextContainer } from "./intro.styles";
 import { FadeInOnScroll } from "@/app/animations/fadeinOnScroll";
-import Image from "next/image";
-import ProfilePicture from "@/../public/profile_picture.png";
+import ProfilePicture from "@/../public/carousel/profile_picture.png";
+import FamilyGrad from "@/../public/carousel/family_grad.png";
+import GuardpupScreen from "@/../public/carousel/guardpup_similarity.png";
+import HelixCreation from "@/../public/carousel/helix_creation.png";
+import MadhacksTeam from "@/../public/carousel/madhacks_team.png";
+import MidasScreen from "@/../public/carousel/midas_screen_graph.png";
+import NiagaraFalls from "@/../public/carousel/niagara_falls.png";
+import PublicSpeakingNasa from "@/../public/carousel/speaking_public_nasa.png";
+import PublicSpeakingWildhacks from "@/../public/carousel/speaking_public_wildhacks.png";
+import UncommonHacksTeam from "@/../public/carousel/uncommon_hacks_team.png";
+import WaddlScreenCv from "@/../public/carousel/waddl_screen_cv.png";
+
+import { Carousel } from "./carousel/carousel";
+
+const images = [
+  { src: ProfilePicture.src, alt: "Professional Headshot" },
+  { src: FamilyGrad.src, alt: "Family Graduation" },
+  { src: GuardpupScreen.src, alt: "Guardpup Screen" },
+  { src: HelixCreation.src, alt: "Helix Creation" },
+  { src: MadhacksTeam.src, alt: "Madhacks team" },
+  { src: MidasScreen.src, alt: "Midas Screen" },
+  { src: NiagaraFalls.src, alt: "Niagara Falls" },
+  { src: PublicSpeakingNasa.src, alt: "Public Speaking at NASA" },
+  { src: PublicSpeakingWildhacks.src, alt: "Public Speaking at Wildhacks" },
+  { src: UncommonHacksTeam.src, alt: "Uncommon Hacks team" },
+  { src: WaddlScreenCv.src, alt: "Waddl Screen" },
+];
 
 export const Intro = () => {
   return (
@@ -16,28 +36,19 @@ export const Intro = () => {
         <Typography variant="h1">Synopsis</Typography>
       </FadeInOnScroll>
       <FadeInOnScroll>
-        <SummaryAndPhotoContainer>
-          <TextContainer>
-            <FadeInOnScroll>
-              <Typography variant="body1">
-                {`I'm a fullstack developer working and studying at the University of Illinois Chicago while running a tech startup.`}
-              </Typography>
-            </FadeInOnScroll>
-            <FadeInOnScroll>
-              <Typography variant="body1">
-                {`I specialize in web and mobile end to end development, from initial drafts to deployment. I'm invested in building impactful applications that will change some lives.`}
-              </Typography>
-            </FadeInOnScroll>
-          </TextContainer>
-          <PictureContainer>
-            <Image
-              src={ProfilePicture}
-              alt="Profile picture"
-              fill
-              style={{ objectFit: "cover", borderRadius: 50 }}
-            />
-          </PictureContainer>
-        </SummaryAndPhotoContainer>
+        <TextContainer>
+          <FadeInOnScroll>
+            <Typography variant="body1">
+              {`I'm a fullstack developer working and studying at the University of Illinois Chicago while working with tech startups.`}
+            </Typography>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+            <Typography variant="body1">
+              {`I specialize in web and mobile end to end development, from initial drafts to deployment. I'm invested in building impactful applications that will change some lives.`}
+            </Typography>
+          </FadeInOnScroll>
+        </TextContainer>
+        <Carousel images={images} speed={100} />
       </FadeInOnScroll>
     </Container>
   );

@@ -3,9 +3,161 @@ import { Icons } from "./icons";
 
 export const projects: Project[] = [
   {
+    title: "Odyssey",
+    type: "pc",
+    screen: "project_screens/odyssey_screen.png",
+    description:
+      "Cross-platform desktop writing suite built with Electron + Next.js. Odyssey lets authors structure novels as draggable scene cards, write in a rich-text editor, and jump anywhere with instant fuzzy search — all offline-first and distraction-free.",
+    startDate: "Nov. 1 2024",
+    endDate: "Apr. 30 2025",
+    points: [
+      "Electron + Next.js standalone build: native installers for Windows, macOS & Linux with a single code-base.",
+      "Rich-text scene editor powered by Draft.js and draft-convert for seamless export to Markdown/HTML.",
+      "Kanban-style scene board with dnd-kit drag-and-drop — reorder chapters in real time.",
+      "Global Fuse.js fuzzy search: hit ⌘/Ctrl+K to jump to any scene, character, or note instantly.",
+      "Redux Toolkit + TypeScript state layer with JSON persistence for a fully offline workflow.",
+      "Custom theming via styled-components and react-colorful — tag scenes & characters with colour-coded labels.",
+    ],
+    icons: [
+      {
+        name: Icons.electron.name,
+        icon: Icons.electron.icon,
+        link: Icons.electron.link,
+      },
+      {
+        name: Icons.nextjs.name,
+        icon: Icons.nextjs.icon,
+        link: Icons.nextjs.link,
+      },
+      {
+        name: Icons.react.name,
+        icon: Icons.react.icon,
+        link: Icons.react.link,
+      },
+      {
+        name: Icons.typescript.name,
+        icon: Icons.typescript.icon,
+        link: Icons.typescript.link,
+      },
+      {
+        name: Icons.redux.name,
+        icon: Icons.redux.icon,
+        link: Icons.redux.link,
+      },
+      {
+        name: Icons.dndkit.name,
+        icon: Icons.dndkit.icon,
+        link: Icons.dndkit.link,
+      },
+      {
+        name: Icons.draftjs.name,
+        icon: Icons.draftjs.icon,
+        link: Icons.draftjs.link,
+      },
+      {
+        name: Icons.fusejs.name,
+        icon: Icons.fusejs.icon,
+        link: Icons.fusejs.link,
+      },
+      {
+        name: Icons.styled_components.name,
+        icon: Icons.styled_components.icon,
+        link: Icons.styled_components.link,
+      },
+    ],
+    externalLinks: [
+      {
+        name: Icons.github.name,
+        icon: Icons.github.icon,
+        link: "https://github.com/anirudhk-tech/odyssey",
+      },
+    ],
+  },
+  {
+    title: "FlamesAI",
+    type: "pc",
+    screen: "project_screens/flamesai_screen.png",
+    description:
+      "A connection-finding platform that leverages Reddit and large-language models to surface hyper-compatible matches: roommates, study buddies, co-founders, and beyond.",
+    startDate: "Jan. 15 2025",
+    endDate: "May. 12 2025",
+    points: [
+      "OAuth-only Reddit integration: import posts, comments & karma securely with one click.",
+      "Vectorized embeddings + Supabase RPC: match profiles at scale with pgvector.",
+      "Sparky AI wingman: chat interface powered by ChatGPT & Gemini to craft perfect intros.",
+      "Privacy-first design: TLS/AES-256 encryption, one-click data deletion, no ad tracking.",
+      "Modern UI/UX with Next.js App Router, TailwindCSS, Framer Motion & shadcn/ui components.",
+      "Redux + TypeScript for robust state management and type-safe developer experience.",
+    ],
+    icons: [
+      {
+        name: Icons.nextjs.name,
+        icon: Icons.nextjs.icon,
+        link: Icons.nextjs.link,
+      },
+      {
+        name: Icons.react.name,
+        icon: Icons.react.icon,
+        link: Icons.react.link,
+      },
+      {
+        name: Icons.typescript.name,
+        icon: Icons.typescript.icon,
+        link: Icons.typescript.link,
+      },
+      {
+        name: Icons.tailwind.name,
+        icon: Icons.tailwind.icon,
+        link: Icons.tailwind.link,
+      },
+      {
+        name: Icons.redux.name,
+        icon: Icons.redux.icon,
+        link: Icons.redux.link,
+      },
+      {
+        name: Icons.supabase.name,
+        icon: Icons.supabase.icon,
+        link: Icons.supabase.link,
+      },
+      {
+        name: Icons.openai.name,
+        icon: Icons.openai.icon,
+        link: Icons.openai.link,
+      },
+      {
+        name: Icons.gemini.name,
+        icon: Icons.gemini.icon,
+        link: Icons.gemini.link,
+      },
+      {
+        name: Icons.shadcn.name,
+        icon: Icons.shadcn.icon,
+        link: Icons.shadcn.link,
+      },
+      {
+        name: Icons.framer_motion.name,
+        icon: Icons.framer_motion.icon,
+        link: Icons.framer_motion.link,
+      },
+      {
+        name: Icons.postgresql.name,
+        icon: Icons.postgresql.icon,
+        link: Icons.postgresql.link,
+      },
+    ],
+    externalLinks: [
+      {
+        name: Icons.github.name,
+        icon: Icons.github.icon,
+        link: "https://github.com/anirudhk-tech/list_builder",
+      },
+    ],
+  },
+  {
     title: "Waddl",
     type: "pc",
-    screen: "/waddl.png",
+    screen: "project_screens/waddl.png",
     description:
       "Led a team of 5 to develop a productivity webapp that employs computer vision, AI, and a Chrome extension. Waddl puts the user and their friend group in charge of raising a duck that 'feeds' on their productivity. If the user slacks off, Waddl reacts by sending humorous AI nudges, optionally deducting the user’s money, or even notifying the user’s external contacts like their boss or family.",
     startDate: "Apr. 1 2025",
@@ -90,7 +242,7 @@ export const projects: Project[] = [
   {
     title: "Midas",
     type: "pc",
-    screen: "/midas.png",
+    screen: "project_screens/midas.png",
     description:
       "Led a team of 5 to develop a predictive financial assistant that visualizes your spending, forecasts the future, and lets you experiment with budget adjustments in real time.",
     startDate: "Mar. 29 2025",
@@ -186,7 +338,7 @@ export const projects: Project[] = [
   {
     title: "Raydar",
     type: "pc",
-    screen: "/raydar.png",
+    screen: "project_screens/raydar.png",
     description:
       "Led a team of 5 to develop a lost and found ML solution that connects uploaded sketches and descriptions of objects to a database of found items.",
     startDate: "Feb. 9 2025",
@@ -265,7 +417,7 @@ export const projects: Project[] = [
   {
     title: "Guardpup",
     type: "pc",
-    screen: "/guardpup.png",
+    screen: "project_screens/guardpup.png",
     description:
       "Led a team of 4 to develop a web app that deters deepfake manipulation by combining AI-driven image search, usage analytics, and screenshot prevention.",
     startDate: "Nov. 2024",
@@ -319,7 +471,7 @@ export const projects: Project[] = [
   {
     title: "ElectroBook",
     type: "pixel",
-    screen: "/electrobook.png",
+    screen: "project_screens/electrobook.png",
     description:
       "An Android app for storing eBooks locally, built with React Native, SQLite, MMKV, and Filesystem, and managed through Zustand.",
     startDate: "Dec. 2023",
@@ -368,7 +520,7 @@ export const projects: Project[] = [
   {
     title: "Crypto Trader",
     type: "pc",
-    screen: "/robinhood.png",
+    screen: "project_screens/robinhood.png",
     description:
       "A Python-based trading bot leveraging the Robinhood API for automated cryptocurrency trades.",
     startDate: "Sep. 2024",
@@ -406,7 +558,7 @@ export const projects: Project[] = [
   {
     title: "EcoSteps",
     type: "pc",
-    screen: "/ecosteps.png",
+    screen: "project_screens/ecosteps.png",
     description:
       "Led a team of 5 to develop a NASA Space Apps 2024 project that gamifies eco-friendly actions for the next generation, backed by AI-driven insights from NASA data.",
     startDate: "Oct. 2024",
@@ -477,7 +629,7 @@ export const projects: Project[] = [
   {
     title: "Personal Discord Bot",
     type: "pc",
-    screen: "/discord.png",
+    screen: "project_screens/discord.png",
     description:
       "A Python-powered Discord bot designed for a personal server, featuring a simulated stock market, Reddit integrations, and text encryption.",
     startDate: "Jun. 2020",
