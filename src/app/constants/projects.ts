@@ -8,8 +8,8 @@ export const projects: Project[] = [
     screen: "project_screens/odyssey_screen.png",
     description:
       "Cross-platform desktop writing suite built with Electron + Next.js. Odyssey lets authors structure novels as draggable scene cards, write in a rich-text editor, and jump anywhere with instant fuzzy search — all offline-first and distraction-free.",
-    startDate: "Nov. 1 2024",
-    endDate: "Apr. 30 2025",
+    startDate: "Apr. 13 2024",
+    endDate: "May 10 2025",
     points: [
       "Electron + Next.js standalone build: native installers for Windows, macOS & Linux with a single code-base.",
       "Rich-text scene editor powered by Draft.js and draft-convert for seamless export to Markdown/HTML.",
@@ -79,8 +79,8 @@ export const projects: Project[] = [
     screen: "project_screens/flamesai_screen.png",
     description:
       "A connection-finding platform that leverages Reddit and large-language models to surface hyper-compatible matches: roommates, study buddies, co-founders, and beyond.",
-    startDate: "Jan. 15 2025",
-    endDate: "May. 12 2025",
+    startDate: "May. 11 2025",
+    endDate: "May. 15 2025",
     points: [
       "OAuth-only Reddit integration: import posts, comments & karma securely with one click.",
       "Vectorized embeddings + Supabase RPC: match profiles at scale with pgvector.",
