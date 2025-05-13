@@ -5,11 +5,11 @@ export const projects: Project[] = [
   {
     title: "Emailing Agent",
     type: "pc",
-    screen: "project_screens/emailing_agent.png",
+    screen: "project_screens/email_agent_screen.png",
     description:
       "A docker container that automates mail sending for small businesses and generates marketing campaign emails through templates.",
-    startDate: "Mar. 18 2024",
-    endDate: "Mar. 20 2024",
+    startDate: "Mar. 18 2025",
+    endDate: "Mar. 25 2025",
     points: [
       "Dockerized Python application for easy deployment and scalability.",
       "Integrated with Gmail API for secure email sending and management.",
