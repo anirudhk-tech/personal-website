@@ -44,7 +44,12 @@ export const Intro = () => {
           </FadeInOnScroll>
           <FadeInOnScroll>
             <Typography variant="body1">
-              {`I specialize in web and mobile end to end development, from initial drafts to deployment. I'm invested in building impactful applications that will change some lives.`}
+              {`I specialize in fullstack end to end development + product management, from initial drafts to product launch and expansion.`}
+            </Typography>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+            <Typography variant="body1">
+              {`I'm invested in building impactful applications that will change some lives.`}
             </Typography>
           </FadeInOnScroll>
         </TextContainer>
