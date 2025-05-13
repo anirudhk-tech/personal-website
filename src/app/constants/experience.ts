@@ -31,9 +31,9 @@ export const Experiences: Experience[] = [
         link: Icons.centos.link,
       },
       {
-        name: Icons.nodejs.name,
-        icon: Icons.nodejs.icon,
-        link: Icons.nodejs.link,
+        name: Icons.node.name,
+        icon: Icons.node.icon,
+        link: Icons.node.link,
       },
       {
         name: Icons.c_sharp.name,
