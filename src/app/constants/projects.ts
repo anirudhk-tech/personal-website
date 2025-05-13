@@ -3,6 +3,50 @@ import { Icons } from "./icons";
 
 export const projects: Project[] = [
   {
+    title: "Emailing Agent",
+    type: "pc",
+    screen: "project_screens/emailing_agent.png",
+    description:
+      "A docker container that automates mail sending for small businesses and generates marketing campaign emails through templates.",
+    startDate: "Mar. 18 2024",
+    endDate: "Mar. 20 2024",
+    points: [
+      "Dockerized Python application for easy deployment and scalability.",
+      "Integrated with Gmail API for secure email sending and management.",
+      "Customizable templates for various marketing campaigns.",
+      "Automated scheduling and tracking of email campaigns.",
+    ],
+    icons: [
+      {
+        name: Icons.python.name,
+        icon: Icons.python.icon,
+        link: Icons.python.link,
+      },
+      {
+        name: Icons.docker.name,
+        icon: Icons.docker.icon,
+        link: Icons.docker.link,
+      },
+      {
+        name: Icons.gmail.name,
+        icon: Icons.gmail.icon,
+        link: Icons.gmail.link,
+      },
+      {
+        name: Icons.fastapi.name,
+        icon: Icons.fastapi.icon,
+        link: Icons.fastapi.link,
+      },
+    ],
+    externalLinks: [
+      {
+        name: Icons.github.name,
+        icon: Icons.github.icon,
+        link: "https://github.com/anirudhk-tech/email-agent",
+      },
+    ],
+  },
+  {
     title: "Odyssey",
     type: "pc",
     screen: "project_screens/odyssey_screen.png",

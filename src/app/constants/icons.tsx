@@ -1,6 +1,8 @@
 import { FaPython } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import {
+  SiDocker,
+  SiFastapi,
   SiFigma,
   SiMediapipe,
   SiRedux,
@@ -69,6 +71,21 @@ import { FaBomb } from "react-icons/fa";
 import { SiStyledcomponents } from "react-icons/si";
 
 export const Icons: Record<string, Icon | Link> = {
+  fastapi: {
+    name: "FastAPI",
+    icon: <SiFastapi color="black" size={24} />,
+    link: "https://fastapi.tiangolo.com/",
+  },
+  gmail: {
+    name: "Gmail",
+    icon: <MdEmail color="black" size={24} />,
+    link: "https://mail.google.com/",
+  },
+  docker: {
+    name: "Docker",
+    icon: <SiDocker color="black" size={24} />,
+    link: "https://www.docker.com/",
+  },
   styled_components: {
     name: "Styled Components",
     icon: <SiStyledcomponents color="black" size={24} />,

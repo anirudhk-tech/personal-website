@@ -30,6 +30,20 @@ export const Skills = () => {
       </FadeInOnScroll>
       <FadeInOnScroll>
         <SubContainer>
+          <Typography variant="body2">DevOps</Typography>
+          <SkillIconsContainer>
+            {skills
+              .filter((skill) => skill.type === "DevOps")
+              .map((skill, idx) => (
+                <a key={idx} href={skill.link ? skill.link : undefined}>
+                  <IconContainer label={skill.name} icon={skill.icon} />
+                </a>
+              ))}
+          </SkillIconsContainer>
+        </SubContainer>
+      </FadeInOnScroll>
+      <FadeInOnScroll>
+        <SubContainer>
           <Typography variant="body2">Frameworks and Libraries</Typography>
           <SkillIconsContainer>
             {skills

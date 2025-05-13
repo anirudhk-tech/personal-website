@@ -36,6 +36,8 @@ import {
   SiTypescript,
   SiRedux,
   SiStyledcomponents,
+  SiDocker,
+  SiFastapi,
 } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { TbBrandFramerMotion, TbBrandReactNative } from "react-icons/tb";
@@ -65,9 +67,20 @@ import { FaStripeS } from "react-icons/fa";
 import { SiTensorflow } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 
-// Sections: Library, Language, Framework, UI, Database, Auth, Soft Skill
+// Sections: Library, Language, Framework, UI, Database, Auth, Soft Skill, DevOps
 
 export const skills = [
+  {
+    icon: <SiFastapi color="black" size={24} />,
+    type: "Framework",
+    name: "FastAPI",
+    link: "https://fastapi.tiangolo.com/",
+  },
+  {
+    icon: <SiDocker color="black" size={24} />,
+    type: "DevOps",
+    name: "Docker",
+  },
   {
     icon: <SiStyledcomponents color="black" size={24} />,
     type: "UI",
