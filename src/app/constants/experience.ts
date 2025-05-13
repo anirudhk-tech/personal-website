@@ -7,14 +7,34 @@ export const Experiences: Experience[] = [
     type: "work",
     company: "Student Affairs of Technology at UIC",
     responsibilities: [
-      "Develop robust full-stack websites for college use under UIC’s Student Affairs Web service.",
-      "Collaborate in a hybrid environment for quick feedback and deployment cycles.",
-      "Work with ASP.NET, C#, PHP, along with MSSQL and Oracle databases.",
+      "Develop robust full-stack websites for college use with React and Node.js.",
+      "Maintain and deploy on CentOS and Red Hat VMs.",
+      "Work with ASP.NET, C#, PHP backends along with MSSQL and Oracle databases.",
     ],
     location: "Chicago, IL, USA",
     startDate: "Sept. 2, 2024",
     endDate: "Present Day",
     icons: [
+      {
+        name: Icons.react.name,
+        icon: Icons.react.icon,
+        link: Icons.react.link,
+      },
+      {
+        name: Icons.redhat.name,
+        icon: Icons.redhat.icon,
+        link: Icons.redhat.link,
+      },
+      {
+        name: Icons.centos.name,
+        icon: Icons.centos.icon,
+        link: Icons.centos.link,
+      },
+      {
+        name: Icons.nodejs.name,
+        icon: Icons.nodejs.icon,
+        link: Icons.nodejs.link,
+      },
       {
         name: Icons.c_sharp.name,
         icon: Icons.c_sharp.icon,

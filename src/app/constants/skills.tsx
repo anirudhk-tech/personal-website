@@ -66,10 +66,45 @@ import { CiPaperplane } from "react-icons/ci";
 import { FaStripeS } from "react-icons/fa";
 import { SiTensorflow } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { SiGithubactions } from "react-icons/si";
+import { SiVercel } from "react-icons/si";
+import { FaRedhat } from "react-icons/fa";
+import { FaCentos } from "react-icons/fa";
+import { SiGooglecloud } from "react-icons/si";
 
 // Sections: Library, Language, Framework, UI, Database, Auth, Soft Skill, DevOps
 
 export const skills = [
+  {
+    icon: <SiGooglecloud color="black" size={24} />,
+    type: "DevOps",
+    name: "Google Cloud Platform",
+    link: "https://cloud.google.com/",
+  },
+  {
+    icon: <FaCentos color="black" size={24} />,
+    type: "DevOps",
+    name: "CentOS",
+    link: "https://www.centos.org/",
+  },
+  {
+    icon: <FaRedhat color="black" size={24} />,
+    type: "DevOps",
+    name: "Red Hat",
+    link: "https://www.redhat.com/en",
+  },
+  {
+    icon: <SiVercel color="black" size={24} />,
+    type: "DevOps",
+    name: "Vercel",
+    link: "https://vercel.com/",
+  },
+  {
+    icon: <SiGithubactions color="black" size={24} />,
+    type: "DevOps",
+    name: "GitHub Actions",
+    link: "https://github.com/features/actions",
+  },
   {
     icon: <SiFastapi color="black" size={24} />,
     type: "Framework",

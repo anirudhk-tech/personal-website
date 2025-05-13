@@ -1,4 +1,4 @@
-import { FaPython } from "react-icons/fa";
+import { FaCentos, FaPython, FaRedhat } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import {
   SiDocker,
@@ -71,6 +71,16 @@ import { FaBomb } from "react-icons/fa";
 import { SiStyledcomponents } from "react-icons/si";
 
 export const Icons: Record<string, Icon | Link> = {
+  centos: {
+    name: "CentOS",
+    icon: <FaCentos color="black" size={24} />,
+    link: "https://www.centos.org/",
+  },
+  redhat: {
+    icon: <FaRedhat color="black" size={24} />,
+    name: "Red Hat",
+    link: "https://www.redhat.com/en",
+  },
   fastapi: {
     name: "FastAPI",
     icon: <SiFastapi color="black" size={24} />,
