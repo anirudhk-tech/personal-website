@@ -3,56 +3,12 @@ import { Icons } from "./icons";
 
 export const projects: Project[] = [
   {
-    title: "Emailing Agent",
-    type: "pc",
-    screen: "project_screens/email_agent_screen.png",
-    description:
-      "A docker container that automates mail sending for small businesses and generates marketing campaign emails through templates.",
-    startDate: "Mar. 18 2025",
-    endDate: "Mar. 25 2025",
-    points: [
-      "Dockerized Python application for easy deployment and scalability.",
-      "Integrated with Gmail API for secure email sending and management.",
-      "Customizable templates for various marketing campaigns.",
-      "Automated scheduling and tracking of email campaigns.",
-    ],
-    icons: [
-      {
-        name: Icons.python.name,
-        icon: Icons.python.icon,
-        link: Icons.python.link,
-      },
-      {
-        name: Icons.docker.name,
-        icon: Icons.docker.icon,
-        link: Icons.docker.link,
-      },
-      {
-        name: Icons.gmail.name,
-        icon: Icons.gmail.icon,
-        link: Icons.gmail.link,
-      },
-      {
-        name: Icons.fastapi.name,
-        icon: Icons.fastapi.icon,
-        link: Icons.fastapi.link,
-      },
-    ],
-    externalLinks: [
-      {
-        name: Icons.github.name,
-        icon: Icons.github.icon,
-        link: "https://github.com/anirudhk-tech/email-agent",
-      },
-    ],
-  },
-  {
     title: "Odyssey",
     type: "pc",
     screen: "project_screens/odyssey_screen.png",
     description:
       "Cross-platform desktop writing suite built with Electron + Next.js. Odyssey lets authors structure novels as draggable scene cards, write in a rich-text editor, and jump anywhere with instant fuzzy search — all offline-first and distraction-free.",
-    startDate: "Apr. 13 2024",
+    startDate: "Apr. 13 2025",
     endDate: "May 10 2025",
     points: [
       "Electron + Next.js standalone build: native installers for Windows, macOS & Linux with a single code-base.",
@@ -195,6 +151,50 @@ export const projects: Project[] = [
         name: Icons.github.name,
         icon: Icons.github.icon,
         link: "https://github.com/anirudhk-tech/list_builder",
+      },
+    ],
+  },
+  {
+    title: "Emailing Agent",
+    type: "pc",
+    screen: "project_screens/email_agent_screen.png",
+    description:
+      "A docker container that automates mail sending for small businesses and generates marketing campaign emails through templates.",
+    startDate: "Mar. 18 2025",
+    endDate: "Mar. 25 2025",
+    points: [
+      "Dockerized Python application for easy deployment and scalability.",
+      "Integrated with Gmail API for secure email sending and management.",
+      "Customizable templates for various marketing campaigns.",
+      "Automated scheduling and tracking of email campaigns.",
+    ],
+    icons: [
+      {
+        name: Icons.python.name,
+        icon: Icons.python.icon,
+        link: Icons.python.link,
+      },
+      {
+        name: Icons.docker.name,
+        icon: Icons.docker.icon,
+        link: Icons.docker.link,
+      },
+      {
+        name: Icons.gmail.name,
+        icon: Icons.gmail.icon,
+        link: Icons.gmail.link,
+      },
+      {
+        name: Icons.fastapi.name,
+        icon: Icons.fastapi.icon,
+        link: Icons.fastapi.link,
+      },
+    ],
+    externalLinks: [
+      {
+        name: Icons.github.name,
+        icon: Icons.github.icon,
+        link: "https://github.com/anirudhk-tech/email-agent",
       },
     ],
   },
