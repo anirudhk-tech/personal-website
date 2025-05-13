@@ -44,13 +44,28 @@ export const Skills = () => {
       </FadeInOnScroll>
       <FadeInOnScroll>
         <SubContainer>
-          <Typography variant="body2">Frameworks and Libraries</Typography>
+          <Typography variant="body2">Frameworks</Typography>
           <SkillIconsContainer>
             {skills
-              .filter(
-                (skill) =>
-                  skill.type === "Framework" || skill.type === "Library"
-              )
+              .filter((skill) => skill.type === "Framework")
+              .map((skill, idx) => (
+                <a key={idx} href={skill.link ? skill.link : undefined}>
+                  <IconContainer
+                    key={idx}
+                    label={skill.name}
+                    icon={skill.icon}
+                  />
+                </a>
+              ))}
+          </SkillIconsContainer>
+        </SubContainer>
+      </FadeInOnScroll>
+      <FadeInOnScroll>
+        <SubContainer>
+          <Typography variant="body2">Libraries</Typography>
+          <SkillIconsContainer>
+            {skills
+              .filter((skill) => skill.type === "Library")
               .map((skill, idx) => (
                 <a key={idx} href={skill.link ? skill.link : undefined}>
                   <IconContainer
