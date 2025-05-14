@@ -12,6 +12,11 @@ import PublicSpeakingNasa from "@/../public/carousel/speaking_public_nasa.png";
 import PublicSpeakingWildhacks from "@/../public/carousel/speaking_public_wildhacks.png";
 import UncommonHacksTeam from "@/../public/carousel/uncommon_hacks_team.png";
 import WaddlScreenCv from "@/../public/carousel/waddl_screen_cv.png";
+import EcoStepsVendor from "@/../public/carousel/ecosteps_vendor.png";
+import GuardpupFriends from "@/../public/carousel/guardpup_friends.png";
+import MidasPretiction from "@/../public/carousel/midas_prediction.png";
+import WaddlLanding from "@/../public/carousel/waddl_landing.png";
+import WaddlStats from "@/../public/carousel/waddl_stats.png";
 
 import { Carousel } from "./carousel/carousel";
 
@@ -27,6 +32,11 @@ const images = [
   { src: PublicSpeakingWildhacks.src, alt: "Public Speaking at Wildhacks" },
   { src: UncommonHacksTeam.src, alt: "Uncommon Hacks team" },
   { src: WaddlScreenCv.src, alt: "Waddl Screen" },
+  { src: EcoStepsVendor.src, alt: "EcoSteps Vendor" },
+  { src: GuardpupFriends.src, alt: "Guardpup Friends" },
+  { src: MidasPretiction.src, alt: "Midas Prediction" },
+  { src: WaddlLanding.src, alt: "Waddl Landing" },
+  { src: WaddlStats.src, alt: "Waddl Stats" },
 ];
 
 export const Intro = () => {
