@@ -23,7 +23,7 @@ export const Landing = ({
   handleScrollToContact: () => void;
 }) => {
   const LINKEDIN_RESUME =
-    "https://www.linkedin.com/in/akuppili/details/featured/1745867592299/single-media-viewer/?profileId=ACoAAEjoBksB2AUh9__CRRQxCAzswBb5L1hvrAE";
+    "https://www.linkedin.com/in/akuppili/details/featured/1747235882994/single-media-viewer/?profileId=ACoAAEjoBksB2AUh9__CRRQxCAzswBb5L1hvrAE";
 
   return (
     <Container>
