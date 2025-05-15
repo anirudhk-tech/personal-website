@@ -63,7 +63,7 @@ export const Intro = () => {
             </Typography>
           </FadeInOnScroll>
         </TextContainer>
-        <Carousel images={images} speed={100} />
+        <Carousel images={images} speed={200} />
       </FadeInOnScroll>
     </Container>
   );
