@@ -22,21 +22,21 @@ import { Carousel } from "./carousel/carousel";
 
 const images = [
   { src: ProfilePicture.src, alt: "Professional Headshot" },
-  { src: FamilyGrad.src, alt: "Family Graduation" },
   { src: GuardpupScreen.src, alt: "Guardpup Screen" },
   { src: HelixCreation.src, alt: "Helix Creation" },
   { src: MadhacksTeam.src, alt: "Madhacks team" },
   { src: MidasScreen.src, alt: "Midas Screen" },
-  { src: NiagaraFalls.src, alt: "Niagara Falls" },
-  { src: PublicSpeakingNasa.src, alt: "Public Speaking at NASA" },
-  { src: PublicSpeakingWildhacks.src, alt: "Public Speaking at Wildhacks" },
-  { src: UncommonHacksTeam.src, alt: "Uncommon Hacks team" },
   { src: WaddlScreenCv.src, alt: "Waddl Screen" },
   { src: EcoStepsVendor.src, alt: "EcoSteps Vendor" },
   { src: GuardpupFriends.src, alt: "Guardpup Friends" },
   { src: MidasPretiction.src, alt: "Midas Prediction" },
   { src: WaddlLanding.src, alt: "Waddl Landing" },
   { src: WaddlStats.src, alt: "Waddl Stats" },
+  { src: NiagaraFalls.src, alt: "Niagara Falls" },
+  { src: PublicSpeakingNasa.src, alt: "Public Speaking at NASA" },
+  { src: PublicSpeakingWildhacks.src, alt: "Public Speaking at Wildhacks" },
+  { src: UncommonHacksTeam.src, alt: "Uncommon Hacks team" },
+  { src: FamilyGrad.src, alt: "Family Graduation" },
 ];
 
 export const Intro = () => {
