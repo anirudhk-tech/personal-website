@@ -2,7 +2,6 @@ import { Typography } from "@mui/material";
 import { Container, TextContainer } from "./intro.styles";
 import { FadeInOnScroll } from "@/app/animations/fadeinOnScroll";
 import ProfilePicture from "@/../public/carousel/profile_picture.png";
-import FamilyGrad from "@/../public/carousel/family_grad.png";
 import GuardpupScreen from "@/../public/carousel/guardpup_similarity.png";
 import HelixCreation from "@/../public/carousel/helix_creation.png";
 import MadhacksTeam from "@/../public/carousel/madhacks_team.png";
@@ -36,7 +35,6 @@ const images = [
   { src: PublicSpeakingNasa.src, alt: "Public Speaking at NASA" },
   { src: PublicSpeakingWildhacks.src, alt: "Public Speaking at Wildhacks" },
   { src: UncommonHacksTeam.src, alt: "Uncommon Hacks team" },
-  { src: FamilyGrad.src, alt: "Family Graduation" },
 ];
 
 export const Intro = () => {
