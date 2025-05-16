@@ -49,7 +49,7 @@ export const Intro = () => {
         <TextContainer>
           <FadeInOnScroll>
             <Typography variant="body1">
-              {`I'm a fullstack developer working and studying at the University of Illinois Chicago while working with tech startups.`}
+              {`I'm a fullstack developer working with tech startups while engaging in a fullstack job. I like to build fast and fail faster to ultimately grow and succeed.`}
             </Typography>
           </FadeInOnScroll>
           <FadeInOnScroll>
