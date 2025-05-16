@@ -68,7 +68,7 @@ export const Experiences: Experience[] = [
     type: "self-employed",
     company: "Helix (Associated with Coffee Logic LLC)",
     startDate: "Sep. 2024",
-    endDate: "Present",
+    endDate: "Oct. 2024",
     location: "Remote",
     responsibilities: [
       "Created a full-stack metric tracking app for Coffee Logic LLC.",
@@ -115,7 +115,7 @@ export const Experiences: Experience[] = [
     type: "self-employed",
     company: "Coffee Logic LLC",
     startDate: "Sep. 2024",
-    endDate: "Present",
+    endDate: "Apr. 2025",
     location: "Remote",
     responsibilities: [
       "Cofounded a software development company with a partner in Georgia.",
@@ -142,11 +142,11 @@ export const Experiences: Experience[] = [
     externalLinks: null,
   },
   {
-    title: "ACM Group Founder",
+    title: "ACM Group Founder and Lead",
     type: "association",
     company: "Association of Computing Machinery (ACM) @ UIC",
     startDate: "Jun. 2024",
-    endDate: "Present",
+    endDate: "Present Day",
     location: "University of Illinois Chicago College of Engineering · On-site",
     responsibilities: [
       "Founded and led the ACM Mobile Development group, uniting students to learn and grow as app developers.",
