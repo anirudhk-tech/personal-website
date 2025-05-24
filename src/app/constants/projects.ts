@@ -3,6 +3,107 @@ import { Icons } from "./icons";
 
 export const projects: Project[] = [
   {
+    title: "StoryboardAI",
+    type: "pc",
+    screen: "project_screens/storyboardai_screen.png",
+    description:
+      "One-week, multi-agent AI co-author. StoryboardAI auto-summarises plot beats, suggests twists, and drops reference images on a canvas board. Svelte front-end; 4-service LLM pipeline on AWS EKS.",
+    startDate: "May 17 2025",
+    endDate: "May 24 2025",
+    points: [
+      "Containerised summariser, text-gen, image-gen & API services with Docker → Helm → EKS; Terraform + GitHub Actions CI/CD gets zero-to-prod in 15 min with one-command rollbacks.",
+      "pgvector cache cut LLM spend 65 %; Nginx edge caching + Helm tuning lowered t2.micro CPU from 90 % → 55 %.",
+      "Canvas UI (Svelte + D3 + Tailwind) delivers 95 %-relevant summaries, scenes & images across 50 prompt tests.",
+    ],
+    icons: [
+      {
+        name: Icons.svelte.name,
+        icon: Icons.svelte.icon,
+        link: Icons.svelte.link,
+      },
+      {
+        name: Icons.typescript.name,
+        icon: Icons.typescript.icon,
+        link: Icons.typescript.link,
+      },
+      { name: Icons.d3.name, icon: Icons.d3.icon, link: Icons.d3.link },
+      {
+        name: Icons.tailwind.name,
+        icon: Icons.tailwind.icon,
+        link: Icons.tailwind.link,
+      },
+      { name: Icons.node.name, icon: Icons.node.icon, link: Icons.node.link },
+      {
+        name: Icons.express.name,
+        icon: Icons.express.icon,
+        link: Icons.express.link,
+      },
+      {
+        name: Icons.prisma.name,
+        icon: Icons.prisma.icon,
+        link: Icons.prisma.link,
+      },
+      {
+        name: Icons.postgresql.name,
+        icon: Icons.postgresql.icon,
+        link: Icons.postgresql.link,
+      },
+      {
+        name: Icons.openai.name,
+        icon: Icons.openai.icon,
+        link: Icons.openai.link,
+      },
+      {
+        name: Icons.gemini.name,
+        icon: Icons.gemini.icon,
+        link: Icons.gemini.link,
+      },
+      {
+        name: Icons.docker.name,
+        icon: Icons.docker.icon,
+        link: Icons.docker.link,
+      },
+      {
+        name: Icons.kubernetes.name,
+        icon: Icons.kubernetes.icon,
+        link: Icons.kubernetes.link,
+      },
+      { name: Icons.helm.name, icon: Icons.helm.icon, link: Icons.helm.link },
+      {
+        name: Icons.terraform.name,
+        icon: Icons.terraform.icon,
+        link: Icons.terraform.link,
+      },
+      {
+        name: Icons.aws_eks.name,
+        icon: Icons.aws_eks.icon,
+        link: Icons.aws_eks.link,
+      },
+      {
+        name: Icons.githubactions.name,
+        icon: Icons.githubactions.icon,
+        link: Icons.githubactions.link,
+      },
+      {
+        name: Icons.nginx.name,
+        icon: Icons.nginx.icon,
+        link: Icons.nginx.link,
+      },
+      {
+        name: Icons.traefik.name,
+        icon: Icons.traefik.icon,
+        link: Icons.traefik.link,
+      },
+    ],
+    externalLinks: [
+      {
+        name: Icons.github.name,
+        icon: Icons.github.icon,
+        link: "https://github.com/anirudhk-tech/storyboard_ai",
+      },
+    ],
+  },
+  {
     title: "Odyssey",
     type: "pc",
     screen: "project_screens/odyssey_screen.png",

@@ -69,8 +69,58 @@ import { FaBox } from "react-icons/fa";
 import { RiDraftFill } from "react-icons/ri";
 import { FaBomb } from "react-icons/fa";
 import { SiStyledcomponents } from "react-icons/si";
+import {
+  SiSvelte,
+  SiKubernetes,
+  SiTerraform,
+  SiHelm,
+  SiNginx,
+  SiTraefikproxy,
+  SiGithubactions,
+} from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 
 export const Icons: Record<string, Icon | Link> = {
+  svelte: {
+    name: "Svelte",
+    icon: <SiSvelte color="black" size={24} />,
+    link: "https://svelte.dev/",
+  },
+  kubernetes: {
+    name: "Kubernetes",
+    icon: <SiKubernetes color="black" size={24} />,
+    link: "https://kubernetes.io/",
+  },
+  terraform: {
+    name: "Terraform",
+    icon: <SiTerraform color="black" size={24} />,
+    link: "https://developer.hashicorp.com/terraform",
+  },
+  helm: {
+    name: "Helm",
+    icon: <SiHelm color="black" size={24} />,
+    link: "https://helm.sh/",
+  },
+  nginx: {
+    name: "Nginx",
+    icon: <SiNginx color="black" size={24} />,
+    link: "https://nginx.org/",
+  },
+  traefik: {
+    name: "Traefik",
+    icon: <SiTraefikproxy color="black" size={24} />,
+    link: "https://traefik.io/",
+  },
+  aws_eks: {
+    name: "Amazon EKS",
+    icon: <FaAws color="black" size={24} />,
+    link: "https://aws.amazon.com/eks/",
+  },
+  githubactions: {
+    name: "GitHub Actions",
+    icon: <SiGithubactions color="black" size={24} />,
+    link: "https://github.com/features/actions",
+  },
   centos: {
     name: "CentOS",
     icon: <FaCentos color="black" size={24} />,

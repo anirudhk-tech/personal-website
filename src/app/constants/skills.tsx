@@ -5,6 +5,7 @@ import {
   FaPhp,
   FaBox,
   FaBomb,
+  FaAws,
 } from "react-icons/fa";
 import {
   RiDraftFill,
@@ -38,6 +39,12 @@ import {
   SiStyledcomponents,
   SiDocker,
   SiFastapi,
+  SiSvelte,
+  SiKubernetes,
+  SiHelm,
+  SiTerraform,
+  SiNginx,
+  SiTraefikproxy,
 } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { TbBrandFramerMotion, TbBrandReactNative } from "react-icons/tb";
@@ -75,6 +82,48 @@ import { SiGooglecloud } from "react-icons/si";
 // Sections: Library, Language, Framework, UI, Database, Auth, Soft Skill, DevOps
 
 export const skills = [
+  {
+    icon: <SiSvelte color="black" size={24} />,
+    type: "Framework",
+    name: "Svelte",
+    link: "https://svelte.dev/",
+  },
+  {
+    icon: <SiKubernetes color="black" size={24} />,
+    type: "DevOps",
+    name: "Kubernetes",
+    link: "https://kubernetes.io/",
+  },
+  {
+    icon: <SiHelm color="black" size={24} />,
+    type: "DevOps",
+    name: "Helm",
+    link: "https://helm.sh/",
+  },
+  {
+    icon: <SiTerraform color="black" size={24} />,
+    type: "DevOps",
+    name: "Terraform",
+    link: "https://developer.hashicorp.com/terraform",
+  },
+  {
+    icon: <SiNginx color="black" size={24} />,
+    type: "DevOps",
+    name: "Nginx",
+    link: "https://nginx.org/",
+  },
+  {
+    icon: <SiTraefikproxy color="black" size={24} />,
+    type: "DevOps",
+    name: "Traefik",
+    link: "https://traefik.io/",
+  },
+  {
+    icon: <FaAws color="black" size={24} />,
+    type: "DevOps",
+    name: "Amazon EKS",
+    link: "https://aws.amazon.com/eks/",
+  },
   {
     icon: <SiGooglecloud color="black" size={24} />,
     type: "DevOps",
