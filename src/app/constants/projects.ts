@@ -3,9 +3,9 @@ import { Icons } from "./icons";
 
 export const projects: Project[] = [
   {
-    title: "StoryboardAI",
+    title: "Storyboard.AI",
     type: "pc",
-    screen: "project_screens/storyboardai_screen.png",
+    screen: "project_screens/storyboard_ai.png",
     description:
       "One-week, multi-agent AI co-author. StoryboardAI auto-summarises plot beats, suggests twists, and drops reference images on a canvas board. Svelte front-end; 4-service LLM pipeline on AWS EKS.",
     startDate: "May 17 2025",
