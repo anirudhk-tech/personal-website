@@ -12,7 +12,7 @@ export const projects: Project[] = [
     endDate: "May 24 2025",
     points: [
       "Containerised summariser, text-gen, image-gen & API services with Docker → Helm → EKS; Terraform + GitHub Actions CI/CD gets zero-to-prod in 15 min with one-command rollbacks.",
-      "pgvector cache cut LLM spend 65 %; Nginx edge caching + Helm tuning lowered t2.micro CPU from 90 % → 55 %.",
+      "PostgreSQL + pgvector cache cut LLM spend 65%; Nginx edge caching + Helm tuning lowered t2.micro CPU from 90% → 55%.",
       "Canvas UI (Svelte + D3 + Tailwind) delivers 95 %-relevant summaries, scenes & images across 50 prompt tests.",
     ],
     icons: [
