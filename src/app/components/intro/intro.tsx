@@ -16,6 +16,8 @@ import GuardpupFriends from "@/../public/carousel/guardpup_friends.png";
 import MidasPretiction from "@/../public/carousel/midas_prediction.png";
 import WaddlLanding from "@/../public/carousel/waddl_landing.png";
 import WaddlStats from "@/../public/carousel/waddl_stats.png";
+import StoryBoardScreen from "@/../public/carousel/storyboardai_screen.png";
+import FlamesLanding from "@/../public/carousel/flamesai_landing.png";
 
 import { Carousel } from "./carousel/carousel";
 
@@ -35,6 +37,8 @@ const images = [
   { src: PublicSpeakingNasa.src, alt: "Public Speaking at NASA" },
   { src: PublicSpeakingWildhacks.src, alt: "Public Speaking at Wildhacks" },
   { src: UncommonHacksTeam.src, alt: "Uncommon Hacks team" },
+  { src: StoryBoardScreen.src, alt: "StoryboardAI Board" },
+  { src: FlamesLanding.src, alt: "FlamesAI Landing" },
 ];
 
 export const Intro = () => {
