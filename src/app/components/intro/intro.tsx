@@ -23,8 +23,10 @@ import { Carousel } from "./carousel/carousel";
 
 const images = [
   { src: ProfilePicture.src, alt: "Professional Headshot" },
+  { src: StoryBoardScreen.src, alt: "StoryboardAI Board" },
   { src: GuardpupScreen.src, alt: "Guardpup Screen" },
   { src: HelixCreation.src, alt: "Helix Creation" },
+  { src: FlamesLanding.src, alt: "FlamesAI Landing" },
   { src: MadhacksTeam.src, alt: "Madhacks team" },
   { src: MidasScreen.src, alt: "Midas Screen" },
   { src: WaddlScreenCv.src, alt: "Waddl Screen" },
@@ -37,8 +39,6 @@ const images = [
   { src: PublicSpeakingNasa.src, alt: "Public Speaking at NASA" },
   { src: PublicSpeakingWildhacks.src, alt: "Public Speaking at Wildhacks" },
   { src: UncommonHacksTeam.src, alt: "Uncommon Hacks team" },
-  { src: StoryBoardScreen.src, alt: "StoryboardAI Board" },
-  { src: FlamesLanding.src, alt: "FlamesAI Landing" },
 ];
 
 export const Intro = () => {
