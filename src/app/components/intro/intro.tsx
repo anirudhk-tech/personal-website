@@ -23,11 +23,11 @@ import { Carousel } from "./carousel/carousel";
 
 const images = [
   { src: ProfilePicture.src, alt: "Professional Headshot" },
-  { src: StoryBoardScreen.src, alt: "StoryboardAI Board" },
   { src: GuardpupScreen.src, alt: "Guardpup Screen" },
   { src: HelixCreation.src, alt: "Helix Creation" },
   { src: FlamesLanding.src, alt: "FlamesAI Landing" },
   { src: MadhacksTeam.src, alt: "Madhacks team" },
+  { src: StoryBoardScreen.src, alt: "StoryboardAI Board" },
   { src: MidasScreen.src, alt: "Midas Screen" },
   { src: WaddlScreenCv.src, alt: "Waddl Screen" },
   { src: EcoStepsVendor.src, alt: "EcoSteps Vendor" },
