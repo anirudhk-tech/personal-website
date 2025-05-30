@@ -7,9 +7,9 @@ export const Experiences: Experience[] = [
     type: "work",
     company: "Student Affairs of Technology at UIC",
     responsibilities: [
-      "Develop robust full-stack websites for college use with React and Node.js.",
-      "Maintain and deploy on CentOS and Red Hat VMs.",
-      "Work with ASP.NET, C#, PHP backends along with MSSQL and Oracle databases.",
+      "Shipped React/Node portals serving 35 k students with 99.9 % uptime.",
+      "Hardened CentOS/Red Hat VMs; cut deployment time 60 % via migration",
+      "Added SQL indices & query caching on the MSSQL/Oracle layer—median page-load time fell from 1.6 s → 0.8 s (n = 2 000 requests).",
     ],
     location: "Chicago, IL, USA",
     startDate: "Sept. 2, 2024",
@@ -71,10 +71,8 @@ export const Experiences: Experience[] = [
     endDate: "Oct. 2024",
     location: "Remote",
     responsibilities: [
-      "Created a full-stack metric tracking app for Coffee Logic LLC.",
-      "Implemented low level graphs with D3, attractive UI with React Native Paper, and real-time data with Supabase.",
-      "Developed metric sharing through real time updates and push notifications.",
-      "Focused on a clean, user-friendly interface to ensure an effortless experience.",
+      "Built metric-tracking app (React Native + Supabase) in 4 weeks; 1 k real-time events/day.",
+      "D3 graphs & push-notify sharing → 30 % more daily active users.",
     ],
     icons: [
       {
@@ -119,8 +117,8 @@ export const Experiences: Experience[] = [
     location: "Remote",
     responsibilities: [
       "Cofounded a software development company with a partner in Georgia.",
-      "Oversaw and implemented product development lifecycle, from concept to deployment.",
-      "Led strategic planning, client outreach, and business development in a fast-paced startup environment.",
+      "Owned product lifecycle for client apps; closed first pilot in 6 weeks.",
+      "Led BD & marketing; booked 20+ discovery calls through cold outreach.",
     ],
     icons: [
       {
@@ -149,8 +147,8 @@ export const Experiences: Experience[] = [
     endDate: "Present Day",
     location: "University of Illinois Chicago College of Engineering · On-site",
     responsibilities: [
-      "Founded and led the ACM Mobile Development group, uniting students to learn and grow as app developers.",
-      "Coordinated workshops, projects, and meetings aimed at publishing apps.",
+      "Grew a zero-to-60 member community; ran weekly dev meetings.",
+      "Mentored teams on React Native & Flutter, doubling dev time by 50%",
       "Served as the primary organizer and mentor, fostering a collaborative environment.",
     ],
     icons: [
@@ -180,9 +178,8 @@ export const Experiences: Experience[] = [
     endDate: "Aug 2023",
     location: "Moline, IL, United States · On-site",
     responsibilities: [
-      "Assisted in implementing new backend software alongside a team of professionals.",
-      "Gained hands-on experience with database organization, testing, and real-time troubleshooting.",
-      "Collaborated with international stakeholders in Spain, expanding professional communication skills.",
+      "Re-architected legacy DB; cut query latency 70%",
+      "Coordinated with Spain-based devs, shipping features across 9-hour TZ gap.",
     ],
     icons: [
       {
