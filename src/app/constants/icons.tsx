@@ -79,8 +79,14 @@ import {
   SiGithubactions,
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 export const Icons: Record<string, Icon | Link> = {
+  twitter: {
+    name: "Twitter",
+    icon: <FaSquareXTwitter color="black" size={24} />,
+    link: "https://x.com/",
+  },
   svelte: {
     name: "Svelte",
     icon: <SiSvelte color="black" size={24} />,

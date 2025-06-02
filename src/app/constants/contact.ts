@@ -17,4 +17,9 @@ export const contact: Contact[] = [
     icon: Icons.github.icon,
     link: "https://github.com/anirudhk-tech",
   },
+  {
+    content: "X (Twitter)",
+    icon: Icons.twitter.icon,
+    link: "https://x.com/venkata_ani",
+  },
 ];
