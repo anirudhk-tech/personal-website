@@ -160,37 +160,4 @@ export const courses: Course[] = [
       "Seminar focused on developing academic and career success skills in CS.",
     type: "major",
   },
-  {
-    short: "MATH210",
-    long: "Calculus III",
-    description: "Multivariable calculus and advanced integration techniques.",
-    type: "major",
-  },
-  {
-    short: "CS251",
-    long: "Data Structures",
-    description: "Study of data organization methods and algorithm efficiency.",
-    type: "major",
-  },
-  {
-    short: "THTR102",
-    long: "Introduction to Theatre",
-    description:
-      "Exploration of theatrical arts, history, and performance techniques.",
-    type: "gened",
-  },
-  {
-    short: "IE342",
-    long: "Probability & Stat for Engr",
-    description:
-      "Probability and statistics with applications tailored for engineering.",
-    type: "major",
-  },
-  {
-    short: "CS211",
-    long: "Programming Practicum",
-    description:
-      "Hands-on projects applying programming skills in real-world scenarios.",
-    type: "major",
-  },
 ];
