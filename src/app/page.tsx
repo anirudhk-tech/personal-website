@@ -13,6 +13,7 @@ import { Personal } from "./components/personal/personal";
 import { Contact } from "./components/contact/contact";
 import { Fab } from "@mui/material";
 import { IoChevronUpCircle } from "react-icons/io5";
+import { Featured } from "./components/featured/featured";
 
 export default function Home() {
   const FAB_THRESHOLD = 20;
@@ -122,6 +123,7 @@ export default function Home() {
             handleScrollToPersonal={handleScrollToPersonal}
           />
         </div>
+        <Featured />
         <Intro />
         <div ref={experienceRef}>
           <Experience />

@@ -18,7 +18,7 @@ import WaddlLanding from "@/../public/carousel/waddl_landing.png";
 import WaddlStats from "@/../public/carousel/waddl_stats.png";
 import StoryBoardScreen from "@/../public/carousel/storyboardai_screen.png";
 import FlamesLanding from "@/../public/carousel/flamesai_landing.png";
-import ScrapHuntBrowsing from "@/../public/carousel/scraphunt_browsing.png";
+import ScrapHuntBrowsing from "@/../public/carousel/scraphunt_browse.png";
 import { Carousel } from "./carousel/carousel";
 
 const images = [
