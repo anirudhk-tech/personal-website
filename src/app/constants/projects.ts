@@ -3,6 +3,72 @@ import { Icons } from "./icons";
 
 export const projects: Project[] = [
   {
+    title: "ScrapHunt",
+    type: "pc",
+    screen: "project_screens/scraphunt.png",
+    description:
+      "Weekend-build marketplace for failed-startup assets. ScrapHunt lets founders list code, research & experiment data while builders buy and reboot. Next.js + Shadcn UI front-end, Supabase/PostgreSQL back-end, all auto-deployed on Vercel.",
+    startDate: "Jun 07 2025",
+    endDate: "Jun 09 2025",
+    points: [
+      // Execution
+      "Zero-to-MVP in 2 h: Next.js scaffold + Supabase schema, auth-less browse, Typeform funnel; GitHub → Vercel CI/CD ships in <60 s; custom domain live in 15 min.",
+      // Performance / cost
+      "Lean but quick: static ISR pages keep 90th-percentile TTFB 180 ms; LCP 1.1 s on 3G",
+      // Early traction
+      "Founder pull: 24 scrap submissions & 2 testimonials pre-launch, 27 % waitlist→signup conversion",
+    ],
+    icons: [
+      {
+        name: Icons.nextjs.name,
+        icon: Icons.nextjs.icon,
+        link: Icons.nextjs.link,
+      },
+      {
+        name: Icons.typescript.name,
+        icon: Icons.typescript.icon,
+        link: Icons.typescript.link,
+      },
+      {
+        name: Icons.react.name,
+        icon: Icons.react.icon,
+        link: Icons.react.link,
+      },
+      {
+        name: Icons.tailwind.name,
+        icon: Icons.tailwind.icon,
+        link: Icons.tailwind.link,
+      },
+      {
+        name: Icons.shadcn.name,
+        icon: Icons.shadcn.icon,
+        link: Icons.shadcn.link,
+      },
+      {
+        name: Icons.supabase.name,
+        icon: Icons.supabase.icon,
+        link: Icons.supabase.link,
+      },
+      {
+        name: Icons.postgresql.name,
+        icon: Icons.postgresql.icon,
+        link: Icons.postgresql.link,
+      },
+      {
+        name: Icons.marketing.name,
+        icon: Icons.marketing.icon,
+        link: Icons.marketing.link,
+      },
+    ],
+    externalLinks: [
+      {
+        name: Icons.website.name,
+        icon: Icons.website.icon,
+        link: "https://scraphunting.com/",
+      },
+    ],
+  },
+  {
     title: "Storyboard.AI",
     type: "pc",
     screen: "project_screens/storyboard_ai.png",
