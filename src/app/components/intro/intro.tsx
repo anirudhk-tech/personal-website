@@ -18,7 +18,7 @@ import WaddlLanding from "@/../public/carousel/waddl_landing.png";
 import WaddlStats from "@/../public/carousel/waddl_stats.png";
 import StoryBoardScreen from "@/../public/carousel/storyboardai_screen.png";
 import FlamesLanding from "@/../public/carousel/flamesai_landing.png";
-
+import ScrapHuntBrowsing from "@/../public/carousel/scraphunt_browsing.png";
 import { Carousel } from "./carousel/carousel";
 
 const images = [
@@ -26,6 +26,7 @@ const images = [
   { src: GuardpupScreen.src, alt: "Guardpup Screen" },
   { src: HelixCreation.src, alt: "Helix Creation" },
   { src: FlamesLanding.src, alt: "FlamesAI Landing" },
+  { src: ScrapHuntBrowsing.src, alt: "ScrapHunt Browsing" },
   { src: MadhacksTeam.src, alt: "Madhacks team" },
   { src: StoryBoardScreen.src, alt: "StoryboardAI Board" },
   { src: MidasScreen.src, alt: "Midas Screen" },
