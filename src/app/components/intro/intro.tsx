@@ -52,7 +52,7 @@ export const Intro = () => {
         <TextContainer>
           <FadeInOnScroll>
             <Typography variant="body1">
-              {`I'm a fullstack founder who reads deeply, writes often, and builds publicly. From code to copy, I ship fast and learn faster.`}
+              {`I'm a fullstack engineer who reads deeply, writes often, and builds publicly. From code to copy, I ship fast and learn faster.`}
             </Typography>
           </FadeInOnScroll>
           <FadeInOnScroll>
@@ -62,7 +62,7 @@ export const Intro = () => {
           </FadeInOnScroll>
           <FadeInOnScroll>
             <Typography variant="body1">
-              {`Every insight I gain from books or builds turns into something real—posts, products, or pivots.`}
+              {`Every insight I gain from books or builds turns into something real: posts, products, or pivots.`}
             </Typography>
           </FadeInOnScroll>
         </TextContainer>
