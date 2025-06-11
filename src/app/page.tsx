@@ -18,6 +18,8 @@ import { Featured } from "./components/featured/featured";
 export default function Home() {
   const FAB_THRESHOLD = 20;
   const [scrollToTopVisible, setScrollToTopVisible] = useState(false);
+  const synopsisRef = useRef<HTMLDivElement>(null);
+  const featuredRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const experienceRef = useRef<HTMLDivElement>(null);
   const projectRef = useRef<HTMLDivElement>(null);
@@ -30,6 +32,18 @@ export default function Home() {
   const handleScrollToTop = () => {
     if (containerRef.current) {
       containerRef.current.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  const handleScrollToSynopsis = () => {
+    if (synopsisRef.current) {
+      synopsisRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleScrollToFeatured = () => {
+    if (featuredRef.current) {
+      featuredRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -121,10 +135,16 @@ export default function Home() {
             handleScrollToSkills={handleScrollToSkills}
             handleScrollToCourses={handleScrollToCourses}
             handleScrollToPersonal={handleScrollToPersonal}
+            handleScrollToSynopsis={handleScrollToSynopsis}
+            handleScrollToFeatured={handleScrollToFeatured}
           />
         </div>
-        <Featured />
-        <Intro />
+        <div ref={featuredRef}>
+          <Featured />
+        </div>
+        <div ref={synopsisRef}>
+          <Intro />
+        </div>
         <div ref={experienceRef}>
           <Experience />
         </div>

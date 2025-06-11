@@ -14,6 +14,8 @@ export const Landing = ({
   handleScrollToCourses,
   handleScrollToPersonal,
   handleScrollToContact,
+  handleScrollToFeatured,
+  handleScrollToSynopsis,
 }: {
   handleScrollToExperience: () => void;
   handleScrollToProjects: () => void;
@@ -21,6 +23,8 @@ export const Landing = ({
   handleScrollToCourses: () => void;
   handleScrollToPersonal: () => void;
   handleScrollToContact: () => void;
+  handleScrollToFeatured: () => void;
+  handleScrollToSynopsis: () => void;
 }) => {
   const LINKEDIN_RESUME =
     "https://www.linkedin.com/in/akuppili/details/featured/1748056382789/single-media-viewer/?profileId=ACoAAEjoBksB2AUh9__CRRQxCAzswBb5L1hvrAE";
@@ -44,6 +48,14 @@ export const Landing = ({
             <a target="_blank" rel="noopener noreferrer" href={LINKEDIN_RESUME}>
               <MenuItemContainer label="Resume" />
             </a>
+            <MenuItemContainer
+              label="Featured"
+              onClick={handleScrollToFeatured}
+            />
+            <MenuItemContainer
+              label="Synopsis"
+              onClick={handleScrollToSynopsis}
+            />
             <MenuItemContainer
               label="Experience"
               onClick={handleScrollToExperience}
