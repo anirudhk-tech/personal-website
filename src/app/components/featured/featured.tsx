@@ -41,7 +41,7 @@ const featured: FeaturedItem[] = [
   },
   {
     src: Cards.src,
-    caption: "Cards: Chapter 1 – Draft from a post-WW3 mutation world.",
+    caption: "Cards: Chapter 1 - Draft from a post-WW3 mutation world.",
     href: "https://docs.google.com/document/d/1hWAmz4iyu4an5E-6L19MkDMV5wk10nXMaUbCoaf_Mjk/edit?usp=sharing",
   },
 ];
