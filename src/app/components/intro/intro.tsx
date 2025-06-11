@@ -52,17 +52,17 @@ export const Intro = () => {
         <TextContainer>
           <FadeInOnScroll>
             <Typography variant="body1">
-              {`I'm a fullstack developer working with tech startups while engaging in a fullstack job. I like to build fast and fail faster to ultimately grow and succeed.`}
+              {`I'm a fullstack founder who reads deeply, writes often, and builds publicly. From code to copy, I ship fast and learn faster.`}
             </Typography>
           </FadeInOnScroll>
           <FadeInOnScroll>
             <Typography variant="body1">
-              {`I specialize in fullstack end to end development, deployment, and scaling. From initial drafts to product launch and expansion.`}
+              {`I blend engineering and marking: building products, studying startup strategy, and scaling what sticks.`}
             </Typography>
           </FadeInOnScroll>
           <FadeInOnScroll>
             <Typography variant="body1">
-              {`I'm invested in building impactful applications that will change some lives.`}
+              {`Every insight I gain from books or builds turns into something real—posts, products, or pivots.`}
             </Typography>
           </FadeInOnScroll>
         </TextContainer>
