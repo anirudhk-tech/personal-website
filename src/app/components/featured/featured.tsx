@@ -10,6 +10,7 @@ import ScrapHunt from "@/../public/project_screens/scraphunt.png";
 import Shiplo from "@/../public/project_screens/shiplo.png";
 import X from "@/../public/featured/x.png";
 import Medium from "@/../public/featured/medium.png";
+import Cards from "@/../public/featured/cards.png";
 
 type FeaturedItem = {
   src: string;
@@ -37,6 +38,12 @@ const featured: FeaturedItem[] = [
     src: Medium.src,
     caption: "Articles - Building in Words",
     href: "https://medium.com/@anirudhkuppili",
+  },
+  {
+    src: Cards.src,
+    caption:
+      "Cards: Chapter 1 - First draft of a post-WW3 world where people gain mutation powers.",
+    href: "https://docs.google.com/document/d/1hWAmz4iyu4an5E-6L19MkDMV5wk10nXMaUbCoaf_Mjk/edit?usp=sharing",
   },
 ];
 
