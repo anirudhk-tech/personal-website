@@ -8,6 +8,8 @@ import { Container, GridContainer, Square, Caption } from "./featured.styles";
 
 import ScrapHunt from "@/../public/project_screens/scraphunt.png";
 import Shiplo from "@/../public/project_screens/shiplo.png";
+import X from "@/../public/featured/x.png";
+import Medium from "@/../public/featured/medium.png";
 
 type FeaturedItem = {
   src: string;
@@ -26,12 +28,22 @@ const featured: FeaturedItem[] = [
     caption: "ScrapHunt - Get Paid for Scrapped Projects",
     href: "https://scraphunting.com/",
   },
+  {
+    src: X.src,
+    caption: "X (Twitter) - Live Insights on What I Read, Write, and Ship.",
+    href: "https://x.com/venkata_ani",
+  },
+  {
+    src: Medium.src,
+    caption: "Articles - Building in Words",
+    href: "https://medium.com/@anirudhkuppili",
+  },
 ];
 
 export const Featured = () => (
   <Container>
     <FadeInOnScroll>
-      <Typography variant="h2">Featured Work</Typography>
+      <Typography variant="h2">Featured</Typography>
     </FadeInOnScroll>
 
     <GridContainer>
