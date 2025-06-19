@@ -21,8 +21,8 @@ type FeaturedItem = {
 const featured: FeaturedItem[] = [
   {
     src: Shiplo.src,
-    caption: "Shiplo - An autonomous IT agent for your pc and business",
-    href: "https://shiplo.vercel.app/",
+    caption: "Shiplo - A platform of autonomous agents",
+    href: "https://tryshiplo.com/",
   },
   {
     src: ScrapHunt.src,
