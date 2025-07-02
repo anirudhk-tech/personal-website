@@ -12,7 +12,7 @@ export const Experiences: Experience[] = [
     responsibilities: [
       "Launched Shiplo and attracted 23 qualified beta waitlisters in the first 72 h. 100 % organic outreach, $0 ad spend.",
       "Led 30+ GTM experiments across IG, X, and cold email; held CAC below $2 and converted 22 % of prospects to beta access.",
-      "Shipped a cross-platform AI agent MVP in 4 weeks",
+      "Co-Shipped a MVP for a platform of AI operators (works on Windows and Mac) in 4 weeks",
     ],
     icons: [
       {
