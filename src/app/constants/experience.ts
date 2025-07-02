@@ -3,6 +3,112 @@ import { Icons } from "./icons";
 
 export const Experiences: Experience[] = [
   {
+    title: "Cofounder, Head of Growth & Ops",
+    type: "self-employed",
+    company: "Shiplo",
+    startDate: "Apr. 2025",
+    endDate: "Present Day",
+    location: "Remote",
+    responsibilities: [
+      "Launched Shiplo and attracted 23 qualified beta waitlisters in the first 72 h. 100 % organic outreach, $0 ad spend.",
+      "Led 30+ GTM experiments across IG, X, and cold email; held CAC below $2 and converted 22 % of prospects to beta access.",
+      "Shipped a cross-platform AI agent MVP in 4 weeks",
+    ],
+    icons: [
+      {
+        name: Icons.startup.name,
+        icon: Icons.startup.icon,
+        link: Icons.startup.link,
+      },
+      {
+        name: Icons.openai.name,
+        icon: Icons.openai.icon,
+        link: Icons.openai.link,
+      },
+      {
+        name: Icons.anthropic.name,
+        icon: Icons.anthropic.icon,
+        link: Icons.anthropic.link,
+      },
+      {
+        name: Icons.gemini.name,
+        icon: Icons.gemini.icon,
+        link: Icons.gemini.link,
+      },
+      {
+        name: Icons.python.name,
+        icon: Icons.python.icon,
+        link: Icons.python.link,
+      },
+      {
+        name: Icons.fastapi.name,
+        icon: Icons.fastapi.icon,
+        link: Icons.fastapi.link,
+      },
+      {
+        name: Icons.browserless.name,
+        icon: Icons.browserless.icon,
+        link: Icons.browserless.link,
+      },
+      {
+        name: Icons.browser_use.name,
+        icon: Icons.browser_use.icon,
+        link: Icons.browser_use.link,
+      },
+      {
+        name: Icons.docker.name,
+        icon: Icons.docker.icon,
+        link: Icons.docker.link,
+      },
+      {
+        name: Icons.react.name,
+        icon: Icons.react.icon,
+        link: Icons.react.link,
+      },
+      {
+        name: Icons.tailwind.name,
+        icon: Icons.tailwind.icon,
+        link: Icons.tailwind.link,
+      },
+      {
+        name: Icons.electron.name,
+        icon: Icons.electron.icon,
+        link: Icons.electron.link,
+      },
+      {
+        name: Icons.reactnative.name,
+        icon: Icons.reactnative.icon,
+        link: Icons.reactnative.link,
+      },
+      {
+        name: Icons.supabase.name,
+        icon: Icons.supabase.icon,
+        link: Icons.supabase.link,
+      },
+      {
+        name: Icons.growth.name,
+        icon: Icons.growth.icon,
+        link: Icons.growth.link,
+      },
+      {
+        name: Icons.ops.name,
+        icon: Icons.ops.icon,
+        link: Icons.ops.link,
+      },
+      {
+        name: Icons.sales.name,
+        icon: Icons.sales.icon,
+        link: Icons.sales.link,
+      },
+      {
+        name: Icons.gtm.name,
+        icon: Icons.gtm.icon,
+        link: Icons.gtm.link,
+      },
+    ],
+    externalLinks: null,
+  },
+  {
     title: "Fullstack Developer",
     type: "work",
     company: "Student Affairs of Technology at UIC",

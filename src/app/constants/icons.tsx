@@ -80,8 +80,47 @@ import {
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { SiClaude } from "react-icons/si";
+import { BsBrowserChrome } from "react-icons/bs";
+import { FaChartLine, FaHandshake } from "react-icons/fa";
+import { MdBuild, MdTrendingUp } from "react-icons/md";
 
 export const Icons: Record<string, Icon | Link> = {
+  growth: {
+    name: "Growth",
+    icon: <FaChartLine color="black" size={24} />,
+    link: null,
+  },
+  ops: {
+    name: "Operations",
+    icon: <MdBuild color="black" size={24} />,
+    link: null,
+  },
+  sales: {
+    name: "Sales",
+    icon: <FaHandshake color="black" size={24} />,
+    link: null,
+  },
+  gtm: {
+    name: "GTM",
+    icon: <MdTrendingUp color="black" size={24} />,
+    link: null,
+  },
+  browserless: {
+    name: "Browserless",
+    icon: <BsBrowserChrome color="black" size={24} />,
+    link: "https://www.browserless.io/",
+  },
+  browser_use: {
+    name: "Browser-Use",
+    icon: <BsBrowserChrome color="black" size={24} />,
+    link: "https://github.com/browserless/browser_use",
+  },
+  anthropic: {
+    name: "Claude",
+    icon: <SiClaude color="black" size={24} />,
+    link: "https://www.anthropic.com/",
+  },
   twitter: {
     name: "Twitter",
     icon: <FaSquareXTwitter color="black" size={24} />,

@@ -78,10 +78,56 @@ import { SiVercel } from "react-icons/si";
 import { FaRedhat } from "react-icons/fa";
 import { FaCentos } from "react-icons/fa";
 import { SiGooglecloud } from "react-icons/si";
+import { SiClaude } from "react-icons/si";
+import { BsBrowserChrome } from "react-icons/bs";
+import { FaChartLine, FaHandshake } from "react-icons/fa";
+import { MdBuild, MdTrendingUp } from "react-icons/md";
 
 // Sections: Library, Language, Framework, UI, Database, Auth, Soft Skill, DevOps
 
 export const skills = [
+  {
+    icon: <FaChartLine color="black" size={24} />,
+    type: "Soft Skill",
+    name: "Growth",
+    link: null,
+  },
+  {
+    icon: <MdBuild color="black" size={24} />,
+    type: "Soft Skill",
+    name: "Operations",
+    link: null,
+  },
+  {
+    icon: <FaHandshake color="black" size={24} />,
+    type: "Soft Skill",
+    name: "Sales",
+    link: null,
+  },
+  {
+    icon: <MdTrendingUp color="black" size={24} />,
+    type: "Soft Skill",
+    name: "GTM",
+    link: null,
+  },
+  {
+    icon: <BsBrowserChrome color="black" size={24} />,
+    type: "Library",
+    name: "Browserless",
+    link: "https://www.browserless.io/",
+  },
+  {
+    icon: <BsBrowserChrome color="black" size={24} />,
+    type: "Library",
+    name: "Browser-Use",
+    link: "https://github.com/browserless/browser_use",
+  },
+  {
+    icon: <SiClaude color="black" size={24} />,
+    type: "Library",
+    name: "Claude",
+    link: "https://www.anthropic.com/",
+  },
   {
     icon: <SiSvelte color="black" size={24} />,
     type: "Framework",
