@@ -19,12 +19,12 @@ type FeaturedItem = {
 const featured: FeaturedItem[] = [
   {
     src: Shiplo.src,
-    caption: "Shiplo",
+    caption: "Shiplo - Autonomous operators",
     href: "https://tryshiplo.com/",
   },
   {
     src: X.src,
-    caption: "X (Twitter) - Live Insights on What I Read, Write, and Ship.",
+    caption: "X (Twitter) - Live Insights.",
     href: "https://x.com/venkata_ani",
   },
   {
