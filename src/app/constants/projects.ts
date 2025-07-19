@@ -11,9 +11,9 @@ export const projects: Project[] = [
     startDate: "Jul 15 2025",
     endDate: "Present",
     points: [
-      "Pure‑Rust stack ▸ `clap` UX, `sqlx` + SQLite store, `chrono` time maths — zero external runtimes.",
-      "Light ML onboard ▸ Naive‑Bayes via `linfa` learns from notes and tags with ~85 % precision after 50 samples.",
-      "Instant insight ▸ in‑terminal bar‑graphs (unicode blocks) show daily / weekly breakdown by category.",
+      "Pure‑Rust stack: clap UX,  SQLite store, chrono time maths. Zero external runtimes.",
+      "Light ML onboard: Naive‑Bayes via `linfa` learns from notes and tags with ~85 % precision after 50 samples.",
+      "Instant insight: in-terminal bar‑graphs (unicode blocks) show daily / weekly breakdown by category.",
     ],
     icons: [
       { name: Icons.rust.name, icon: Icons.rust.icon, link: Icons.rust.link },
