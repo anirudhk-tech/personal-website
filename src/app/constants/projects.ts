@@ -3,6 +3,45 @@ import { Icons } from "./icons";
 
 export const projects: Project[] = [
   {
+    title: "Tempus",
+    type: "pc",
+    screen: "project_screens/tempus.png",
+    description:
+      "Terminal‑native productivity tracker written 100 % in Rust. Tempus lets you start / end timers from the shell and runs an embedded lightweight ML model to auto‑categorise each entry, so you instantly see where your day really goes.",
+    startDate: "Jul 15 2025",
+    endDate: "Present",
+    points: [
+      "Pure‑Rust stack ▸ `clap` UX, `sqlx` + SQLite store, `chrono` time maths — zero external runtimes.",
+      "Light ML onboard ▸ Naive‑Bayes via `linfa` learns from notes and tags with ~85 % precision after 50 samples.",
+      "Instant insight ▸ in‑terminal bar‑graphs (unicode blocks) show daily / weekly breakdown by category.",
+    ],
+    icons: [
+      { name: Icons.rust.name, icon: Icons.rust.icon, link: Icons.rust.link },
+      {
+        name: Icons.sqlite.name,
+        icon: Icons.sqlite.icon,
+        link: Icons.sqlite.link,
+      },
+      {
+        name: Icons.terminal.name,
+        icon: Icons.terminal.icon,
+        link: Icons.terminal.link,
+      },
+      {
+        name: Icons.linfa.name,
+        icon: Icons.linfa.icon,
+        link: Icons.linfa.link,
+      },
+    ],
+    externalLinks: [
+      {
+        name: Icons.github.name,
+        icon: Icons.github.icon,
+        link: "https://github.com/anirudhk-tech/tempus",
+      },
+    ],
+  },
+  {
     title: "ScrapHunt",
     type: "pc",
     screen: "project_screens/scraphunt.png",
@@ -11,11 +50,8 @@ export const projects: Project[] = [
     startDate: "Jun 07 2025",
     endDate: "Jun 09 2025",
     points: [
-      // Execution
       "Zero-to-MVP in 2 h: Next.js scaffold + Supabase schema, auth-less browse, Typeform funnel; GitHub → Vercel CI/CD ships in <60 s; custom domain live in 15 min.",
-      // Performance / cost
       "Lean but quick: static ISR pages keep 90th-percentile TTFB 180 ms; LCP 1.1 s on 3G",
-      // Early traction
       "Founder pull: 24 scrap submissions & 2 testimonials pre-launch, 27 % waitlist→signup conversion",
     ],
     icons: [

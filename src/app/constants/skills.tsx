@@ -45,6 +45,7 @@ import {
   SiTerraform,
   SiNginx,
   SiTraefikproxy,
+  SiRust,
 } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { TbBrandFramerMotion, TbBrandReactNative } from "react-icons/tb";
@@ -82,10 +83,23 @@ import { SiClaude } from "react-icons/si";
 import { BsBrowserChrome } from "react-icons/bs";
 import { FaChartLine, FaHandshake } from "react-icons/fa";
 import { MdBuild, MdTrendingUp } from "react-icons/md";
+import { GiArtificialIntelligence } from "react-icons/gi";
 
 // Sections: Library, Language, Framework, UI, Database, Auth, Soft Skill, DevOps
 
 export const skills = [
+  {
+    name: "Linfa",
+    icon: <GiArtificialIntelligence color="black" size={24} />,
+    link: "https://github.com/rust-ml/linfa",
+    type: "Library",
+  },
+  {
+    icon: <SiRust color="black" size={24} />,
+    type: "Language",
+    name: "Rust",
+    link: "https://www.rust-lang.org/",
+  },
   {
     icon: <FaChartLine color="black" size={24} />,
     type: "Soft Skill",

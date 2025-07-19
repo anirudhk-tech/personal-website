@@ -1,4 +1,4 @@
-import { FaCentos, FaPython, FaRedhat } from "react-icons/fa";
+import { FaCentos, FaPython, FaRedhat, FaTerminal } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import {
   SiDocker,
@@ -6,6 +6,7 @@ import {
   SiFigma,
   SiMediapipe,
   SiRedux,
+  SiRust,
   SiSpacy,
   SiTypescript,
 } from "react-icons/si";
@@ -86,6 +87,21 @@ import { FaChartLine, FaHandshake } from "react-icons/fa";
 import { MdBuild, MdTrendingUp } from "react-icons/md";
 
 export const Icons: Record<string, Icon | Link> = {
+  rust: {
+    name: "Rust",
+    icon: <SiRust color="black" size={24} />,
+    link: "https://www.rust-lang.org/",
+  },
+  terminal: {
+    name: "Terminal",
+    icon: <FaTerminal color="black" size={24} />,
+    link: null,
+  },
+  linfa: {
+    name: "Linfa",
+    icon: <GiArtificialIntelligence color="black" size={24} />,
+    link: "https://github.com/rust-ml/linfa",
+  },
   growth: {
     name: "Growth",
     icon: <FaChartLine color="black" size={24} />,
