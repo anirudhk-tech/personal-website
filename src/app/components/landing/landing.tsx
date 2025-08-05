@@ -27,11 +27,8 @@ export const Landing = ({
   handleScrollToSynopsis: () => void;
 }) => {
   const openDocx = () => {
-    const src = encodeURIComponent(
-      "https://anirudhkuppili.com/docs/resume.docx"
-    );
-    const viewerUrl = `https://view.officeapps.live.com/op/view.aspx?src=${src}`;
-    window.open(viewerUrl, "_blank", "noopener,noreferrer");
+    const docUrl = `https://anirudhkuppili.com/docs/resume.docx`;
+    window.open(docUrl, "_blank", "noopener,noreferrer");
   };
 
   return (
