@@ -3,16 +3,18 @@ import { Icons } from "./icons";
 
 export const Experiences: Experience[] = [
   {
-    title: "Cofounder, Head of Growth & Ops",
+    title: "Co-Founder, Product & Growth Lead",
     type: "self-employed",
     company: "Shiplo",
-    startDate: "Apr. 2025",
+    startDate: "Apr 2025",
     endDate: "Present Day",
     location: "Remote",
     responsibilities: [
-      "Launched Shiplo and attracted 23 qualified beta waitlisters in the first 72 h. 100 % organic outreach, $0 ad spend.",
-      "Led 30+ GTM experiments across IG, X, and cold email; held CAC below $2 and converted 22 % of prospects to beta access.",
-      "Co-Shipped a MVP for a platform of AI operators (works on Windows and Mac) in 4 weeks",
+      "Co-built a multi-platform AI-operator platform (web, desktop, server) from zero to MVP in 4 weeks.",
+      "Launched GTM from scratch—secured 72 beta sign-ups in the first 14 days with 100 % organic reach and $0 ad spend.",
+      "Ran 30+ experiments across IG, X, LinkedIn, and cold email; kept CAC below $2 and converted 22 % of prospects.",
+      "Scaled to 2.8 k monthly active users within 6 weeks by seeding a marketplace of 15 pre-built “Shiplo Originals” operators.",
+      "Own product roadmap, budgeting, and ops; accepted into Delta Residency & Founder University Cohort 11.",
     ],
     icons: [
       {
