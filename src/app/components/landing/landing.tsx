@@ -26,8 +26,10 @@ export const Landing = ({
   handleScrollToFeatured: () => void;
   handleScrollToSynopsis: () => void;
 }) => {
-  const LINKEDIN_RESUME =
-    "https://www.linkedin.com/in/akuppili/details/featured/1748056382789/single-media-viewer/?profileId=ACoAAEjoBksB2AUh9__CRRQxCAzswBb5L1hvrAE";
+  const openDocx = () => {
+    const docUrl = `https://anirudhkuppili.com/docs/resume.docx`;
+    window.open(docUrl, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <Container>
@@ -45,9 +47,7 @@ export const Landing = ({
         </FadeIn>
         <FadeIn delay={2.0} duration={1}>
           <MenuContainer>
-            <a target="_blank" rel="noopener noreferrer" href={LINKEDIN_RESUME}>
-              <MenuItemContainer label="Resume" />
-            </a>
+            <MenuItemContainer label="Resume" onClick={openDocx} />
             <MenuItemContainer
               label="Featured"
               onClick={handleScrollToFeatured}
