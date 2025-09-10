@@ -35,27 +35,28 @@ const featured: FeaturedItem[] = [
 ];
 
 export const Featured = () => (
-  <Container>
-    <FadeInOnScroll>
-      <Typography variant="h2">Featured</Typography>
-    </FadeInOnScroll>
+  <></>
+  // <Container>
+  //   <FadeInOnScroll>
+  //     <Typography variant="h2">Featured</Typography>
+  //   </FadeInOnScroll>
 
-    <GridContainer>
-      {featured.map(({ src, caption, href }) => (
-        <FadeInOnScroll key={caption}>
-          <Link href={href} passHref legacyBehavior target="_blank">
-            <Square>
-              <Image
-                src={src}
-                alt={caption}
-                fill
-                style={{ objectFit: "cover" }}
-              />
-              <Caption variant="body1">{caption}</Caption>
-            </Square>
-          </Link>
-        </FadeInOnScroll>
-      ))}
-    </GridContainer>
-  </Container>
+  //   <GridContainer>
+  //     {featured.map(({ src, caption, href }) => (
+  //       <FadeInOnScroll key={caption}>
+  //         <Link href={href} passHref legacyBehavior target="_blank">
+  //           <Square>
+  //             <Image
+  //               src={src}
+  //               alt={caption}
+  //               fill
+  //               style={{ objectFit: "cover" }}
+  //             />
+  //             <Caption variant="body1">{caption}</Caption>
+  //           </Square>
+  //         </Link>
+  //       </FadeInOnScroll>
+  //     ))}
+  //   </GridContainer>
+  // </Container>
 );
