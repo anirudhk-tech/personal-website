@@ -85,7 +85,7 @@ export const projects: Project[] = [
       {
         name: Icons.github.name,
         icon: Icons.github.icon,
-        link: "https://github.com/anirudhk-tech/hermes",
+        link: "https://github.com/benz206/hophacks2025",
       },
       {
         name: Icons.video.name,
