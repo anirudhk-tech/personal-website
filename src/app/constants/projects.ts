@@ -12,12 +12,29 @@ export const projects: Project[] = [
     endDate: "Present",
     points: [
       "Top-10 @ HopHacks (Baltimore) out of 300+ participants with a full end-to-end demo.",
-      "Next.js 15 + Supabase SSR app fronting a Vapi voice agent; webhooks drive call state, summaries, and follow-ups.",
-      "IVR skipper: the agent holds the line, presses through menus, and uses a headless browser to fetch / submit info when needed.",
-      "Post-call TL;DR: Google Gemini formats a friendly recap; optional auto-callback reads it to the user.",
-      "Secure by default: server-only keys, webhook verification, Supabase RLS; demo flows avoid storing PHI.",
+      "Voice layer: Vapi agent + Deepgram ASR + ElevenLabs TTS for natural IVR navigation.",
+      "Frontend: Next.js 15 + React + TypeScript + Tailwind + Shadcn; responsive iOS-style dashboard.",
+      "Backend: Supabase (SSR, RLS, webhooks) powering auth, storage, and call state sync.",
+      "Browser automation: Browserless + Browser-Use agent presses menus and fetches/submits info.",
+      "Post-call TL;DR: Gemini summarizes the call, with optional auto-callback readout.",
+      "Security: server-only keys, verified webhooks, and RLS; demo flows avoid storing PHI.",
     ],
     icons: [
+      {
+        name: Icons.vapi.name,
+        icon: Icons.vapi.icon,
+        link: Icons.vapi.link,
+      },
+      {
+        name: Icons.deepgram.name,
+        icon: Icons.deepgram.icon,
+        link: Icons.deepgram.link,
+      },
+      {
+        name: Icons.elevenlabs.name,
+        icon: Icons.elevenlabs.icon,
+        link: Icons.elevenlabs.link,
+      },
       {
         name: Icons.nextjs.name,
         icon: Icons.nextjs.icon,

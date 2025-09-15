@@ -13,6 +13,7 @@ import {
   RiNextjsFill,
   RiSupabaseFill,
   RiTailwindCssFill,
+  RiVoiceAiFill,
 } from "react-icons/ri";
 import {
   SiSpacy,
@@ -46,6 +47,8 @@ import {
   SiNginx,
   SiTraefikproxy,
   SiRust,
+  SiDeepgram,
+  SiElevenlabs,
 } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { TbBrandFramerMotion, TbBrandReactNative } from "react-icons/tb";
@@ -88,6 +91,24 @@ import { GiArtificialIntelligence } from "react-icons/gi";
 // Sections: Library, Language, Framework, UI, Database, Auth, Soft Skill, DevOps
 
 export const skills = [
+  {
+    name: "ElevenLabs",
+    icon: <SiElevenlabs color="black" size={24} />,
+    link: "https://elevenlabs.io/",
+    type: "Library",
+  },
+  {
+    name: "Deepgram",
+    icon: <SiDeepgram color="black" size={24} />,
+    link: "https://deepgram.com/",
+    type: "Library",
+  },
+  {
+    name: "Vapi",
+    icon: <RiVoiceAiFill color="black" size={24} />,
+    link: "https://vapi.ai/",
+    type: "Library",
+  },
   {
     name: "Linfa",
     icon: <GiArtificialIntelligence color="black" size={24} />,

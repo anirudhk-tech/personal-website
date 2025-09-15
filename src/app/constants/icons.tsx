@@ -85,8 +85,26 @@ import { SiClaude } from "react-icons/si";
 import { BsBrowserChrome } from "react-icons/bs";
 import { FaChartLine, FaHandshake } from "react-icons/fa";
 import { MdBuild, MdTrendingUp } from "react-icons/md";
+import { SiDeepgram } from "react-icons/si";
+import { SiElevenlabs } from "react-icons/si";
+import { RiVoiceAiFill } from "react-icons/ri";
 
 export const Icons: Record<string, Icon | Link> = {
+  vapi: {
+    name: "Vapi",
+    icon: <RiVoiceAiFill color="black" size={24} />,
+    link: "https://vapi.ai/",
+  },
+  elevenlabs: {
+    name: "ElevenLabs",
+    icon: <SiElevenlabs color="black" size={24} />,
+    link: "https://elevenlabs.io/",
+  },
+  deepgram: {
+    name: "Deepgram",
+    icon: <SiDeepgram color="black" size={24} />,
+    link: "https://deepgram.com/",
+  },
   rust: {
     name: "Rust",
     icon: <SiRust color="black" size={24} />,
