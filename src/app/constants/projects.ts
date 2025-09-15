@@ -5,7 +5,7 @@ export const projects: Project[] = [
   {
     title: "Hermes",
     type: "iphone",
-    screen: "project_screens/hermes.png",
+    screen: "project_screens/hermes.jpg",
     description:
       "Hackathon-born smart phone-call assistant. Hermes sits on hold, navigates IVRs, and completes tasks while a controlled browser handles web flows — then delivers a clean Gemini summary back to you.",
     startDate: "Sep. 2025",
