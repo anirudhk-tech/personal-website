@@ -3,6 +3,81 @@ import { Icons } from "./icons";
 
 export const projects: Project[] = [
   {
+    title: "Hermes",
+    type: "iphone",
+    screen: "project_screens/hermes.png",
+    description:
+      "Hackathon-born smart phone-call assistant. Hermes sits on hold, navigates IVRs, and completes tasks while a controlled browser handles web flows — then delivers a clean Gemini summary back to you.",
+    startDate: "Sep. 2025",
+    endDate: "Present",
+    points: [
+      "Top-10 @ HopHacks (Baltimore) out of 300+ participants with a full end-to-end demo.",
+      "Next.js 15 + Supabase SSR app fronting a Vapi voice agent; webhooks drive call state, summaries, and follow-ups.",
+      "IVR skipper: the agent holds the line, presses through menus, and uses a headless browser to fetch / submit info when needed.",
+      "Post-call TL;DR: Google Gemini formats a friendly recap; optional auto-callback reads it to the user.",
+      "Secure by default: server-only keys, webhook verification, Supabase RLS; demo flows avoid storing PHI.",
+    ],
+    icons: [
+      {
+        name: Icons.nextjs.name,
+        icon: Icons.nextjs.icon,
+        link: Icons.nextjs.link,
+      },
+      {
+        name: Icons.typescript.name,
+        icon: Icons.typescript.icon,
+        link: Icons.typescript.link,
+      },
+      {
+        name: Icons.react.name,
+        icon: Icons.react.icon,
+        link: Icons.react.link,
+      },
+      {
+        name: Icons.tailwind.name,
+        icon: Icons.tailwind.icon,
+        link: Icons.tailwind.link,
+      },
+      {
+        name: Icons.shadcn.name,
+        icon: Icons.shadcn.icon,
+        link: Icons.shadcn.link,
+      },
+      {
+        name: Icons.supabase.name,
+        icon: Icons.supabase.icon,
+        link: Icons.supabase.link,
+      },
+      {
+        name: Icons.gemini.name,
+        icon: Icons.gemini.icon,
+        link: Icons.gemini.link,
+      },
+      {
+        name: Icons.browser_use.name,
+        icon: Icons.browser_use.icon,
+        link: Icons.browser_use.link,
+      },
+      {
+        name: Icons.browserless.name,
+        icon: Icons.browserless.icon,
+        link: Icons.browserless.link,
+      },
+    ],
+    externalLinks: [
+      {
+        name: Icons.github.name,
+        icon: Icons.github.icon,
+        link: "https://github.com/anirudhk-tech/hermes",
+      },
+      {
+        name: Icons.video.name,
+        icon: Icons.video.icon,
+        link: "https://youtu.be/bRTh9abD-wU",
+      },
+    ],
+  },
+  {
     title: "Tempus",
     type: "pc",
     screen: "project_screens/tempus.png",
