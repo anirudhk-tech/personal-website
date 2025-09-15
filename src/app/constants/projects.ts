@@ -92,6 +92,11 @@ export const projects: Project[] = [
         icon: Icons.video.icon,
         link: "https://youtu.be/bRTh9abD-wU",
       },
+      {
+        name: Icons.devpost.name,
+        icon: Icons.devpost.icon,
+        link: "https://devpost.com/software/rex-xfcu07",
+      },
     ],
   },
   {
