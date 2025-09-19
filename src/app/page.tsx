@@ -14,6 +14,7 @@ import { Contact } from "./components/contact/contact";
 import { Fab } from "@mui/material";
 import { IoChevronUpCircle } from "react-icons/io5";
 import { Featured } from "./components/featured/featured";
+import { Achievements } from "./components/achievements/achievements";
 
 export default function Home() {
   const FAB_THRESHOLD = 20;
@@ -28,6 +29,7 @@ export default function Home() {
   const personalRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
   const landingRef = useRef<HTMLDivElement>(null);
+  const achievementsRef = useRef<HTMLDivElement>(null);
 
   const handleScrollToTop = () => {
     if (containerRef.current) {
@@ -50,6 +52,12 @@ export default function Home() {
   const handleScrollToExperience = () => {
     if (experienceRef.current) {
       experienceRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleScrollToAchievements = () => {
+    if (achievementsRef.current) {
+      achievementsRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -137,6 +145,7 @@ export default function Home() {
             handleScrollToPersonal={handleScrollToPersonal}
             handleScrollToSynopsis={handleScrollToSynopsis}
             handleScrollToFeatured={handleScrollToFeatured}
+            handleScrollToAchievements={handleScrollToAchievements}
           />
         </div>
         <div ref={featuredRef}>
@@ -147,6 +156,9 @@ export default function Home() {
         </div>
         <div ref={experienceRef}>
           <Experience />
+        </div>
+        <div ref={achievementsRef}>
+          <Achievements />
         </div>
         <div ref={projectRef}>
           <Project />

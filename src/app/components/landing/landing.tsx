@@ -16,6 +16,7 @@ export const Landing = ({
   handleScrollToContact,
   handleScrollToFeatured,
   handleScrollToSynopsis,
+  handleScrollToAchievements,
 }: {
   handleScrollToExperience: () => void;
   handleScrollToProjects: () => void;
@@ -25,6 +26,7 @@ export const Landing = ({
   handleScrollToContact: () => void;
   handleScrollToFeatured: () => void;
   handleScrollToSynopsis: () => void;
+  handleScrollToAchievements: () => void;
 }) => {
   const openDocx = () => {
     const docUrl = `https://anirudhkuppili.com/docs/resume.docx`;
@@ -59,6 +61,10 @@ export const Landing = ({
             <MenuItemContainer
               label="Experience"
               onClick={handleScrollToExperience}
+            />
+            <MenuItemContainer
+              label="Achievements"
+              onClick={handleScrollToAchievements}
             />
             <MenuItemContainer
               label="Projects"
