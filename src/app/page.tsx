@@ -120,11 +120,12 @@ export default function Home() {
             variant="extended"
             sx={{
               position: "fixed",
-              right: 10,
-              bottom: 10,
+              right: 20,
+              bottom: 20,
             }}
+            onClick={handleScrollToTop}
           >
-            <IoChevronUpCircle onClick={handleScrollToTop} />
+            <IoChevronUpCircle size={24} />
           </Fab>
         )}
         <div ref={landingRef}>
