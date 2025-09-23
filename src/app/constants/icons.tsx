@@ -88,12 +88,12 @@ import { MdBuild, MdTrendingUp } from "react-icons/md";
 import { SiDeepgram } from "react-icons/si";
 import { SiElevenlabs } from "react-icons/si";
 import { RiVoiceAiFill } from "react-icons/ri";
-import { FaInstagramSquare } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
 
 export const Icons: Record<string, Icon | Link> = {
   instagram: {
     name: "Instagram",
-    icon: <FaInstagramSquare />,
+    icon: <RiInstagramFill color="black" size={24} />,
     link: "https://instagram.com/",
   },
   vapi: {
