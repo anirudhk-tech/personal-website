@@ -6,7 +6,9 @@ export const Contact = () => {
   return (
     <Container>
       <Typography variant="h1">Contact</Typography>
-      <Typography variant="body1">Have an oppurtunity? Reach out!</Typography>
+      <Typography variant="body1">
+        Find me hanging out digitally here
+      </Typography>
       <ContactContainer>
         {contact.map((contact) => (
           <a

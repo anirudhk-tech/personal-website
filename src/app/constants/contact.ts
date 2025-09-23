@@ -22,4 +22,9 @@ export const contact: Contact[] = [
     icon: Icons.twitter.icon,
     link: "https://x.com/venkata_ani",
   },
+  {
+    content: "Devpost",
+    icon: Icons.devpost.icon,
+    link: "https://devpost.com/anirudhk-tech",
+  },
 ];

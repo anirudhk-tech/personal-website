@@ -14,7 +14,6 @@ export const Landing = ({
   handleScrollToCourses,
   handleScrollToPersonal,
   handleScrollToContact,
-  handleScrollToFeatured,
   handleScrollToSynopsis,
   handleScrollToAchievements,
 }: {
@@ -24,7 +23,6 @@ export const Landing = ({
   handleScrollToCourses: () => void;
   handleScrollToPersonal: () => void;
   handleScrollToContact: () => void;
-  handleScrollToFeatured: () => void;
   handleScrollToSynopsis: () => void;
   handleScrollToAchievements: () => void;
 }) => {
@@ -50,10 +48,6 @@ export const Landing = ({
         <FadeIn delay={2.0} duration={1}>
           <MenuContainer>
             <MenuItemContainer label="Resume" onClick={openDocx} />
-            <MenuItemContainer
-              label="Featured"
-              onClick={handleScrollToFeatured}
-            />
             <MenuItemContainer
               label="Synopsis"
               onClick={handleScrollToSynopsis}
