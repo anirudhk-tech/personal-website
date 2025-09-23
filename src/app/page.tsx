@@ -12,7 +12,6 @@ import { Courses } from "./components/courses/courses";
 import { Personal } from "./components/personal/personal";
 import { Contact } from "./components/contact/contact";
 import { Fab } from "@mui/material";
-import { IoChevronUpCircle } from "react-icons/io5";
 import { Achievements } from "./components/achievements/achievements";
 
 export default function Home() {
@@ -120,12 +119,12 @@ export default function Home() {
             variant="extended"
             sx={{
               position: "fixed",
-              right: 20,
+              right: 30,
               bottom: 20,
             }}
             onClick={handleScrollToTop}
           >
-            <IoChevronUpCircle size={24} />
+            Go up
           </Fab>
         )}
         <div ref={landingRef}>
