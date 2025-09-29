@@ -97,8 +97,14 @@ import { SiElevenlabs } from "react-icons/si";
 import { RiVoiceAiFill } from "react-icons/ri";
 import { RiInstagramFill } from "react-icons/ri";
 import { CgMenuGridR } from "react-icons/cg";
+import { FaStripeS } from "react-icons/fa";
 
 export const Icons: Record<string, Icon | Link> = {
+  stripe: {
+    name: "Stripe",
+    icon: <FaStripeS color="black" size={24} />,
+    link: "https://stripe.com/",
+  },
   langchain: {
     name: "LangChain",
     icon: <SiLangchain color="black" size={24} />,
