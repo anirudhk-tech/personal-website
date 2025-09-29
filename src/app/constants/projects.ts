@@ -32,7 +32,7 @@ export const projects: Project[] = [
       {
         name: Icons.fetchai?.name,
         icon: Icons.fetchai?.icon,
-        link: Icons.shopify.link,
+        link: Icons.fetchai?.link,
       },
       {
         name: Icons.figma.name,
