@@ -6,6 +6,7 @@ import {
   FaBox,
   FaBomb,
   FaAws,
+  FaShopify,
 } from "react-icons/fa";
 import {
   RiDraftFill,
@@ -49,6 +50,7 @@ import {
   SiRust,
   SiDeepgram,
   SiElevenlabs,
+  SiLangchain,
 } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { TbBrandFramerMotion, TbBrandReactNative } from "react-icons/tb";
@@ -87,10 +89,29 @@ import { BsBrowserChrome } from "react-icons/bs";
 import { FaChartLine, FaHandshake } from "react-icons/fa";
 import { MdBuild, MdTrendingUp } from "react-icons/md";
 import { GiArtificialIntelligence } from "react-icons/gi";
+import { CgMenuGridR } from "react-icons/cg";
 
 // Sections: Library, Language, Framework, UI, Database, Auth, Soft Skill, DevOps
 
 export const skills = [
+  {
+    name: "Shopify",
+    icon: <FaShopify color="black" size={24} />,
+    link: "https://shopify.com/",
+    type: "Library",
+  },
+  {
+    name: "Fetch.ai",
+    icon: <CgMenuGridR color="black" size={24} />,
+    link: "https://fetch.ai/",
+    type: "Framework",
+  },
+  {
+    name: "LangChain",
+    icon: <SiLangchain color="black" size={24} />,
+    link: "https://langchain.com/",
+    type: "Library",
+  },
   {
     name: "ElevenLabs",
     icon: <SiElevenlabs color="black" size={24} />,

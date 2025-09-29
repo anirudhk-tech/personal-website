@@ -3,6 +3,98 @@ import { Icons } from "./icons";
 
 export const projects: Project[] = [
   {
+    title: "Rockefeller",
+    type: "pc",
+    screen: "project_screens/rockefeller.jpg",
+    description:
+      "Multi-agent AI system built to launch an entire online business for you, end-to-end, in minutes.",
+    startDate: "Sep. 2025",
+    endDate: "Sep. 2025",
+    points: [
+      "Honorable Mention @ MHacks (Ann Arbor, MI) among 380+ teams.",
+      "Automates market research, brand/logo design (Figma), legal compliance docs, and investor decks (Prezi).",
+      "End-to-end Shopify store creation with Stripe payments integration.",
+      "Launches social ad campaigns + influencer outreach.",
+      "Bootstraps customer service flows with AI agents.",
+      "Integrates Fetch.ai Innovation Lab's uAgents for scalable AI operations.",
+    ],
+    icons: [
+      {
+        name: Icons.shopify?.name,
+        icon: Icons.shopify?.icon,
+        link: Icons.shopify.link,
+      },
+      {
+        name: Icons.stripe.name,
+        icon: Icons.stripe.icon,
+        link: Icons.stripe.link,
+      },
+      {
+        name: Icons.fetchai?.name,
+        icon: Icons.fetchai?.icon,
+        link: Icons.shopify.link,
+      },
+      {
+        name: Icons.figma.name,
+        icon: Icons.figma.icon,
+        link: Icons.figma.link,
+      },
+      {
+        name: Icons.nextjs.name,
+        icon: Icons.nextjs.icon,
+        link: Icons.nextjs.link,
+      },
+      {
+        name: Icons.typescript.name,
+        icon: Icons.typescript.icon,
+        link: Icons.typescript.link,
+      },
+      {
+        name: Icons.react.name,
+        icon: Icons.react.icon,
+        link: Icons.react.link,
+      },
+      {
+        name: Icons.tailwind.name,
+        icon: Icons.tailwind.icon,
+        link: Icons.tailwind.link,
+      },
+      { name: Icons.vapi.name, icon: Icons.vapi.icon, link: Icons.vapi.link },
+      {
+        name: Icons.deepgram.name,
+        icon: Icons.deepgram.icon,
+        link: Icons.deepgram.link,
+      },
+      {
+        name: Icons.elevenlabs.name,
+        icon: Icons.elevenlabs.icon,
+        link: Icons.elevenlabs.link,
+      },
+      {
+        name: Icons.github.name,
+        icon: Icons.github.icon,
+        link: Icons.github.link,
+      },
+    ],
+    externalLinks: [
+      {
+        name: Icons.github.name,
+        icon: Icons.github.icon,
+        link: "https://github.com/ArslanKamchybekov/rockefeller",
+      },
+      {
+        name: Icons.devpost.name,
+        icon: Icons.devpost.icon,
+        link: "https://devpost.com/software/bigsteppers",
+      },
+      {
+        name: Icons.video.name,
+        icon: Icons.video.icon,
+        link: "https://www.youtube.com/watch?v=j8iZ3TOJKLc",
+      },
+    ],
+  },
+  {
     title: "Hermes",
     type: "iphone",
     screen: "project_screens/hermes.jpg",

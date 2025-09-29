@@ -10,6 +10,12 @@ export const AchievementsData = [
     description: "1st place | 400+ participants | Project: Raydar",
   },
   {
+    img: "/achievements/mhacks.svg",
+    title: "MHacks",
+    description:
+      "Honorable Mention to 1st Place | 750+ participants | Project: Rockefeller",
+  },
+  {
     img: "/achievements/uncommonhacks.svg",
     title: "UncommonHacks",
     description: "2nd place | 150+ participants | Project: Midas",

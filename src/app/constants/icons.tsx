@@ -1,9 +1,16 @@
-import { FaCentos, FaPython, FaRedhat, FaTerminal } from "react-icons/fa";
+import {
+  FaCentos,
+  FaPython,
+  FaRedhat,
+  FaShopify,
+  FaTerminal,
+} from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import {
   SiDocker,
   SiFastapi,
   SiFigma,
+  SiLangchain,
   SiMediapipe,
   SiRedux,
   SiRust,
@@ -89,8 +96,25 @@ import { SiDeepgram } from "react-icons/si";
 import { SiElevenlabs } from "react-icons/si";
 import { RiVoiceAiFill } from "react-icons/ri";
 import { RiInstagramFill } from "react-icons/ri";
+import { CgMenuGridR } from "react-icons/cg";
 
 export const Icons: Record<string, Icon | Link> = {
+  langchain: {
+    name: "LangChain",
+    icon: <SiLangchain color="black" size={24} />,
+    link: "https://langchain.com/",
+  },
+  shopify: {
+    name: "Shopify",
+    icon: <FaShopify />,
+    link: "https://shopify.com",
+  },
+
+  fetchai: {
+    name: "Fetch.ai",
+    icon: <CgMenuGridR />,
+    link: "https://fetch.ai",
+  },
   instagram: {
     name: "Instagram",
     icon: <RiInstagramFill color="black" size={24} />,
