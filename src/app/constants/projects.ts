@@ -44,7 +44,7 @@ export const projects: Project[] = [
       {
         name: Icons.github.name,
         icon: Icons.github.icon,
-        link: "https://github.com/ArslanKamchybekov/sharksight",
+        link: "https://github.com/anirudhk-tech/sharks",
       },
     ],
   },
@@ -272,6 +272,16 @@ export const projects: Project[] = [
         name: Icons.github.name,
         icon: Icons.github.icon,
         link: "https://github.com/anirudhk-tech/tempus",
+      },
+      {
+        name: Icons.nasa.name,
+        icon: Icons.nasa.icon,
+        link: "https://www.spaceappschallenge.org/2025/find-a-team/big-steppas/?tab=project",
+      },
+      {
+        name: Icons.youtube.name,
+        icon: Icons.youtube.icon,
+        link: "https://www.youtube.com/watch?v=gIDg16UoqPA",
       },
     ],
   },

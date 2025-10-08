@@ -99,8 +99,14 @@ import { RiInstagramFill } from "react-icons/ri";
 import { CgMenuGridR } from "react-icons/cg";
 import { FaStripeS } from "react-icons/fa";
 import { SiAutodesk } from "react-icons/si";
+import { SiNasa } from "react-icons/si";
 
 export const Icons: Record<string, Icon | Link> = {
+  nasa: {
+    name: "NASA",
+    icon: <SiNasa color="black" size={24} />,
+    link: "https://www.nasa.gov/",
+  },
   cad: {
     name: "CAD",
     icon: <SiAutodesk color="black" size={24} />,
