@@ -12,7 +12,7 @@ export const projects: Project[] = [
     endDate: "Oct. 2025",
     points: [
       "Predicts shark locations worldwide based on NASA environmental data (temperature, pollution, ocean cycles).",
-      "Machine learning models trained on satellite and tagged shark movement datasets.",
+      "Machine learning models trained on satellite and tagged shark movement datasets in AWS",
       "Custom tracker attaches to a shark's jaw, monitoring vitals and location for research teams.",
       "Automated, intuitive dashboards for agencies to visualize hotspots, trends, and poaching risks.",
       "Team led development, blending data science, hardware prototyping, and ocean conservation outreach.",
