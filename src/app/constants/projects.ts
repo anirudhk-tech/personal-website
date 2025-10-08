@@ -5,7 +5,7 @@ export const projects: Project[] = [
   {
     title: "Sharks",
     type: "pc",
-    screen: "project_screens/sharks.jpg",
+    screen: "project_screens/sharks.jpeg",
     description:
       "AI-powered system for protecting endangered sharks using NASA satellite data, real-time tracking tech, and actionable analytics for ocean agencies and conservationists.",
     startDate: "Oct. 2025",
