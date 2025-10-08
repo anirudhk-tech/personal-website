@@ -223,8 +223,8 @@ export const skills = [
   {
     icon: <FaAws color="black" size={24} />,
     type: "DevOps",
-    name: "Amazon EKS",
-    link: "https://aws.amazon.com/eks/",
+    name: "AWS",
+    link: "",
   },
   {
     icon: <SiGooglecloud color="black" size={24} />,

@@ -98,8 +98,19 @@ import { RiVoiceAiFill } from "react-icons/ri";
 import { RiInstagramFill } from "react-icons/ri";
 import { CgMenuGridR } from "react-icons/cg";
 import { FaStripeS } from "react-icons/fa";
+import { SiAutodesk } from "react-icons/si";
 
 export const Icons: Record<string, Icon | Link> = {
+  cad: {
+    name: "CAD",
+    icon: <SiAutodesk color="black" size={24} />,
+    link: "https://www.autodesk.com/",
+  },
+  aws: {
+    name: "AWS",
+    icon: <FaAws color="black" size={24} />,
+    link: "https://aws.amazon.com/",
+  },
   stripe: {
     name: "Stripe",
     icon: <FaStripeS color="black" size={24} />,

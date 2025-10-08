@@ -3,6 +3,52 @@ import { Icons } from "./icons";
 
 export const projects: Project[] = [
   {
+    title: "Sharks",
+    type: "pc",
+    screen: "project_screens/sharks.jpg",
+    description:
+      "AI-powered system for protecting endangered sharks using NASA satellite data, real-time tracking tech, and actionable analytics for ocean agencies and conservationists.",
+    startDate: "Oct. 2025",
+    endDate: "Oct. 2025",
+    points: [
+      "Predicts shark locations worldwide based on NASA environmental data (temperature, pollution, ocean cycles).",
+      "Machine learning models trained on satellite and tagged shark movement datasets.",
+      "Custom tracker attaches to a shark's jaw, monitoring vitals and location for research teams.",
+      "Automated, intuitive dashboards for agencies to visualize hotspots, trends, and poaching risks.",
+      "Team led development, blending data science, hardware prototyping, and ocean conservation outreach.",
+    ],
+    icons: [
+      {
+        name: Icons.pytorch?.name,
+        icon: Icons.pytorch?.icon,
+        link: Icons.pytorch?.link,
+      },
+      {
+        name: Icons.tensorflow?.name,
+        icon: Icons.tensorflow?.icon,
+        link: Icons.tensorflow?.link,
+      },
+      { name: Icons.aws?.name, icon: Icons.aws?.icon, link: Icons.aws?.link },
+      {
+        name: Icons.nextjs.name,
+        icon: Icons.nextjs.icon,
+        link: Icons.nextjs.link,
+      },
+      {
+        name: Icons.cad.name,
+        icon: Icons.cad.icon,
+        link: Icons.cad.link,
+      },
+    ],
+    externalLinks: [
+      {
+        name: Icons.github.name,
+        icon: Icons.github.icon,
+        link: "https://github.com/ArslanKamchybekov/sharksight",
+      },
+    ],
+  },
+  {
     title: "Rockefeller",
     type: "pc",
     screen: "project_screens/rockefeller.jpg",
@@ -11,7 +57,6 @@ export const projects: Project[] = [
     startDate: "Sep. 2025",
     endDate: "Sep. 2025",
     points: [
-      "Honorable Mention @ MHacks (Ann Arbor, MI) among 380+ teams.",
       "Automates market research, brand/logo design (Figma), legal compliance docs, and investor decks (Prezi).",
       "End-to-end Shopify store creation with Stripe payments integration.",
       "Launches social ad campaigns + influencer outreach.",
