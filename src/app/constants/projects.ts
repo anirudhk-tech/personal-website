@@ -5,7 +5,7 @@ export const projects: Project[] = [
   {
     title: "Beavr",
     type: "iphone",
-    screen: "project_screens/beavr.jpg",
+    screen: "project_screens/beavr.png",
     description:
       "Minimalist reading companion that listens to your thoughts, answers them silently with AI, and stores reflections as private sessions for later review.",
     startDate: "Oct. 2025",
