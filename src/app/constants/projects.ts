@@ -9,7 +9,7 @@ export const projects: Project[] = [
     description:
       "Minimalist reading companion that listens to your thoughts, answers them silently with AI, and stores reflections as private sessions for later review.",
     startDate: "Oct. 2025",
-    endDate: "Present",
+    endDate: "Oct. 2025",
     points: [
       "Built with Expo + React Native, optimized for iOS.",
       "AI session system listens while you read, then answers questions silently.",
