@@ -86,6 +86,11 @@ export const projects: Project[] = [
         icon: Icons.github.icon,
         link: "https://github.com/anirudhk-tech/sharks",
       },
+      {
+        name: Icons.video.name,
+        icon: Icons.video.icon,
+        link: "https://www.youtube.com/watch?v=gIDg16UoqPA",
+      },
     ],
   },
   {
@@ -318,11 +323,6 @@ export const projects: Project[] = [
         icon: Icons.nasa.icon,
         link: "https://www.spaceappschallenge.org/2025/find-a-team/big-steppas/?tab=project",
       },
-      {
-        name: Icons.video.name,
-        icon: Icons.video.icon,
-        link: "https://www.youtube.com/watch?v=gIDg16UoqPA",
-      },
     ],
   },
   {
@@ -382,9 +382,14 @@ export const projects: Project[] = [
     ],
     externalLinks: [
       {
-        name: Icons.website.name,
-        icon: Icons.website.icon,
-        link: "https://scraphunting.com/",
+        name: Icons.producthunt.name,
+        icon: Icons.producthunt.icon,
+        link: "https://www.producthunt.com/posts/scraphunt?utm_source=other&utm_medium=social",
+      },
+      {
+        name: Icons.loom.name,
+        icon: Icons.loom.icon,
+        link: "https://www.loom.com/share/8876e1da7255423997baf5d4ea89296f?sid=16f4418f-040c-4f12-95b7-879b4e2044dd",
       },
     ],
   },

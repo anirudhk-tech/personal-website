@@ -101,8 +101,20 @@ import { FaStripeS } from "react-icons/fa";
 import { SiAutodesk } from "react-icons/si";
 import { SiNasa } from "react-icons/si";
 import { SiAppstore } from "react-icons/si";
+import { FaProductHunt } from "react-icons/fa";
+import { SiLoom } from "react-icons/si";
 
 export const Icons: Record<string, Icon | Link> = {
+  loom: {
+    name: "Loom",
+    icon: <SiLoom color="black" size={24} />,
+    link: "https://www.loom.com/",
+  },
+  producthunt: {
+    name: "Product Hunt",
+    icon: <FaProductHunt color="black" size={24} />,
+    link: "https://www.producthunt.com/",
+  },
   appstore: {
     name: "App Store",
     icon: <SiAppstore color="black" size={24} />,
