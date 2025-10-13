@@ -100,8 +100,14 @@ import { CgMenuGridR } from "react-icons/cg";
 import { FaStripeS } from "react-icons/fa";
 import { SiAutodesk } from "react-icons/si";
 import { SiNasa } from "react-icons/si";
+import { SiAppstore } from "react-icons/si";
 
 export const Icons: Record<string, Icon | Link> = {
+  appstore: {
+    name: "App Store",
+    icon: <SiAppstore color="black" size={24} />,
+    link: "https://apps.apple.com/app/beavr",
+  },
   nasa: {
     name: "NASA",
     icon: <SiNasa color="black" size={24} />,

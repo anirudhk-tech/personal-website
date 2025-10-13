@@ -3,6 +3,46 @@ import { Icons } from "./icons";
 
 export const projects: Project[] = [
   {
+    title: "Beavr",
+    type: "iphone",
+    screen: "project_screens/beavr.jpg",
+    description:
+      "Minimalist reading companion that listens to your thoughts, answers them silently with AI, and stores reflections as private sessions for later review.",
+    startDate: "Oct. 2025",
+    endDate: "Present",
+    points: [
+      "Built with Expo + React Native, optimized for iOS.",
+      "AI session system listens while you read, then answers questions silently.",
+      "Session viewer displays all reflections and AI responses in an elegant feed.",
+      "Designed a cozy pet beaver aesthetic blending calm UI with curiosity.",
+    ],
+    icons: [
+      { name: Icons.expo.name, icon: Icons.expo.icon, link: Icons.expo.link },
+      {
+        name: Icons.reactnative.name,
+        icon: Icons.reactnative.icon,
+        link: Icons.reactnative.link,
+      },
+      {
+        name: Icons.typescript.name,
+        icon: Icons.typescript.icon,
+        link: Icons.typescript.link,
+      },
+      {
+        name: Icons.gemini.name,
+        icon: Icons.gemini.icon,
+        link: Icons.gemini.link,
+      },
+    ],
+    externalLinks: [
+      {
+        name: Icons.appstore.name,
+        icon: Icons.appstore.icon,
+        link: "https://apps.apple.com/us/app/beavr/id6751278641",
+      },
+    ],
+  },
+  {
     title: "Sharks",
     type: "pc",
     screen: "project_screens/sharks.jpeg",
