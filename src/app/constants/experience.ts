@@ -26,7 +26,7 @@ export const Experiences: Experience[] = [
     externalLinks: null,
   },
   {
-    title: "Founding Engineer",
+    title: "Cofounder",
     type: "self-employed",
     company: "Shiplo",
     startDate: "Jun 2025",
@@ -55,7 +55,7 @@ export const Experiences: Experience[] = [
     externalLinks: null,
   },
   {
-    title: "Founding Engineer",
+    title: "Cofounder",
     type: "self-employed",
     company: "Coffee Logic LLC",
     startDate: "Oct 2024",
