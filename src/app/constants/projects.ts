@@ -319,8 +319,8 @@ export const projects: Project[] = [
         link: "https://www.spaceappschallenge.org/2025/find-a-team/big-steppas/?tab=project",
       },
       {
-        name: Icons.youtube.name,
-        icon: Icons.youtube.icon,
+        name: Icons.video.name,
+        icon: Icons.video.icon,
         link: "https://www.youtube.com/watch?v=gIDg16UoqPA",
       },
     ],
