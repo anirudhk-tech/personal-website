@@ -10,7 +10,7 @@ export const contact: Contact[] = [
   {
     content: "Instagram",
     icon: Icons.instagram.icon,
-    link: "https://www.instagram.com/venkata.ani/",
+    link: "https://www.instagram.com/journey.of.ani/",
   },
   {
     content: "LinkedIn",

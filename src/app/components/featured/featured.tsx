@@ -20,7 +20,7 @@ const featured: FeaturedItem[] = [
   {
     src: Instagram.src,
     caption: "Instagram - Tested insights",
-    href: "https://www.instagram.com/venkata.ani/",
+    href: "https://www.instagram.com/journey.of.ani/",
   },
   {
     src: X.src,
