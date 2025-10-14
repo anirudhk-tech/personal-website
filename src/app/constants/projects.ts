@@ -191,7 +191,7 @@ export const projects: Project[] = [
     description:
       "Hackathon-born smart phone-call assistant. Hermes sits on hold, navigates IVRs, and completes tasks while a controlled browser handles web flows — then delivers a clean Gemini summary back to you.",
     startDate: "Sep. 2025",
-    endDate: "Present",
+    endDate: "Sep. 2025",
     points: [
       "Top-10 @ HopHacks (Baltimore) out of 300+ participants with a full end-to-end demo.",
       "Voice layer: Vapi agent + Deepgram ASR + ElevenLabs TTS for natural IVR navigation.",
@@ -287,8 +287,8 @@ export const projects: Project[] = [
     screen: "project_screens/tempus.png",
     description:
       "Terminal‑native productivity tracker written 100 % in Rust. Tempus lets you start / end timers from the shell and runs an embedded lightweight ML model to auto‑categorise each entry, so you instantly see where your day really goes.",
-    startDate: "Jul 15 2025",
-    endDate: "Present",
+    startDate: "Jul. 2025",
+    endDate: "Jul. 2025",
     points: [
       "Pure‑Rust stack: clap UX,  SQLite store, chrono time maths. Zero external runtimes.",
       "Light ML onboard: Naive‑Bayes via `linfa` learns from notes and tags with ~85 % precision after 50 samples.",

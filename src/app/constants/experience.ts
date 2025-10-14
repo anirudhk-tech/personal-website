@@ -7,7 +7,7 @@ export const Experiences: Experience[] = [
     type: "work",
     company: "University of Illinois Chicago",
     startDate: "Sep 2024",
-    endDate: "Present Day",
+    endDate: "Present",
     location: "Chicago, IL",
     responsibilities: [
       "Resolved 14 prod bugs; delivered 8 pages across 2 core modules (React/.NET/SQL Server).",
@@ -98,7 +98,7 @@ export const Experiences: Experience[] = [
     type: "association",
     company: "Association of Computing Machinery (ACM) @ UIC",
     startDate: "Jun 2024",
-    endDate: "Present Day",
+    endDate: "Jun 2025",
     location: "Chicago, IL",
     responsibilities: [
       "Founded and scaled SIG Mobile from 0 → 30+ members.",
