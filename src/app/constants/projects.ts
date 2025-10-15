@@ -40,6 +40,11 @@ export const projects: Project[] = [
         icon: Icons.appstore.icon,
         link: "https://apps.apple.com/us/app/beavr/id6751278641",
       },
+      {
+        name: Icons.github.name,
+        icon: Icons.github.icon,
+        link: "https://github.com/anirudhk-tech/Beaver",
+      },
     ],
   },
   {
