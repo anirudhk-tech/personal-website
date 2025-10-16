@@ -24,6 +24,9 @@ export const TextContainer = styled(Box)(() => ({
   gap: "10px",
   alignItems: "center",
   justifyContent: "center",
+  fontSize: "70px",
+  fontFamily: "Montserrat, sans-serif",
+  color: "black",
 }));
 
 export const MenuContainer = styled(Box)(() => ({
@@ -47,4 +50,18 @@ export const MenuItemContainer = styled(Chip)(() => ({
     transform: "translateY(-4px)",
     boxShadow: "0 12px 24px rgba(0, 0, 0, 0.2)",
   },
+  fontSize: "0.8rem",
+}));
+
+export const GradientTextContainer = styled(Box)(() => ({
+  height: "auto",
+  width: "fit-content",
+  display: "flex",
+  padding: 5,
+  paddingLeft: 14,
+  paddingRight: 14,
+  cursor: "pointer",
+  fontSize: "0.8rem",
+  borderRadius: "16px",
+  backgroundColor: "black",
 }));

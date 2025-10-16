@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material";
 export const theme = createTheme({
   typography: {
     h1: {
-      fontFamily: "Orbitron, sans-serif",
+      fontFamily: "Montserrat, sans-serif",
       color: "black",
       fontSize: "2.5rem",
       fontWeight: 700,
@@ -16,7 +16,7 @@ export const theme = createTheme({
       },
     },
     h2: {
-      fontFamily: "Orbitron, sans-serif",
+      fontFamily: "Montserrat, sans-serif",
       color: "black",
       fontSize: "2rem",
       fontWeight: 700,
@@ -29,7 +29,7 @@ export const theme = createTheme({
       },
     },
     h3: {
-      fontFamily: "Orbitron, sans-serif",
+      fontFamily: "Montserrat, sans-serif",
       color: "black",
       fontSize: "1.75rem",
       fontWeight: 700,
@@ -42,7 +42,7 @@ export const theme = createTheme({
       },
     },
     h4: {
-      fontFamily: "Orbitron, sans-serif",
+      fontFamily: "Montserrat, sans-serif",
       color: "black",
       fontSize: "1.5rem",
       fontWeight: 700,
@@ -55,7 +55,7 @@ export const theme = createTheme({
       },
     },
     h5: {
-      fontFamily: "Orbitron, sans-serif",
+      fontFamily: "Montserrat, sans-serif",
       color: "black",
       fontSize: "1.25rem",
       fontWeight: 700,
@@ -68,7 +68,7 @@ export const theme = createTheme({
       },
     },
     h6: {
-      fontFamily: "Orbitron, sans-serif",
+      fontFamily: "Montserrat, sans-serif",
       color: "black",
       fontSize: "1rem",
       fontWeight: 700,
