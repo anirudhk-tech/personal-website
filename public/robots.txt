@@ -1,0 +1,6 @@
+# robots.txt for https://www.anirudhkuppili.com/
+
+User-agent: *
+Allow: /
+
+Allow: /LLMs.txt

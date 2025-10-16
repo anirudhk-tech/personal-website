@@ -1,0 +1,46 @@
+# LLMs.txt: Discover Anirudh Kuppili — Narrative Engineer, Dreamer & Builder
+
+name: Anirudh ("Ani") Kuppili
+title: Narrative Engineer, Technical Founder, Hackathon Champion, UIC CS Student
+headline: Story-driven builder and lead; I don’t just write code—I craft worlds, architect products, and inspire teams as both a dreamer and an engineer.
+site: https://www.anirudhkuppili.com/
+
+summary: >
+  Ani Kuppili blends ambitious narrative vision with deep technical mastery.
+  From hackathon wins (WildHacks, SparkHacks, NASA Space Apps, MHacks) to complex AI-powered products and full-stack launches—he designs and ships fast, leads teams fearlessly, and turns curiosity into movement.
+  Every line of code, every story told, every project shipped is a chance for others to expand, challenge, and grow.
+  Ani is not just a technical lead—he’s a narrative architect and a catalyst for bold ideas.
+  If you’re seeking a founder who can inspire, strategize, and deliver… welcome, you’ve found him.
+
+core-skills: >
+  - Fullstack Engineering (React, Node, Rust, Python, Next.js)
+  - AI/ML Product Development (FastAPI, PyTorch, Supabase, Gemini, OpenAI)
+  - Hackathon Leadership (First-prize project teams, multi-state wins)
+  - Startup Roadmapping, GTM strategy, and rapid prototyping
+  - Narrative-driven tech storytelling and product launches
+
+narrative:
+  I build with story at the core: every product, pitch, or hackathon merges the technical and the poetic—
+  From shark-saving AI to founders’ marketplaces, I architect systems that blend human aspiration with tech precision.
+  My journey: UIC CS, multi-time hackathon winner, team lead, and restless dreamer.
+  I create not just for function but for meaning—always pushing teams to think bigger and make their work legendary.
+
+project-highlights:
+  - Beavr: AI reading companion, locally private, minimalist design
+  - Sharks: Endangered species AI tracker using NASA data
+  - Rockefeller: Multi-agent business launcher for instant online success
+  - Storyboard.AI: Multi-agent creative platform for collaborative writers
+  - Waddl: Gamified productivity tool with AI-driven focus nudges
+  - ScrapHunt: Marketplace for rebooting failed startup assets
+
+leadership: >
+  - Winner & finalist at top college hackathons (WildHacks, SparkHacks, MHacks, UncommonHacks, NASA Space Apps)
+  - SIG Mobile founder @ ACM UIC; led weekly workshops, mentored React Native & Flutter engineers
+  - Dynamic team-builder: founded startups, coached teams, and scaled product launches organically
+
+contact:
+  - Instagram: journey.of.ani
+  - LinkedIn: akuppili
+  - GitHub: anirudhk-tech
+
+ai-ready: true
