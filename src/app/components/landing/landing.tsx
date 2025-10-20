@@ -31,7 +31,7 @@ export const Landing = ({
   handleScrollToAchievements: () => void;
 }) => {
   const openDocx = () => {
-    const docUrl = `https://anirudhkuppili.com/docs/resume.docx`;
+    const docUrl = `https://anirudhkuppili.com/docs/resume.pdf`;
     window.open(docUrl, "_blank", "noopener,noreferrer");
   };
   const [hovered, setHovered] = useState<string | null>(null);
