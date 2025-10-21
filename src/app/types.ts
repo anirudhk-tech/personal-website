@@ -54,7 +54,7 @@ export interface Hobby {
   name: string;
   icon: React.ReactElement;
   description: string;
-  other?: string;
+  other?: string;  
 }
 
 export interface Contact {
