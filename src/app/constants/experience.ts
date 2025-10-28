@@ -10,9 +10,9 @@ export const Experiences: Experience[] = [
     endDate: "Present",
     location: "Chicago, IL",
     responsibilities: [
-      "Resolved 14 prod bugs; delivered 8 pages across 2 core modules (React/.NET/SQL Server).",
-      "Rewrote and indexed 5 slow SQL/Oracle stored procedures.",
-      "Supported CentOS → Red Hat migration, fixing 3 major breaking changes.",
+      "Shipping websites to 30k students, faculty, and staff",
+      "Rewrote and indexed 5 slow SQL/Oracle stored procedures",
+      "Supported CentOS → Red Hat migration, fixing 3 major breaking changes",
     ],
     icons: [
       Icons.react,
@@ -26,15 +26,15 @@ export const Experiences: Experience[] = [
     externalLinks: null,
   },
   {
-    title: "Cofounder",
-    type: "self-employed",
+    title: "Founding Engineer",
+    type: "work",
     company: "Shiplo",
     startDate: "Jun 2025",
     endDate: "Oct 2025",
     location: "Chicago, IL",
     responsibilities: [
-      "Co-built Python server + multi-platform AI-operator platform; shipped v0 in 4 weeks.",
-      "Launched GTM from scratch → 304 beta signups in 4 weeks, 100% organic reach.",
+      "Scaled to 304 people; co-built Python server + multi-platform AI-operator platform",
+      "Launched GTM from scratch in 4 weeks, 100% organic reach.",
       "Owned roadmap, budget, and 3-person eng loop; admitted to Delta Residency & Founder University 11.",
     ],
     icons: [
@@ -55,8 +55,8 @@ export const Experiences: Experience[] = [
     externalLinks: null,
   },
   {
-    title: "Cofounder",
-    type: "self-employed",
+    title: "Founding Engineer",
+    type: "work",
     company: "Coffee Logic LLC",
     startDate: "Oct 2024",
     endDate: "May 2025",
