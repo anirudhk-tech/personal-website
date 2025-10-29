@@ -52,17 +52,17 @@ export const Intro = () => {
         <TextContainer>
           <FadeInOnScroll>
             <Typography variant="body1">
-              {`I'm a fullstack engineer who builds, reads, and writes. From code to copy, I ship fast and learn faster.`}
+              {`I'm a fullstack engineer who builds fast, creatively`}
             </Typography>
           </FadeInOnScroll>
           <FadeInOnScroll>
             <Typography variant="body1">
-              {`I blend engineering and marketing: building products, studying strategy, and scaling what sticks.`}
+              {`I blend engineering leadership and marketing: building products and scaling them`}
             </Typography>
           </FadeInOnScroll>
           <FadeInOnScroll>
             <Typography variant="body1">
-              {`Every insight I gain from books or builds turns into something real: posts, products, or pivots.`}
+              {`I document my journey and share tips on Instagram @journey.of.ani`}
             </Typography>
           </FadeInOnScroll>
         </TextContainer>
