@@ -931,11 +931,6 @@ export const projects: Project[] = [
     ],
     externalLinks: [
       {
-        name: Icons.website.name,
-        icon: Icons.website.icon,
-        link: "https://raydar.tech/",
-      },
-      {
         name: Icons.devpost.name,
         icon: Icons.devpost.icon,
         link: "https://devpost.com/software/raydar-163vca",

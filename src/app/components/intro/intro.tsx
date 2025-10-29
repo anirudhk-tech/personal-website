@@ -62,7 +62,7 @@ export const Intro = () => {
           </FadeInOnScroll>
           <FadeInOnScroll>
             <Typography variant="body1">
-              {`I document my journey and share tips on Instagram @journey.of.ani`}
+              {`I document my journey and share tips on Instagram @journey.of.ani. I also write and read books`}
             </Typography>
           </FadeInOnScroll>
         </TextContainer>
