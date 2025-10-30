@@ -1,13 +1,13 @@
 import { FadeIn } from "@/app/animations/fadein";
 import {
   Container,
+  CTAButton,
   GradientTextContainer,
   MenuContainer,
   MenuItemContainer,
   TextContainer,
 } from "./landing.styles";
-import { Typography } from "@mui/material";
-import SplitText from "@/app/components/common/react-bits/SplitText/SplitText";
+import { Typography, Box } from "@mui/material";
 import { useState } from "react";
 import GradientText from "@/app/components/common/react-bits/GradientText/GradientText";
 
@@ -35,29 +35,33 @@ export const Landing = ({
     window.open(docUrl, "_blank", "noopener,noreferrer");
   };
   const [hovered, setHovered] = useState<string | null>(null);
+  const gradientColors = [
+    "#fa8ab2",
+    "#f668a5",
+    "#fcbedc",
+    "#fa8ab2",
+    "#ffe0eb",
+  ];
+  const handleGoToMail = () => {
+    window.location.href = `mailto:anirudhkuppili.dev@gmail.com?subject=Work%20with%20Ani&body=Hi%20Ani,%0AI'm%20interested%20in%20working%20with%20you`;
+  };
 
   return (
     <Container>
       <TextContainer>
+        <Typography
+          variant="h1"
+          textAlign="center"
+          sx={{ color: "#fff", fontWeight: "bold" }}
+        >
+          Oh hi there, I'm Ani
+        </Typography>
         <FadeIn delay={0.5} duration={1}>
-          <SplitText
-            text="Oh hi there, I'm Ani."
-            delay={100}
-            duration={0.6}
-            ease="power3.out"
-            splitType="chars"
-            from={{ opacity: 0, y: 40 }}
-            to={{ opacity: 1, y: 0 }}
-            threshold={0.1}
-            textAlign="center"
-          />
-        </FadeIn>
-        <FadeIn delay={1.5} duration={1}>
-          <Typography variant="body1">
+          <Typography variant="body1" sx={{ color: "#fff" }}>
             Looking for something specific?
           </Typography>
         </FadeIn>
-        <FadeIn delay={2.0} duration={1}>
+        <FadeIn delay={1.0} duration={1}>
           <MenuContainer>
             <div
               onMouseEnter={() => setHovered("resume")}
@@ -68,13 +72,7 @@ export const Landing = ({
               ) : (
                 <GradientTextContainer onClick={openDocx}>
                   <GradientText
-                    colors={[
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                    ]}
+                    colors={gradientColors}
                     animationSpeed={3}
                     showBorder={false}
                   >
@@ -92,13 +90,7 @@ export const Landing = ({
               ) : (
                 <GradientTextContainer onClick={handleScrollToSynopsis}>
                   <GradientText
-                    colors={[
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                    ]}
+                    colors={gradientColors}
                     animationSpeed={3}
                     showBorder={false}
                   >
@@ -116,13 +108,7 @@ export const Landing = ({
               ) : (
                 <GradientTextContainer onClick={handleScrollToExperience}>
                   <GradientText
-                    colors={[
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                    ]}
+                    colors={gradientColors}
                     animationSpeed={3}
                     showBorder={false}
                   >
@@ -140,13 +126,7 @@ export const Landing = ({
               ) : (
                 <GradientTextContainer onClick={handleScrollToAchievements}>
                   <GradientText
-                    colors={[
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                    ]}
+                    colors={gradientColors}
                     animationSpeed={3}
                     showBorder={false}
                   >
@@ -164,13 +144,7 @@ export const Landing = ({
               ) : (
                 <GradientTextContainer onClick={handleScrollToProjects}>
                   <GradientText
-                    colors={[
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                    ]}
+                    colors={gradientColors}
                     animationSpeed={3}
                     showBorder={false}
                   >
@@ -188,13 +162,7 @@ export const Landing = ({
               ) : (
                 <GradientTextContainer onClick={handleScrollToSkills}>
                   <GradientText
-                    colors={[
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                    ]}
+                    colors={gradientColors}
                     animationSpeed={3}
                     showBorder={false}
                   >
@@ -212,13 +180,7 @@ export const Landing = ({
               ) : (
                 <GradientTextContainer onClick={handleScrollToCourses}>
                   <GradientText
-                    colors={[
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                    ]}
+                    colors={gradientColors}
                     animationSpeed={3}
                     showBorder={false}
                   >
@@ -236,13 +198,7 @@ export const Landing = ({
               ) : (
                 <GradientTextContainer onClick={handleScrollToPersonal}>
                   <GradientText
-                    colors={[
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                    ]}
+                    colors={gradientColors}
                     animationSpeed={3}
                     showBorder={false}
                   >
@@ -260,13 +216,7 @@ export const Landing = ({
               ) : (
                 <GradientTextContainer onClick={handleScrollToContact}>
                   <GradientText
-                    colors={[
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                      "#ffedbc",
-                      "#ed4264",
-                    ]}
+                    colors={gradientColors}
                     animationSpeed={3}
                     showBorder={false}
                   >
@@ -276,6 +226,11 @@ export const Landing = ({
               )}
             </div>
           </MenuContainer>
+          <Box
+            sx={{ width: "100%", display: "flex", justifyContent: "center" }}
+          >
+            <CTAButton onClick={handleGoToMail}>Work with Me</CTAButton>
+          </Box>
         </FadeIn>
       </TextContainer>
     </Container>

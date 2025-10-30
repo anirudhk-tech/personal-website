@@ -1,5 +1,61 @@
-import { Project } from "../types";
+import { Project, StandoutProject } from "../types";
 import { Icons } from "./icons";
+export const standoutProjects: StandoutProject[] = [
+  {
+    name: "Hermes",
+    tagline:
+      "Voice-controlled browser agent that automates workflows and fetches data in real time.",
+    metric: "🏆 20+ calls made, top 10 in John Hopkins hackathon",
+    type: "iphone",
+    screen: "project_screens/hermes.jpg",
+    link: "https://hermes.agent",
+  },
+  {
+    name: "Sharks",
+    tagline:
+      "ML-powered ocean conservation app built with NASA data to detect endangered species zones.",
+    metric: "🌊 Uses 4 NASA datasets",
+    type: "pc",
+    screen: "project_screens/sharks.jpeg",
+    link: "https://sharks.ai",
+  },
+  {
+    name: "Rockefeller",
+    tagline:
+      "An autonomous multi-agent system that launches and runs small online businesses.",
+    metric: "🤖 Generated 10+ working prototypes autonomously",
+    type: "pc",
+    screen: "project_screens/rockefeller.jpg",
+    link: "https://rockefeller.ai",
+  },
+  {
+    name: "Beavr",
+    tagline:
+      "Personal reading AI on iOS that summarizes, explains, and remembers everything you read.",
+    metric: "📱 400+ study sessions",
+    type: "iphone",
+    screen: "project_screens/beavr.png",
+    link: "https://beavr.app",
+  },
+  {
+    name: "Tempus",
+    tagline:
+      "Rust-based terminal productivity tracker that visualizes your focus and time data beautifully.",
+    metric: "🦀 Built fully in Rust, used daily",
+    type: "pc",
+    screen: "project_screens/tempus.png",
+    link: "https://tempus.dev",
+  },
+  {
+    name: "Odyssey",
+    tagline:
+      "Cross-platform writing suite blending creativity tools with clean offline-first sync.",
+    metric: "✍️ 1,000+ notes synced across devices",
+    type: "pc",
+    screen: "project_screens/odyssey_screen.png",
+    link: "https://odyssey.app",
+  },
+];
 
 export const projects: Project[] = [
   {

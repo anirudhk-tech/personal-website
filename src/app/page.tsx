@@ -11,8 +11,9 @@ import { Skills } from "./components/skills/skills";
 import { Courses } from "./components/courses/courses";
 import { Personal } from "./components/personal/personal";
 import { Contact } from "./components/contact/contact";
-import { Fab } from "@mui/material";
+import { Fab, Typography } from "@mui/material";
 import { Achievements } from "./components/achievements/achievements";
+import { Cta } from "./components/common/cta";
 
 export default function Home() {
   const FAB_THRESHOLD = 20;
@@ -27,6 +28,10 @@ export default function Home() {
   const contactRef = useRef<HTMLDivElement>(null);
   const landingRef = useRef<HTMLDivElement>(null);
   const achievementsRef = useRef<HTMLDivElement>(null);
+
+  const handleGoToMail = () => {
+    window.location.href = `mailto:anirudhkuppili.dev@gmail.com?subject=Work%20with%20Ani&body=Hi%20Ani,%0AI'm%20interested%20in%20working%20with%20you`;
+  };
 
   const handleScrollToTop = () => {
     if (containerRef.current) {
@@ -145,15 +150,17 @@ export default function Home() {
         <div ref={experienceRef}>
           <Experience />
         </div>
+        <Cta />
         <div ref={achievementsRef}>
           <Achievements />
         </div>
         <div ref={projectRef}>
-          <Project />
+          <Project standout />
         </div>
         <div ref={skillsRef}>
           <Skills />
         </div>
+        <Cta />
         <div ref={coursesRef}>
           <Courses />
         </div>
@@ -163,6 +170,7 @@ export default function Home() {
         <div ref={contactRef}>
           <Contact />
         </div>
+        <Cta />
       </Container>
     </LockContainer>
   );

@@ -1,4 +1,4 @@
-import { Box, styled, Chip } from "@mui/material";
+import { Box, styled, Chip, Button } from "@mui/material";
 
 export const Container = styled(Box)(() => ({
   display: "flex",
@@ -6,7 +6,7 @@ export const Container = styled(Box)(() => ({
   height: "100vh",
   width: "100vw",
   overflow: "hidden",
-  background: "linear-gradient(135deg, #ed4264 , #ffedbc)",
+  background: "linear-gradient(135deg, #18181c 0%, #232526 70%, #fa8ab2 100%)",
   paddingTop: "10%",
   paddingBottom: "10%",
   paddingLeft: "5%",
@@ -51,6 +51,7 @@ export const MenuItemContainer = styled(Chip)(() => ({
     boxShadow: "0 12px 24px rgba(0, 0, 0, 0.2)",
   },
   fontSize: "0.8rem",
+  color: "#fff",
 }));
 
 export const GradientTextContainer = styled(Box)(() => ({
@@ -64,4 +65,21 @@ export const GradientTextContainer = styled(Box)(() => ({
   fontSize: "0.8rem",
   borderRadius: "16px",
   backgroundColor: "black",
+}));
+
+export const CTAButton = styled(Button)(() => ({
+  alignSelf: "center",
+  marginTop: "24px",
+  marginBottom: "12px",
+  justifyContent: "center",
+  minWidth: "210px",
+  borderRadius: "16px",
+  color: "#fff",
+  fontWeight: 800,
+  fontSize: "1.15rem",
+  letterSpacing: 1,
+  backgroundColor: "#fa8ab2",
+  position: "relative",
+  overflow: "hidden",
+  zIndex: 0,
 }));

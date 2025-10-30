@@ -6,7 +6,7 @@ import { OrbitControls } from "three/examples/jsm/Addons.js";
 export const useRenderThree = (
   model: string,
   screen: string,
-  screenTexture: string
+  screenTexture: string,
 ) => {
   const [container, setContainer] = useState<HTMLDivElement | null>(null);
   const modelRef = useRef<Three.Object3D | null>(null);
@@ -30,13 +30,13 @@ export const useRenderThree = (
     scene.add(pivot);
     pivotRef.current = pivot;
 
-    const camera = new Three.PerspectiveCamera(75, width / height, 0.1, 1000);
+    const camera = new Three.PerspectiveCamera(65, width / height, 0.1, 1000);
     if (isIphoneProject) {
-      camera.position.set(-3, 0.6, 85);
+      camera.position.set(-3, 0.6, 105);
     } else if (isPixelProject) {
-      camera.position.set(0, 0.6, -3);
+      camera.position.set(0, 0.6, -5);
     } else {
-      camera.position.set(0.0, 0.08, 45);
+      camera.position.set(0.0, 0.08, 55);
     } // Move the camera so it's in front of the model (either iphone, pixel or laptop)
 
     const renderer = new Three.WebGLRenderer({ antialias: true, alpha: true });
@@ -78,7 +78,7 @@ export const useRenderThree = (
       0,
       Math.PI / 8,
       0.25,
-      1
+      1,
     );
     spotLight.position.set(0, 8, 10);
     spotLight.castShadow = true;
@@ -118,13 +118,13 @@ export const useRenderThree = (
           undefined,
           (error) => {
             console.error("Error loading texture:", error);
-          }
+          },
         );
       },
       undefined,
       (error) => {
         console.error("Error loading model:", error);
-      }
+      },
     );
 
     // ANIMATION
@@ -138,17 +138,44 @@ export const useRenderThree = (
       isPausedRef.current = false;
     };
 
+    let orbitAngle = 0;
+
     function animate() {
       if (outOfViewRef.current) return;
       frameId = requestAnimationFrame(animate);
       controls.update();
       renderer.render(scene, camera);
-      if (pivotRef.current) {
-        if (isPausedRef.current) return;
-        pivotRef.current.rotation.y +=
-          isIphoneProject || isPixelProject ? 0.002 : 0.0005;
+
+      if (!isPausedRef.current) {
+        const isLaptopProject = !isIphoneProject && !isPixelProject;
+        if (isLaptopProject) {
+          const centerAngle = 0; // straight ahead
+          const sweep = Math.PI / 4; // 45° in radians
+          orbitAngle += 0.00002; // keep this line
+          const boundedAngle = centerAngle + sweep * Math.sin(orbitAngle);
+          const radius = 55;
+          const height = 0.08;
+          camera.position.x = Math.sin(boundedAngle) * radius;
+          camera.position.z = Math.cos(boundedAngle) * radius;
+          camera.position.y = height;
+        } else {
+          orbitAngle += isIphoneProject ? 0.0007 : 0.0003;
+          const minAngle = -Math.PI / 2.3;
+          const maxAngle = Math.PI / 2.3;
+          const sweep = maxAngle - minAngle;
+          const boundedAngle =
+            minAngle + ((Math.sin(orbitAngle) + 1) / 2) * sweep;
+          const radius = isIphoneProject ? 105 : 5;
+          const height = isIphoneProject ? 0.6 : 0.6;
+          camera.position.x = Math.cos(boundedAngle) * radius;
+          camera.position.z = Math.sin(boundedAngle) * radius;
+          camera.position.y = height;
+        }
+        camera.lookAt(0, 0, 0);
+        controls.target.set(0, 0, 0);
       }
     }
+
     animate();
 
     container.addEventListener("mousedown", handleMouseDown);

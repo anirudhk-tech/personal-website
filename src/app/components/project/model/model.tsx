@@ -9,31 +9,41 @@ export const Model = ({
   backgroundGradient,
   project,
   screenTexture,
+  standout,
 }: {
   model: string;
   screen: string;
   backgroundGradient?: string;
-  project: Project;
+  project?: Project;
   screenTexture: string;
+  standout?: boolean;
 }) => {
   const { setContainer } = useRenderThree(model, screen, screenTexture);
   const isMobile = useMediaQuery("(max-width: 600px)");
 
-  return (
-    <Container>
-      {isMobile && (
-        <>
-          <Typography variant="h4">{project.title}</Typography>
-          <Typography variant="body1">
-            {project.startDate} - {project.endDate}
-          </Typography>
-          <Typography variant="body2">{project.description}</Typography>
-        </>
-      )}
-      <ModelContainer
-        sx={{ background: backgroundGradient ? backgroundGradient : "" }}
-        ref={setContainer}
-      ></ModelContainer>
-    </Container>
-  );
+  if (!standout && project) {
+    return (
+      <Container>
+        {isMobile && (
+          <>
+            <Typography variant="h4">{project.title}</Typography>
+            <Typography variant="body1">
+              {project.startDate} - {project.endDate}
+            </Typography>
+            <Typography variant="body2">{project.description}</Typography>
+          </>
+        )}
+        <ModelContainer
+          sx={{ background: backgroundGradient ? backgroundGradient : "" }}
+          ref={setContainer}
+        ></ModelContainer>
+      </Container>
+    );
+  } else {
+    return (
+      <Container>
+        <ModelContainer ref={setContainer}></ModelContainer>
+      </Container>
+    );
+  }
 };

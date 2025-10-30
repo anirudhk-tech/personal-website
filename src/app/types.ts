@@ -12,6 +12,15 @@ export interface Project {
   type: "pixel" | "iphone" | "pc";
 }
 
+export interface StandoutProject {
+  name: string;
+  tagline: string;
+  metric: string;
+  type: "pixel" | "iphone" | "pc";
+  screen: string;
+  link: string;
+}
+
 export interface Experience {
   title: string;
   responsibilities: string[];
@@ -54,7 +63,7 @@ export interface Hobby {
   name: string;
   icon: React.ReactElement;
   description: string;
-  other?: string;  
+  other?: string;
 }
 
 export interface Contact {
