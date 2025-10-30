@@ -43,7 +43,7 @@ export const Landing = ({
     "#ffe0eb",
   ];
   const handleGoToMail = () => {
-    window.location.href = `mailto:anirudhkuppili.dev@gmail.com?subject=Work%20with%20Ani&body=Hi%20Ani,%0AI'm%20interested%20in%20working%20with%20you`;
+    window.location.href = `mailto:anirudhkuppili.dev@gmail.com?subject=Work%20with%20Ani&body=Hi%20Ani,%0AI%20am%20interested%20in%20working%20with%20you`;
   };
 
   return (
