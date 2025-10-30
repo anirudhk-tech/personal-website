@@ -43,7 +43,7 @@ export const Landing = ({
     "#ffe0eb",
   ];
   const handleGoToMail = () => {
-    window.location.href = `mailto:anirudhkuppili.dev@gmail.com?subject=Work%20with%20Ani&body=Hi%20Ani,%0AI%20am%20interested%20in%20working%20with%20you`;
+    window.location.href = `mailto:anirudhkuppili.dev@gmail.com?subject=Work%20with%20Ani&body=Hi%20Ani,%0AI'm%20interested%20in%20working%20with%20you`;
   };
 
   return (
@@ -54,7 +54,7 @@ export const Landing = ({
           textAlign="center"
           sx={{ color: "#fff", fontWeight: "bold" }}
         >
-          Oh hi there, I'm Ani
+          {`Oh hi there, I'm Ani`}
         </Typography>
         <FadeIn delay={0.5} duration={1}>
           <Typography variant="body1" sx={{ color: "#fff" }}>
