@@ -2,60 +2,54 @@ import { Project, StandoutProject } from "../types";
 import { Icons } from "./icons";
 export const standoutProjects: StandoutProject[] = [
   {
-    name: "Hermes",
-    tagline:
-      "Voice-controlled browser agent that automates workflows and fetches data in real time.",
-    metric: "🏆 20+ calls made, top 10 in John Hopkins hackathon",
-    type: "iphone",
-    screen: "project_screens/hermes.jpg",
-    link: "https://hermes.agent",
-  },
-  {
     name: "Sharks",
-    tagline:
-      "ML-powered ocean conservation app built with NASA data to detect endangered species zones.",
-    metric: "🌊 Uses 4 NASA datasets",
+    tagline: "AI-driven ocean conservation system combining satellite analytics and real-time tracking.",
+    metric: "463+ tracked shark movements worldwide",
     type: "pc",
     screen: "project_screens/sharks.jpeg",
-    link: "https://sharks.ai",
+    link: "https://github.com/anirudhk-tech/sharks"
   },
   {
     name: "Rockefeller",
-    tagline:
-      "An autonomous multi-agent system that launches and runs small online businesses.",
-    metric: "🤖 Generated 10+ working prototypes autonomously",
+    tagline: "Multi-agent AI automating end-to-end online business launch in minutes.",
+    metric: "19 successful store launches automated",
     type: "pc",
     screen: "project_screens/rockefeller.jpg",
-    link: "https://rockefeller.ai",
+    link: "https://github.com/ArslanKamchybekov/rockefeller"
   },
   {
-    name: "Beavr",
-    tagline:
-      "Personal reading AI on iOS that summarizes, explains, and remembers everything you read.",
-    metric: "📱 400+ study sessions",
+    name: "Hermes",
+    tagline: "Smart phone-call assistant navigating IVRs and summarizing calls with AI.",
+    metric: "42 calls navigated autonomously",
     type: "iphone",
-    screen: "project_screens/beavr.png",
-    link: "https://beavr.app",
+    screen: "project_screens/hermes.jpg",
+    link: "https://github.com/benz206/hophacks2025"
   },
   {
     name: "Tempus",
-    tagline:
-      "Rust-based terminal productivity tracker that visualizes your focus and time data beautifully.",
-    metric: "🦀 Built fully in Rust, used daily",
+    tagline: "Rust-based terminal productivity tracker with embedded ML categorization.",
+    metric: "2,036 timed sessions logged",
     type: "pc",
     screen: "project_screens/tempus.png",
-    link: "https://tempus.dev",
+    link: "https://github.com/anirudhk-tech/tempus"
   },
   {
-    name: "Odyssey",
-    tagline:
-      "Cross-platform writing suite blending creativity tools with clean offline-first sync.",
-    metric: "✍️ 1,000+ notes synced across devices",
+    name: "Storyboard.AI",
+    tagline: "Multi-agent AI co-author summarizing story beats and suggesting twists.",
+    metric: "6 stories co-authored with AI",
     type: "pc",
-    screen: "project_screens/odyssey_screen.png",
-    link: "https://odyssey.app",
+    screen: "project_screens/storyboard_ai.png",
+    link: "https://github.com/anirudhk-tech/storyboard_ai"
   },
-];
+  {
+    name: "Waddl",
+    tagline: "AI-powered productivity webapp with computer vision and social accountability.",
+    metric: "1,032 distractions caught",
+    type: "pc",
+    screen: "project_screens/waddl.png",
+    link: "https://github.com/ArslanKamchybekov/waddl"
+  }
+]
 
 export const projects: Project[] = [
   {

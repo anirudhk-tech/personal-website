@@ -54,7 +54,7 @@ export const Landing = ({
           textAlign="center"
           sx={{ color: "#fff", fontWeight: "bold" }}
         >
-          Oh hi there, I'm Ani
+          {`Oh hi there, I'm Ani`}
         </Typography>
         <FadeIn delay={0.5} duration={1}>
           <Typography variant="body1" sx={{ color: "#fff" }}>
