@@ -69,11 +69,11 @@ export const GradientTextContainer = styled(Box)(() => ({
 
 export const CTAButton = styled(Button)(() => ({
   alignSelf: "center",
-  marginTop: "24px",
+  marginTop: "60px",
   marginBottom: "12px",
   justifyContent: "center",
   minWidth: "210px",
-  borderRadius: "16px",
+  borderRadius: "4px",
   color: "#fff",
   fontWeight: 800,
   fontSize: "1.15rem",

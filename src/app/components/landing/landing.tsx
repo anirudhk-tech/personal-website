@@ -52,7 +52,11 @@ export const Landing = ({
         <Typography
           variant="h1"
           textAlign="center"
-          sx={{ color: "#fff", fontWeight: "bold" }}
+          sx={{
+            color: "#fff",
+            fontWeight: "bold",
+            fontSize: { xs: "2rem", sm: "3rem", md: "5rem" },
+          }}
         >
           {`Oh hi there, I'm Ani`}
         </Typography>
